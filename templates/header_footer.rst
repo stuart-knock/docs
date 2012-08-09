@@ -30,7 +30,6 @@
         |Page ###Page###                |        
         +-------------------------------+
         
-
 |
 |
 |
@@ -41,9 +40,10 @@
 |
 |
 
-.. image:: images/TVB_logo.png
+.. image:: styles/TVB_logo.png
    :width: 90%
    :align: center
+   
 |
 |
 
