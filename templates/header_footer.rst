@@ -2,10 +2,6 @@
 .. |TVB_URL| replace:: http://www.thevirtualbrain.org
 .. |DATE| date::
 
-
-.. role:: red
-.. role:: blue
-
 .. header::
       
 		.. class:: noborder 
@@ -47,9 +43,9 @@
 |
 |
 
-================
-|TITLE| 
-================
+=======
+|TITLE|
+=======
 
 |
 |
@@ -66,3 +62,11 @@
 .. raw:: pdf
 
     PageBreak
+
+.. contents:: Table of Contents
+   :depth: 4
+
+.. raw:: pdf
+
+    PageBreak
+    
