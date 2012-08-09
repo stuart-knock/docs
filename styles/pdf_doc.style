@@ -25,7 +25,14 @@
          {"parent": "header-footer-text",
           "alignment": "right",
           "fontSize": 8 }],     
-         
+     
+     [ "main-title" , 
+         {"parent": "normal",
+          "fontName": "Arial",
+          "textColor": black,
+          "alignment": "left",
+          "fontSize": 30, 
+          "background-color": white }],
      
      [ "legendtext", {
           "parent": "normal",

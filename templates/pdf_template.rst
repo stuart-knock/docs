@@ -32,9 +32,6 @@
 |
 |
 |
-|
-|
-|
 
 .. image:: styles/TVB_logo.png
    :width: 90%
@@ -43,11 +40,11 @@
 |
 |
 
-=======
-|TITLE|
-=======
+.. class:: main-title
+   
+   |TITLE|
 
-|
+
 |
 |
 
@@ -64,7 +61,7 @@
     PageBreak
 
 .. contents:: Table of Contents
-   :depth: 4
+   :depth: 3
 
 .. raw:: pdf
 
