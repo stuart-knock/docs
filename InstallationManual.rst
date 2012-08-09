@@ -3,7 +3,7 @@
 .. |VERSION| replace:: 1.0
 .. |REVISION| replace:: 0.1
 
-.. include:: templates/header_footer.rst   
+.. include:: templates/pdf_template.rst
       
 
 This file will guide you in installing and using The Virtual Brain project correctly.
