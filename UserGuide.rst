@@ -634,10 +634,6 @@ a vector value to a node in the connectivity matrix.
 
    Preview for Topographic Visualizer
 
-.. TEST CASES
-
-.. include:: TestCases.rst 
-
 
 .. DATA EXCHANGE
 
