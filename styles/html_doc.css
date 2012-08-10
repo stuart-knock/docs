@@ -1,6 +1,31 @@
-@import url(html4css1.css);
-
 h1, h2, h3, h4, h5, h6, p.topic-title {
-  font-family: sans-serif
-  color:red
+  font-family: sans-serif;
+  color:red;
+}
+
+img {
+	width:100% !important;
+}
+
+img#tvb-logo {
+	width:30% !important;
+}
+
+/* Hide header and footer lines */
+hr.header, hr.footer {
+	display: none;
+}
+
+/* Hide header and footer */
+table.noborder {
+	display: none;
+}
+
+/* Increase font for main title */
+p.main-title {
+	color: #000;
+	font-size: 50px;
+	white-space: nowrap;
+	width: auto;	
+	font-weight: bold;
 }

@@ -33,10 +33,12 @@
 |
 |
 
+
 .. image:: styles/TVB_logo.png
+   :name: tvb-logo
    :width: 90%
    :align: center
-   
+
 |
 |
 
