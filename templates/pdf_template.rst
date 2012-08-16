@@ -1,5 +1,5 @@
-.. |TVB| replace:: *TheVirtualBrain*
-.. |TVB_URL| replace:: http://www.thevirtualbrain.org
+.. include :: pdf_constants.rst
+
 .. |DATE| date::
 
 .. header::
