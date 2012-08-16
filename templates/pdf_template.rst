@@ -30,8 +30,6 @@
 |
 |
 |
-|
-|
 
 
 .. image:: styles/TVB_logo.png
@@ -59,7 +57,7 @@
 
 .. raw:: pdf
 
-    PageBreak
+    PageBreak oneColumn
 
 .. contents:: Table of Contents
    :depth: 3
