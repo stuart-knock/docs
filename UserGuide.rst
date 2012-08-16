@@ -76,6 +76,10 @@ database and deleting all the |TVB| created folders.
 
 .. include:: UserGuide-UI.rst
 
+.. TEST CASES
+
+.. include:: TestCases.rst 
+
 .. DATA EXCHANGE
 
 .. include:: DataExchange.rst 
