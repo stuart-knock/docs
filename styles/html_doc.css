@@ -20,9 +20,11 @@ p.caption {
 	text-align: left;	
 }
 
+/*
+Not used since :name: is not supported on Linux for RST format
 img#tvb-logo {
 	width:30% !important;
-}
+}*/
 
 /* Hide header and footer lines */
 hr.header, hr.footer {
