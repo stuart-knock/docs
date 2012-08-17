@@ -138,26 +138,15 @@ A history of launched simulations is kept to have the traceability of the differ
 modifications that took place in the simulation chain.
 
 
-.. DATA EXCHANGE
-
 .. include:: UserGuide-UI_User.rst 
-
-
-.. DATA EXCHANGE
 
 .. include:: UserGuide-UI_Project.rst
 
-
-.. DATA EXCHANGE
-
 .. include:: UserGuide-UI_Analyze.rst
-
-
-.. DATA EXCHANGE
 
 .. include:: UserGuide-UI_Connectivity.rst
 
-
-.. DATA EXCHANGE
+.. include:: UserGuide-UI_SpaceTime.rst
 
 .. include:: UserGuide-UI_Burst.rst
+
