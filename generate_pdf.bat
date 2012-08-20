@@ -5,8 +5,8 @@ REM files and place them on the correct folder to be included into distribution.
 cls
 del *.pdf
 
-rst2pdf -o InstallationManual.pdf InstallationManual.rst --stylesheets=styles/pdf_doc.style
-rst2pdf -o UserGuide.pdf UserGuide.rst --stylesheets=styles/pdf_doc.style
-rst2pdf -o UserScientificReport.pdf UserScientificReport.rst --stylesheets=styles/pdf_doc.style
-rst2pdf -o DeveloperReferenceManual.pdf DeveloperReferenceManual.rst --stylesheets=styles/pdf_doc.style
+rst2pdf --stylesheets=./styles/pdf_doc.style -o InstallationManual.pdf       InstallationManual/InstallationManual.rst
+rst2pdf --stylesheets=./styles/pdf_doc.style -o UserGuide.pdf                UserGuide/UserGuide.rst
+rst2pdf --stylesheets=./styles/pdf_doc.style -o UserScientificReport.pdf     ScientificReport/UserScientificReport.rst
+rst2pdf --stylesheets=./styles/pdf_doc.style -o DeveloperReferenceManual.pdf DeveloperReference/DeveloperReferenceManual.rst
 

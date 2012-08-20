@@ -3,7 +3,7 @@
 .. |VERSION| replace:: 1.0
 .. |REVISION| replace:: 0.1
 
-.. include:: templates/pdf_template.rst
+.. include:: ../templates/pdf_template.rst
 
 
 |TVB| is a framework for the simulation of the dynamics of large-scale brain networks with biologically

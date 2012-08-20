@@ -8,7 +8,7 @@
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
 
-rst2pdf -o InstallationManual.pdf --stylesheets=./styles/pdf_doc.style InstallationManual.rst
-rst2pdf -o UserGuide.pdf --stylesheets=./styles/pdf_doc.style UserGuide.rst
-rst2pdf -o DeveloperReferenceManual.pdf --stylesheets=./styles/pdf_doc.style DeveloperReferenceManual.rst
-rst2pdf -o UserScientificReport.pdf --stylesheets=./styles/pdf_doc.style UserScientificReport.rst
+rst2pdf --stylesheets=./styles/pdf_doc.style -o InstallationManual.pdf       InstallationManual/InstallationManual.rst
+rst2pdf --stylesheets=./styles/pdf_doc.style -o UserGuide.pdf                UserGuide/UserGuide.rst
+rst2pdf --stylesheets=./styles/pdf_doc.style -o UserScientificReport.pdf     ScientificReport/UserScientificReport.rst
+rst2pdf --stylesheets=./styles/pdf_doc.style -o DeveloperReferenceManual.pdf DeveloperReference/DeveloperReferenceManual.rst
