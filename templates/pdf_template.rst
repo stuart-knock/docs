@@ -32,7 +32,7 @@
 |
 
 
-.. image:: ../styles/TVB_logo.png
+.. image:: ../styles/TVB_logo.svg
    :width: 90%
    :align: center
 
