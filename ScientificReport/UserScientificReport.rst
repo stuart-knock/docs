@@ -25,7 +25,7 @@
 
 .. include:: sci.report.theoretical_framework.rst
 
-.. include:: sci.report.tvb_simulator
+.. include:: sci.report.tvb_simulator.rst
 
 .. include:: sci.report.neuroimaging.rst
 
