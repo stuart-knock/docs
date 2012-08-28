@@ -1,5 +1,5 @@
-User Interface of |TVB| Framework
-=================================
+User Interface of |TVB|
+=======================
 
 Once started, |TVB| should automatically open your default browser and start on the
 default `http://127.0.0.1:8080/settings/settings`. If not, you should manually open your favorite browser from our
@@ -146,7 +146,7 @@ modifications that took place in the simulation chain.
 
 .. include:: UserGuide-UI_Connectivity.rst
 
-.. include:: UserGuide-UI_SpaceTime.rst
+.. include:: UserGuide-UI_Stimulus.rst
 
 .. include:: UserGuide-UI_Burst.rst
 
