@@ -30,3 +30,6 @@
 .. include:: sci.report.neuroimaging.rst
 
 .. include:: sci.report.cognitive.rst
+
+.. include:: sci.report.bib.rst
+
