@@ -94,3 +94,31 @@ a vector value to a node in the connectivity matrix.
    :align: center
 
    Preview for Topographic Visualizer
+   
+
+.. SIMULATOR PART 
+
+.. include:: Simulator.rst   
+
+.. Integrator
+        the integration scheme for the (possibly stochastic) differential equations
+        and integration step (in physical unit).
+    Surface
+        the surfaces (cortex, skull, skin) for the resolution of forward problems.
+    Monitors
+        the data registered during the simulations.
+    Connectivity
+        connectivity matrix to use in the simulation.
+    Coupling
+        coupling fucntion between nodes of the network.
+    Stimulus
+        optional stimulation of the brain.
+    Model and parameters:
+        model type (such as Fithugh-Nagumo for example) and the parameters used in
+        the simulation.
+    Simulation length:
+        duration in physical time of the simulation (not to be confused with the
+        computing duration)
+    `Launch` and `Cancel` buttons on the right. 
+    
+    
