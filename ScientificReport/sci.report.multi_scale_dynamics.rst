@@ -32,16 +32,29 @@ Common assumptions in mean-field modelling are that explicit structural features
 Noninvasive neuroimaging signals constitute the superimposed representations of the activity of many sources leading to high ambiguity in the mapping between internal states and observable signals, i.e., the pairing between internal states of the neural network and observed neuroimaging signals is surjective, but not bijective. As a consequence, the EEG and MEG backward solution is underdetermined (`Helmholtz 1853`). Therefore, a crucial step towards the outlined goals is the correct synchronization of model and data, that is, the alignment of model states with internal - but often unobservable – states of the system.
 
 
+Various mean-field models are available in |TVB| simulator reproducing typical features of mesoscopic population dynamics. 
+For each node of the large-scale network, a neural population model describes the local dynamics.
 
-Various mean-field models are available in TVB reproducing typical features of mesoscopic population dynamics. For each node, a neural population model  describes the local dynamic at each of the nodes of the large-scale network.
-When traversing the scale to the large scale network, then the each network node is governed by its own intrinsic dynamics superimposed with the dynamics of all other network nodes that are each connected via specific connection weights and time delays yielding the following evolution equation for the time course  of the network mean-field potential  at node :   
-
-Eq. 
-The equation describes the numerical integration of a network of connected neural populations . The large-scale network is described by connection weights  where index  indicates the weight of node  exerting an influence on the node indexed by . The time delays for information transmission  depend on a distance matrix and a constant conduction speed . Weights are scaled by a constant . Additive noise is introduced by the term .
+When traversing the scale to the large scale network, then each network node is governed by its own intrinsic dynamics superimposed with the dynamics of all other network nodes that are each connected via specific connection weights and time delays yielding the following (generic) evolution equation for the time course of the network mean-field potential at node:
 
 
-.. models --> Kinetic models
+.. math::
+    \dot{u_{i}} = g(u_{i}, v_{i}) - c \sum_{j=1}^{N} f_{ij} u_{j}(t - \Delta t_{ij}) + \sum_{k=1}^{P} \gamma_{ik}\, u_{k} + n_{u}
 
-2D GENERIC OSCILLATOR 
-This choice is motivated by various reasons, but foremost by the fact that a wide range of neuron models can be described by the a 2D dynamic system and that () have shown that population models of  such neuron models preserve the mathematical form of the single neuron equations. 
-2D generic oscillator models generate a wide range of phenomena as observed in neuronal population dynamics such as multistability, coexistence of oscillatory and non-oscillatory behaviors, various behaviors displaying multiple time scales, to name just a few. 
+.. math::
+    \dot{v_{i}} = h(u_{i}, v_{i}) + n_{v}
+
+
+The equation describes the stochastic differential equation of a network of connected neural populations. The large-scale network is described by connection weights :math:`f_{ij}` where index :math:`j` indicates the weight of node exerting an influence on the node indexed by :math:`i`. The local network connectivity is described by connection weights :math:`\gamma_{ik}`.  
+The time delays depend on a distance matrix :math:`d_{ij}` and a constant conduction speed :math:`\nu`, consequently :math:`\Delta t_{ij}=\frac{d_{ij}}{\nu}`. Weights are scaled by a constant :math:`c`. Additive noise is introduced by the terms :math:`n_{u}` and :math:`n_{v}`.
+
+.. todo: Cross reference to coupling functions within reference manual and why?
+
+
+A 2D GENERIC OSCILLATOR
+~~~~~~~~~~~~~~~~~~~~~~~ 
+
+This choice is motivated by various reasons, but foremost by the fact that a wide range of neuron models can be described by the a 2D dynamic system and that (`Stefanescu Jirsa 2008`_) have shown that population models of such neuron models preserve the mathematical form of the single neuron equations. 2D generic oscillator models generate a wide range of phenomena as observed in neuronal population dynamics such as multistability, coexistence of oscillatory  and non-oscillatory behaviors, various behaviors displaying multiple time scales, to name just a few. 
+
+.. insert figure of different scenarios with trajectories
+.. 

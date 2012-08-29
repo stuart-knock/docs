@@ -28,9 +28,13 @@
 
 .. include:: sci.report.tvb_simulator.rst
 
+.. include:: sci.report.analysis.rst
+
 .. include:: sci.report.neuroimaging.rst
 
 .. include:: sci.report.cognitive.rst
 
 .. include:: sci.report.bib.rst
+
+.. List of figures
 

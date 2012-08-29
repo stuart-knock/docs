@@ -38,7 +38,7 @@ Bilbiography
 .. _Haken 1972:
 .. [H_1972] *needs reference*
 
-.. _Kelso 1995`:
+.. _Kelso 1995:
 .. [K_1995] *needs reference*
 
 .. _Buzsaki 2006:
@@ -49,6 +49,9 @@ Bilbiography
 
 .. _Helmholtz 1853:
 .. [H_1853] *needs reference*
+
+.. _Knock et al 2009:
+.. [K_2009] Knock, S., McIntosh, A. R., Sporns, O., Kötter, R., Hangmann, P. and Jirsa, V. K., *The effects of physiologically plausible connectivity structure on local and global dynamics in large scale brain models*, Journal of Neuroscience Methods, 183: 86-94, 2009. 
 
 .. Books
 
