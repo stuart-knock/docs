@@ -9,6 +9,7 @@
 .. Purpose:
 
 .. To provide a more detailed and comprehensive description of |TVB|: Scientific motivation and goals.
+.. Scientific documentation of the ‘The Virtual Brain’ (Integrating computational brain models and multi-modal neuroimaging data using |TVB|)
 
 .. Contents:
 ..   	Description of the Theoretical framework and formalisms, the need of a practical implementation
