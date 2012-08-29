@@ -8,11 +8,7 @@ Bilbiography
 
 .. [FH_1961] FitzHugh, R., *Impulses and physiological states in theoretical models of nerve membrane*, Biophysical Journal 1: 445, 1961.
 
-
 .. Books
-
-
-
 
 .. Book chapters
 
