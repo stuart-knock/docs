@@ -16,7 +16,7 @@ Common assumptions in mean-field modelling are that explicit structural features
 
 
 
-.. figure:: images/local_source_node_network.png
+.. figure:: images/local_source_node_network.jpg
    :scale: 50 %
    :alt: a scheme of a local source node network
 
