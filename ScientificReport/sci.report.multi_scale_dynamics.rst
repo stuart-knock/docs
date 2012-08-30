@@ -56,5 +56,28 @@ A 2D GENERIC OSCILLATOR
 
 This choice is motivated by various reasons, but foremost by the fact that a wide range of neuron models can be described by the a 2D dynamic system and that (`Stefanescu Jirsa 2008`_) have shown that population models of such neuron models preserve the mathematical form of the single neuron equations. 2D generic oscillator models generate a wide range of phenomena as observed in neuronal population dynamics such as multistability, coexistence of oscillatory  and non-oscillatory behaviors, various behaviors displaying multiple time scales, to name just a few. 
 
-.. insert figure of different scenarios with trajectories
-.. 
+.. figure:: images/phase_plane_trajectory_2dGenericOscillator_bistability.png
+   :scale: 50 %
+   :alt: bistable configuration
+
+   Figure :counter:`figure`. Bistable configuration.  
+ 
+   A fixed point and a limit cycle coexist when :math:`I_{ext}` is set to 0. If :math:`I_{ext}=-2`, then the equilibrium is only a fixed point.
+
+.. figure:: images/phase_plane_trajectory_2dGenericOscillator_excitability.png
+   :scale: 50 %
+   :alt: excitable configuration
+
+   Figure :counter:`figure`. Excitable configuration.
+ 
+   The model exhibits FitzHugh-Nagumo dynamics. If :math:`a=2` the dynamics correpond to an oscillator (limit cycle).
+
+3. Configuration
+
+.. figure:: images/phase_plane_trajectory_2dGenericOscillator_SNIC.png
+   :scale: 50 %
+   :alt: SNIC configuration
+
+   Figure :counter:`figure`. Saddle Node bifurcation on the Invariant Circle (SNIC) configuration.
+ 
+   The model exhibits Morri-Lecar dynamics. 
