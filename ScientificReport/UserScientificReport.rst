@@ -36,5 +36,3 @@
 
 .. include:: sci.report.bib.rst
 
-.. List of figures
-

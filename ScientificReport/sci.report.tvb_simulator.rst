@@ -1,5 +1,5 @@
 Large-scale brain dynamics practical implementation: |TVB| Simulator
-====================================================================
+=====================================================================
 
 .. links to the reference manual, include (maybe) only a short and compact and 'sciency' description
 
@@ -30,7 +30,7 @@ Simulating large-scale brain dynamics is a large-scale problem because, since we
 .. We have a large software system: we bring together pieces of software to solve larger problems. We do not write from scratch well known algorithms.
 
 Goals and TODOs
-~~~~~~~~~~~~~~~
+---------------
 .. Provided the problem we ask is well-posed. 
 
 We want to answer questions that have not been answered before, to make use of the results to ask new questions and improve the functionality (new requirements) of our software.
@@ -39,10 +39,3 @@ We want to answer questions that have not been answered before, to make use of t
 - Keep it simple. We do not want a monolithic system. |TVB| Simulator is composed by a few modules. 
 - Testing and debugging. 
 - A challenge: tune (learning tool) the scaling of the connectivity matrices to avoid having overflows (Inf, NaNs)
-
-
-.. |TVB| : a Web-based scientific research tool
-.. ============================================
-
-.. Education, research and Information Technologies. 
-
