@@ -1,18 +1,16 @@
 Simulation Environment
 ----------------------
 
-.. figure:: screenshots/simulate.jpg
+.. figure:: screenshots/simulator.jpg
    :width: 90%
    :align: center
 
    The interface for the TVB Simulator
     
    
-The Simulator Interface
-.......................
-
-In the following we discuss the input parameters and other functional elements
-of the simulator interface.
+In the following we briefly describe  the input parameters and other functional elements
+of the simulator interface. For more, detailed and technical explanation, please refer
+to the Reference Manual or the Scientific Report.
 
 
 `Global Couplings`
@@ -23,9 +21,9 @@ of the simulator interface.
     In upcoming versions this speed will be adjustable for each connection.
 
 `Coupling`
-    The coupling between network nodes can be of different nature, for instance
-    linear or nonlinear/multiplicative.  Between neurons, linear coupling implies gap
-    junction coupling, which does not directly translate to the population models,
+    The coupling between network nodes can be of different nature. 
+    Between neurons, linear coupling implies gap junction coupling, which does not directly 
+    translate to the population models,
     where synaptic couplings may appear mathematically in linear or nonlinear
     representations.  Global coupling strength and baseline shift are the options
     available so far.
@@ -48,13 +46,11 @@ of the simulator interface.
     Brain stimulations can be provided to different nodes. This option is not
     functional yet in the interface, but will be soon.
 
-
 `Model`
-    The neural population models are chosen in this section. For neurophysiological
+    The population model is chosen in this section. For neurophysiological
     interpretations of the parameters, please refer to the scientific papers for the
     time being. The parameter 'Random_Stream' defines the random number
-    generator used for the stochastic network models. So far, noise is always
-    additive and linear.
+    generator used for the stochastic network models.
 
 `Integrators`
 To compute the time course and the dynamics of the brain network model, numerical
@@ -65,16 +61,12 @@ There are two integration schemes:
 	- stochastic
 
 The difference between both schemes is that the latter adds a noise term to the
-update rule. So far, noise is always additive and linear.
+update rule. By default noise is additive and linear, although multiplicative noise is also available.
 
-At present, the implemented algorithms are:
-	- Euler's method,
-	- Heun's method and,
-	- Runge-Kutta 4-th order method.
+If a stochastic scheme is selected then `Noise` configuration fields will be shown.
 
-These algorithms vary in their ability of providing a correct approximation of
-the network dynamics within a reasonable time period. Typical integration step
-sizes are suggested by default (in miliseconds).
+The available integration algorithms vary in their ability of providing a correct approximation of
+the network dynamics within a reasonable time period. Typical integration step sizes are suggested by default (in miliseconds).
 
 
 `Monitors`
@@ -83,11 +75,10 @@ sizes are suggested by default (in miliseconds).
 
 
 `Simulation Length`
-    This is the duration in physical time [ms] of the simulation (not to be confused
+    This is the duration in physical time (miliseconds) of the simulation (not be confused
     with the time that the computer will need to perform the simulation).
 
-`Launch` and `Cancel` buttons on the right, which launch the simulation process
-for the given parameters.
+`Launch` button on the upper right  starts the simulation process for the given parameters.
 
 
 

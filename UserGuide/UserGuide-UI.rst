@@ -113,10 +113,10 @@ User:
 Project:
     where projects are defined and administered.
 
-Burst:
-    where Simulate, Analyze and View are combined to have a quick overview of the ongoing Project.
+Simulator:
+    where simulations are launched, combined with the analyzers and visualiers. It allows to have quick overview of the ongoing Project.
 
-SpaceTime:
+Stimulus:
     where spatiotemporal stimuli can be generated.
 
 Analyze:
@@ -142,11 +142,10 @@ modifications that took place in the simulation chain.
 
 .. include:: UserGuide-UI_Project.rst
 
-.. include:: UserGuide-UI_Analyze.rst
+.. include:: UserGuide-UI_Burst.rst
 
-.. include:: UserGuide-UI_Connectivity.rst
+.. include:: UserGuide-UI_Analyze.rst
 
 .. include:: UserGuide-UI_Stimulus.rst
 
-.. include:: UserGuide-UI_Burst.rst
-
+.. include:: UserGuide-UI_Connectivity.rst
