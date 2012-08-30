@@ -8,7 +8,7 @@ directories where related data sets and simulation results are stored.
 When the `Project` option is selected you should have the default project created
 for you on user registration:
 
-.. figure:: screenshots/default_project.png
+.. figure:: screenshots/default_project.jpg
    :width: 90%
    :align: center
 
@@ -17,7 +17,7 @@ for you on user registration:
 You can edit this by clicking on the `Project Properties` option which leads to the project's form (this form is also reached by clicking the
 `Create New Project` button in the `View All Projects` option):
 
-.. figure:: screenshots/project_form.png
+.. figure:: screenshots/project_form.jpg
    :width: 90%
    :align: center
 
@@ -29,7 +29,7 @@ share the project with other users by checking their respective 'Visible for' bo
 Then Save changes (button located on the right side), to get back to the page where
 projects can be selected; the new project is now present:
 
-.. figure:: screenshots/project_select.png
+.. figure:: screenshots/project_select.jpg
    :width: 90%
    :align: center
 
@@ -39,7 +39,7 @@ Projects are selected using their **id** on the left column. Once a project is
 selected, you can get information on your project by pointing to the upper left corner of
 the interface:
 
-.. figure:: screenshots/project_info.png
+.. figure:: screenshots/project_info.jpg
    :width: 90%
    :align: center
 
@@ -49,7 +49,7 @@ the interface:
 To navigate through the `Project` area, there is a second level
 menu in the top left corner, next to the Project number.
 
-.. figure:: screenshots/project_area.png
+.. figure:: screenshots/project_area.jpg
    :width: 90%
    :align: center
 
@@ -62,7 +62,7 @@ This area consists of:
   project operations is displayed. From this board the user can filter, view, reload or
   cancel any operation.
 
-.. figure:: screenshots/default_operations.png
+.. figure:: screenshots/default_operations.jpg
    :width: 90%
    :align: center
 
@@ -80,13 +80,13 @@ This area consists of:
 		- Upload Connectivity
 		- Upload Surface
 
-.. figure:: screenshots/data.png
+.. figure:: screenshots/data.jpg
    :width: 90%
    :align: center
 
    The data structure of our project with default data.
 
-.. figure:: screenshots/data_description.png
+.. figure:: screenshots/data_description.jpg
    :width: 90%
    :align: center
 

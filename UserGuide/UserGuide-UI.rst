@@ -6,7 +6,7 @@ default `http://127.0.0.1:8080/settings/settings`. If not, you should manually o
 list of supported browsers and open the before mentioned URL. This should open up the
 following settings page:
 
-.. figure:: screenshots/settings.png
+.. figure:: screenshots/settings.jpg
    :width: 90%
    :align: center
 
@@ -70,7 +70,7 @@ If you want to create a new user, you should `register` using the `new account
 link` which gives the following form:
 
 
-.. figure:: screenshots/register.png
+.. figure:: screenshots/register.jpg
    :width: 90%
    :align: center
 
@@ -92,7 +92,7 @@ You can log into the platform once registered and validated or by using the
 admin credentials you set in the `settings page`. Then, click on the `login` button on the
 right of the page which will bring you to:
 
-.. figure:: screenshots/user.png
+.. figure:: screenshots/user.jpg
    :width: 90%
    :align: center
 

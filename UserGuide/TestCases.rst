@@ -109,7 +109,7 @@ represented by a scalar measure.
 5. A discrete representation will be displayed on the right side of the screen and it
 will be updated each time several simulations are finished.
 
-.. figure:: screenshots/testcase_parameter_exploration.png
+.. figure:: screenshots/testcase_parameter_exploration.jpg
    :width: 70%
    :align: center
 

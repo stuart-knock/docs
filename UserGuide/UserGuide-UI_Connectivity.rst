@@ -1,7 +1,7 @@
 Connectivity Area
 -----------------
 
-.. figure:: screenshots/connectivity_area.png
+.. figure:: screenshots/connectivity_area.jpg
    :width: 90%
    :align: center
 
@@ -16,7 +16,7 @@ This connectivity visualizer allows you to see the structural information as
 base model part of TVB. On the left panel, the connectivity matrix is displayed
 in 3D.
 
-.. figure:: screenshots/connectivity.png
+.. figure:: screenshots/connectivity.jpg
    :width: 90%
    :align: center
 
@@ -29,7 +29,7 @@ You can select an individual node and righ-click on it to visualize the incoming
 or outgoing edges. For each node you can choose a different color to apply to its
 edges.
 
-.. figure:: screenshots/connectivity3d_coloredges.png
+.. figure:: screenshots/connectivity3d_coloredges.jpg
    :width: 90%
    :align: center
 
@@ -43,7 +43,7 @@ A 3D (WebGL) representation of the connectivity matrix.
 Two specific node-measures can be displayed here by node gradient colors and
 different node sizes.
 
-.. figure:: screenshots/connectivity3d.png
+.. figure:: screenshots/connectivity3d.jpg
    :width: 90%
    :align: center
 
@@ -59,15 +59,15 @@ One can select node-by-node in the connectivity, to emphasize connections
 between nodes and strength. Views are 2D Left, 2D Top and 2D Right.
 
 
-.. figure:: screenshots/connectivity2d_left.png
+.. figure:: screenshots/connectivity2d_left.jpg
    :width: 30%
    :align: left
 
-.. figure:: screenshots/connectivity2d_top.png
+.. figure:: screenshots/connectivity2d_top.jpg
    :width: 30%
    :align: center
 
-.. figure:: screenshots/connectivity2d_right.png
+.. figure:: screenshots/connectivity2d_right.jpg
    :width: 30%
    :align: right
 
@@ -87,7 +87,7 @@ quadrant selector on the upper left corner of the matrix:
 
 	- and quadrants 2 and 3 are the inter-hemisphere connectivity weights.
 
-.. figure:: screenshots/connectivity_quadrants.png
+.. figure:: screenshots/connectivity_quadrants.jpg
    :width: 90%
    :align: center
 
@@ -98,7 +98,7 @@ Matrix*, allows you to perform basic algebraic operations on a set of nodes.
 In addition to that, you can specify the edge type, i.e., if the connection
 strengths to be modified are going out or coming in from/to the selected nodes.
 
-.. figure:: screenshots/connectivity3d_edges_operations.png
+.. figure:: screenshots/connectivity3d_edges_operations.jpg
    :width: 90%
    :align: center
 
@@ -117,7 +117,7 @@ By default the set includes all the nodes. You can deselect the nodes from the
 node list. If you wish to save a particular selection, enter a new name and hit
 the Save Selection button.
 
-.. figure:: screenshots/connectivity3d_newselection.png
+.. figure:: screenshots/connectivity3d_newselection.jpg
    :width: 90%
    :align: center
 
@@ -141,7 +141,7 @@ Matrix  MPLH5 View
 A 2D (matplotlib) representation of the connectivity matrix. Here, the four
 quadrants of the weights matrix can be observed.
 
-.. figure:: screenshots/connectivity_mplh5.png
+.. figure:: screenshots/connectivity_mplh5.jpg
    :width: 90%
    :align: center
 

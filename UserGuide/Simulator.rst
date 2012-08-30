@@ -1,7 +1,7 @@
 Simulation Environment
 ----------------------
 
-.. figure:: screenshots/simulate.png
+.. figure:: screenshots/simulate.jpg
    :width: 90%
    :align: center
 

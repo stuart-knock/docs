@@ -5,7 +5,7 @@ Analyze Area
 This option offers a (currently limited) set of techniques for data
 (experimental or simulated) analysis.
 
-.. figure:: screenshots/analyze.png
+.. figure:: screenshots/analyze.jpg
    :width: 80%
    :align: center
 

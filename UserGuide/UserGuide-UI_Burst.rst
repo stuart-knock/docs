@@ -4,7 +4,7 @@ Burst Area
 Configurable multipanel display that combines |TVB| simulation, analysis and
 visualization capabilities.
 
-.. figure:: screenshots/burst.png
+.. figure:: screenshots/burst.jpg
    :width: 90%
    :align: center
 
@@ -40,7 +40,7 @@ surface vertex has an individual measure) or on the region level
 (coarse-granularity - each region is represented with only one color).
 
 
-.. figure:: screenshots/brain.png
+.. figure:: screenshots/brain.jpg
    :width: 90%
    :align: center
 
@@ -57,7 +57,7 @@ You have the option to select particular channels for display
 You can zoom by selecting a specific area with mouse-selection.
 
 
-.. figure:: screenshots/eeg.png
+.. figure:: screenshots/eeg.jpg
    :width: 90%
    :align: center
 
@@ -71,7 +71,7 @@ A synchronized side by side representation with a 3D webGL and a 2D EEG-like vis
 of brain activity.
 
 
-.. figure:: screenshots/braineeg.png
+.. figure:: screenshots/braineeg.jpg
    :width: 90%
    :align: center
 
@@ -89,7 +89,7 @@ Topographic Viewer
 A comparison between a maximum of 3 brain maps. Each map associates
 a vector value to a node in the connectivity matrix.
 
-.. figure:: screenshots/topografic.png
+.. figure:: screenshots/topografic.jpg
    :width: 90%
    :align: center
 
