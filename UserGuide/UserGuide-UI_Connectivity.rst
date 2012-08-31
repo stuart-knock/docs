@@ -5,9 +5,11 @@ Connectivity Area
    :width: 90%
    :align: center
 
+   Preview for Connectivity Area
 
-Connectivity 3D
-...............
+
+Long Range Connectivity
+.......................
 
 Connectivity 3D Edges
 ~~~~~~~~~~~~~~~~~~~~~
@@ -83,9 +85,9 @@ save changes for a compared simulation.
 You can select the quadrant to be displayed on the 2D table by accesing the
 quadrant selector on the upper left corner of the matrix:
 
-	- quadrants 1 and 4 are the intra-hemisphere connectivity weights,
+- quadrants 1 and 4 are the intra-hemisphere connectivity weights,
 
-	- and quadrants 2 and 3 are the inter-hemisphere connectivity weights.
+- and quadrants 2 and 3 are the inter-hemisphere connectivity weights.
 
 .. figure:: screenshots/connectivity_quadrants.jpg
    :width: 90%
@@ -123,20 +125,8 @@ the Save Selection button.
 
    Preview for New Selection
 
-The Connectivity Matrix editor allows you to perform lesions and save this changes
-in a new connectivity matrix:
-
-	- Deselect the nodes you want lesion by clicking directly on the region	labels. This will remove all the incoming and ongoing connections into	and from those nodes.
-	- Hit the `Save Interest` button to save the new connectivity matrix.
-	- Press the `Refresh` button below the Connectivity Matrix field, to see your new matrix. Select it.
-	- `Launch` the viewer again
-
-Your connectivity matrix should be displayed. The connection strengths of the
-lesioned nodes should be set to 0.
-
-
 Matrix  MPLH5 View
-..................
+~~~~~~~~~~~~~~~~~~
 
 A 2D (matplotlib) representation of the connectivity matrix. Here, the four
 quadrants of the weights matrix can be observed.
@@ -146,3 +136,37 @@ quadrants of the weights matrix can be observed.
    :align: center
 
    Preview for Matrix Display
+
+
+Local Connectivity
+..................
+
+Generates the spatial profile of local connectivity.
+
+.. figure:: screenshots/connectivity_local.jpg
+   :width: 90%
+   :align: center
+
+   Local Connectivity editing page
+
+Fields:
+
+- `Surface` : the spatial support
+- `Spatial` : the local connectivity function
+- `Cuttof distance`: distance at which the evaluation of the spatial function is truncated.
+- `Display name`: user defined name for the new local connectivity entity
+
+To generate the Local Connectivity entity press the `Create Local Connectivity` button, located on the lower right corner.
+
+The `View Local Connectivity` button launches a 3D brain visualizer to display the spatial profile of the newly generated entity.
+
+.. figure:: screenshots/local_connectivity_viewer.jpg
+   :width: 90%
+   :align: center
+
+   Local Connectivity Viewer
+
+The `Edit Local Connectivity` takes you back to the main Local Connectivity editing page.
+
+ 
+ 

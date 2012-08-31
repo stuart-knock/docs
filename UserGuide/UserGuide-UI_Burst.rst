@@ -40,14 +40,13 @@ button.
     Stimulus
         optional stimulation of the brain.
     Model and parameters:
-        model type (such as Fithugh-Nagumo for example) and the parameters used in
+        model type (such as Fitzhugh-Nagumo for example) and the parameters used in
         the simulation.
     Integrator
         the integration scheme for the differential equations and integration step (in physical unit).
 	If the integration scheme is stochastic:
 	Noise
 	    the additive or multiplicative noise term used in the integration scheme.
-
     Monitors
         the data registered during the simulations.
     Simulation length:
@@ -55,25 +54,3 @@ button.
         computing duration)
     `Launch` simulation button on the right. 
     
-.. VISUALIZERS COLUMN
-.. should be a file    
-
-
-Some of the available visualizers are described below.
-.. This should be in a different file
-
-Brain Visualizer
-................
-
-A 3D (WebGL) visualization of the brain activity.
-
-This visualizer displays the activity on the surface level (fine granularity - each
-surface vertex has an individual measure) or on the region level
-(coarse-granularity - each region is represented with only one color).
-
-
-.. figure:: screenshots/brain.jpg
-   :width: 90%
-   :align: center
-
-   Preview for Brain Viewer

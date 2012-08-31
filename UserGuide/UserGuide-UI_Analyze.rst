@@ -2,8 +2,7 @@
 Analyze Area
 ------------
 
-This option offers a (currently limited) set of techniques for data
-(experimental or simulated) analysis.
+This option offers a  set of techniques for data analysis.
 
 .. figure:: screenshots/analyze.jpg
    :width: 80%
@@ -12,22 +11,22 @@ This option offers a (currently limited) set of techniques for data
    The current available analyzers
 
 
-The techniques currently offered here are:
-	- Continuous Wavelet Transform
-	- Fourier Transform
-	- Temporal Coherence of Nodes
-	- Principal Component Analysis
-	- Global Variance
-	- Cross Correlation of Nodes
-	- Timeseries metrics (?)
-	- Temporal Covariance of Nodes
-	- Variance of the Variance of Nodes
+TVB analyzers
+.............
+
+The techniques currently offered as part of |TVB| are:
+
+- Continuous Wavelet Transform
+- Fast Fourier Transform
+- Cross Coherence of Nodes
+- Principal Component Analysis
+- Independent Component Analysis
+- Cross Correlation of Nodes
+- Time-series metrics
+- Temporal Covariance of Nodes
 
 For mathematical details see the Reference Manual.
-.. crossrefrence needed 
-
-
-
+.. CROSSREFERENCE NEEDED
 
 Brain Connectivity Toolbox Analyzers
 ....................................
@@ -35,3 +34,6 @@ Brain Connectivity Toolbox Analyzers
 If you have `matlab` or `octave` installed and available through the command line
 then all the algorithms offered by `Brain Connectivity Toolbox` can be used directly
 from |TVB| interface and the results can later be displayed in one of our visualizers.
+
+
+

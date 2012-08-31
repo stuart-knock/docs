@@ -1,11 +1,11 @@
-Test cases tutorial
-===================
+Tutorials and Examples
+======================
 
 Simple simulation scenarios
 ---------------------------
 
 We present here some basic simulation scenarios that the user should be able to
-reproduce through the interface.
+reproduce through the |TVB| interface.
 
 
 Example 1: Generating resting activity from the default data
@@ -71,8 +71,8 @@ Advanced test cases
 -------------------
 
 
-Track Burst History (?)
-.......................
+Track Simulations History
+.........................
 
     PRECONDITION: minimal data set in place (connectivity matrix, surface and parcellation, nodes, fibre lengths)
 
@@ -80,7 +80,7 @@ Track Burst History (?)
 
     2. Visualize time series of all nodes (or subset) and their FFT (or subset).
 
-    3. Choose scalar measure: pick a single frequency component from FFT.  Key word: “chaining of analyzers”
+    3. Choose scalar measure: pick a single frequency component from FFT. 
 
     4. Set parameters and generate network dynamics
 
@@ -133,51 +133,39 @@ will be updated each time several simulations are finished.
 
 
 Example 4. Perform a lesion
-...........................
+............................
 
 - Objective: learn how to use the connectivity editor by lesioning the connections
   between different brain regions.
 
-1. Display the connectivity matrix with the Connectivity Viewer
+1. Display the connectivity matrix. Go to the `Connectivity` --> Long Range Connectivity
 
-2. Perform a Lesion.
+2. Launch the connectivity viewer. 
 
-3. Save the new connectivity matrix.
+3. The Connectivity Matrix editor allows you to perform lesions and save this changes
+in a new connectivity matrix:
+
+	#. Deselect the nodes you want lesion by clicking directly on the region labels. This will remove all the incoming and ongoing connections into and from those nodes.
+	#. Hit the `Save Interest` button to save the new connectivity matrix.
+	#. Press the `Refresh` button below the Connectivity Matrix field, to see your new matrix. Select it.
+	#. `Launch` the viewer again
+
+4. Your new connectivity matrix should be displayed. The connection strengths of the lesioned nodes are now set to 0.
+
 
 
 Example 5.
 ..........
 
 How to generate Temporal and Spatiotemporal Stimuli?
-====================================================
 
 Region-based stimulus
 ---------------------
 
-#. Select a node from the 3D view on the left. Change its weight in the 'Current weight' cell.
-
-#. Press the 'Update weight' button.
-
-#. Do this for at least 5 nodes (assigning for instance 0.25, 0.15, 0.0625, 0.03125, 0.015625)
-
-#. Use a Gaussian for the temporal evolution of the stimulus
-
-#. Name the stimulus and press the 'Create the stimulus'
-
-#. Visualize the resulting pattern
-
-#. Stimulus should be available from the Burst page
 
 Surface-based stimulus
 ----------------------
 
-#
-Advanced surface-based
-----------------------
+.. Advanced surface-based
 
-Objective: generating a complex stimulus (a composition of sine waves)
-
-#.
-
-
-
+.. Objective: generating a complex stimulus (a composition of sine waves)
