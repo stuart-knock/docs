@@ -54,3 +54,6 @@ button.
         computing duration)
     `Launch` simulation button on the right. 
     
+.. VIEW COLUMN
+
+.. include:: UserGuide-UI_Simulator-Visualizers.rst
