@@ -16,26 +16,28 @@ These are the configurable settings for |TVB|. Note that the `Name` of the admin
 is the only one that cannot be changed later on. The others will be accessible afterwards
 from the profile page of the administrator. These settings are:
 
-Name:
+Administrator User Name:
 	the name of the administrator.
 
 Password:
 	the password of the administrator. This can be changed later by clicking the
 	`Change password` link from the profile page.
 
-Email:
+Administrator Email:
 	the email of the administrator. Emails requesting validations for new users will
 	be sent to this address. This can be changed by clicking the `edit` link from the
 	profile page.
 
-TVB root:
+Root folder for all projects:
 	this is the root storage for |TVB|. All your projects will be stored here, as well
-	as the logger file and the files used as input and output for the backend server.
-	This will still be available on the settings page later on. The settings page is
-	available for an administrator through the `TVB Settings` like from the profile page
-	at any later time.
+	as the logging file and the files used as input and output for the backend server.
+	Please provide here a valid folder path, on a drive which has enough space for storing TVB data.
+	This field will be present on the settings page later on, but you won't be able to change it.
+	In case you are forced to change this path/folder, we recoment that you export your 
+	existing projects, stop |TVB|, start it with clean option (and configure new folder)
+	then import your projects back in the system.
 
-DB type:
+DB engine:
 	currently supported are *sqlite* and *postgresql* databases. You will need to provide a
 	valid database URL in case you choose postgresql. In the case of sqlite a default
 	`tvb-database.db` will always be used. Please take into consideration that when

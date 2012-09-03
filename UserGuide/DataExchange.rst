@@ -127,6 +127,10 @@ standard format that can be used automatically by other software. This is basica
 both data and metadata. These files can be easily opened in Python / Matlab / Java / C++ or
 additional processing.
 
+In case you want to process HDF5 files with Matlab you can find API documentation here:
+http://www.mathworks.com/help/techdoc/ref/f16-5702.html#f16-15000
+
+
 
 File Format
 ***********
@@ -162,6 +166,7 @@ Will be defined when export implemented.
 .. raw:: pdf
 
    PageBreak oneColumn
+
 
 Import Data
 ...........
@@ -365,6 +370,9 @@ purposes.  Support for CFF import might be removed in the future versions.
 
 The current |TVB| version includes a set of demo data, housed in a folder that contains
 two CFF files which could be imported for testing.
+
+Since CFF is a complex format you can use it for uploading single data (e.g one surface, connectivity, 
+local connectivity, region mapping) but also you could group multiple such data into a single CFF file. 
 
 
 File Format
