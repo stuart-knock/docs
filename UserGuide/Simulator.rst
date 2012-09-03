@@ -8,7 +8,7 @@ Simulation Environment
    The interface for the TVB Simulator
     
    
-In the following we briefly describe  the input parameters and other functional elements
+In the following we briefly describe the input parameters and other functional elements
 of the simulator interface. For more, detailed and technical explanation, please refer
 to the Reference Manual or the Scientific Report.
 

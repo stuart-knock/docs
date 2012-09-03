@@ -4,10 +4,9 @@
 .. UserGuide-UI_Visualizers.rst ---> all visualizers? 
 
 
-A brief description of some available visualizers in the `View` column of the `Simulator` Area. Maximize this column by clicking
-on the icon located on its top right corner.
+A brief description of some available visualizers in the `View` column of the `Simulator` Area. 
+Maximize this column by clicking on the icon located on its top right corner.
 
-Up to 4 visualizers per `View` tab can be configured. 
 
 
 Brain Activity Visualizer
@@ -25,7 +24,6 @@ It displays the activity at the surface level (fine granularity - each surface v
 
 Covariance Visualizer
 .....................
-
 
 .. figure:: screenshots/visualizer_covariance.jpg
    :width: 90%
@@ -80,3 +78,8 @@ Time Series Visualizer
 Wavelet Spectrogram Visualizer
 ..............................
 
+.. figure:: screenshots/visualizer_wavelet.jpg
+   :width: 90%
+   :align: center
+
+   Preview for Wavelet Visualizer
