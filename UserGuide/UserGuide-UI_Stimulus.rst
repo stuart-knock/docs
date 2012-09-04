@@ -27,3 +27,9 @@ Surface level stimulus
 .. figure:: screenshots/stimulus_surface.jpg
    :width: 90%
    :align: center
+
+.. image:: screenshots/important.png
+   :align: left
+
+Surfaces with vertices more than 256 * 256 * 256 are filtered out from Surface Level Stimulus, because the algorithm for vertices pick only has so many colors to use. 
+On long-term, the intention is to have in TVB a surface-shrink algorithm, that given a huge surface builds a smaller one for usage inside TVB. 

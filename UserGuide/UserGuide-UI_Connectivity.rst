@@ -166,6 +166,12 @@ The `View Local Connectivity` button launches a 3D brain visualizer to display t
 
    Local Connectivity Viewer
 
+.. image:: screenshots/important.png
+   :align: left
+
+Surfaces with vertices more than 256 * 256 * 256 are filtered out from Local Connectivity, because the algorithm for vertices pick only has so many colors to use. 
+On long-term, the intention is to have in TVB a surface-shrink algorithm, that given a huge surface builds a smaller one for usage inside TVB. 
+
 The `Edit Local Connectivity` takes you back to the main Local Connectivity editing page.
 
  

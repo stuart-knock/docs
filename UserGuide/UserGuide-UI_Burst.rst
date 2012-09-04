@@ -21,6 +21,7 @@ or to save a simulation using a different model.
 
 
 .. BURST HISTORY COLUMN
+
 SELECT: Burst
 .............
 On the left column, a history of all previous simulations is kept and can be accessed at any time. 
@@ -30,6 +31,7 @@ Please notice that **deleting a burst will also delete all data that had been pr
 
 
 .. SIMULATOR COLUMN
+
 CONFIGURE: Simulation
 .....................
 
@@ -80,8 +82,15 @@ If you are launching a surface-based simulation, then it is possible to add more
 
    Preview for surface model configuration.
 
+.. image:: screenshots/important.png
+   :align: left
+
+Surfaces with vertices more than 256 * 256 * 256 are filtered out from Model Parameters setter on surface level, because the algorithm for vertices pick only has so many colors to use. 
+On long-term, the intention is to have in TVB a surface-shrink algorithm, that given a huge surface builds a smaller one for usage inside TVB. 
     
+
 .. VIEW COLUMN
+
 VIEW: Visualizers for selected burst
 ....................................
 
