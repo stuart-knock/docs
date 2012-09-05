@@ -80,4 +80,7 @@ This choice is motivated by various reasons, but foremost by the fact that a wid
 
    Figure :counter:`figure`. Saddle Node bifurcation on the Invariant Circle (SNIC) configuration.
  
-   The model exhibits Morri-Lecar dynamics. 
+   The model exhibits Morris-Lecar dynamics. 
+
+
+

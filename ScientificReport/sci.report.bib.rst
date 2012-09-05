@@ -21,16 +21,16 @@ Bilbiography
 .. [JH_1996] Jirsa V., Haken H. *Field theory of electromagnetic brain activity*,  Physical Review Letters 77(5): 960-963, 1996.
 
 .. _Nunez 1974:
-.. [N_1974] *needs reference*
+.. [N_1974] Nunez P., L., *The brain wave equation: A model for the EEG*, Mathematical Biosciences. 21:279–297, 1974.
 
 .. _Robinson 1997:
-.. [R_1997] *needs reference*
+.. [R_1997] Robinson, P.A., Rennie, C.J., Wright, J.J., *Propagation and stability of waves of electrical activity in the cerebral cortex*, Physical Reviews Letters E, 56, 826-840, 1997.
 
 .. _Jirsa et al 2002:
 .. [J_et_al_2002] *needs reference*
 
 .. _Brunel Wang 2003:
-.. [BW_2003] *needs reference*
+.. [BW_2003] Brunel, N. and Wang, X-J, * What determines the frequency of fast network oscillations with irregular neural discharges? I. Synaptic dynamics and excitation-inhibition balance*, Journal of Neurophysioly, 90, 415-430, 2003.
 
 .. _Jirsa Stefanescu 2010:
 .. [JS_2010] *needs reference*
@@ -45,7 +45,7 @@ Bilbiography
 .. [B_2006] *needs reference*
 
 .. _Assisi et al 2005:
-.. [A_et_al_2005] *needs reference*
+.. [A_et_al_2005] Assisi, C. G., Jirsa, V. K., and Kelso, J. A. S., *Synchrony and clustering in heterogeneous networks with global coupling and parameter dispersion*, Physical Review Letters, 94, 018106, 2005.
 
 .. _Helmholtz 1853:
 .. [H_1853] *needs reference*
