@@ -130,6 +130,7 @@ additional processing.
 In case you want to process HDF5 files with Matlab you can find API documentation here:
 http://www.mathworks.com/help/techdoc/ref/f16-5702.html#f16-15000
 
+.. NOTE:: The HDF5 functionality referenced above was only introduced in Matlab 2011a.
 
 
 File Format
