@@ -117,7 +117,7 @@ From this overlay, the user can:
 - link data to other projects
 - export data.
 
-On the right hand menu for this page, an `upload` buttons appear. This
+On the right hand menu for this page, an `upload` button appears. This
 launches an overlay with tabs for each type of TVB-compatible data:
     
     .. figure:: screenshots/data_uploaders.jpg
@@ -171,9 +171,10 @@ deleting the project.
 Saved Figures
 ..............
 
-This page displays all the figures saved by clicking `Save Figure` button in
-the top right me
+This page displays all the figures saved within one |TVB| session 
 
-.. #TODO: need to add a figure here, and maybe more description.nu on the visualization pages.
-
-
+    .. figure:: screenshots/project_saved_figures.jpg
+        :width: 90%
+        :align: center
+        
+        The Saved Figures page
