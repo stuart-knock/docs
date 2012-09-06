@@ -1,11 +1,16 @@
 Connectivity Area
 -----------------
 
-.. figure:: screenshots/connectivity_area.jpg
-   :width: 90%
-   :align: center
+In this area you can edit both types of TVB connectivity objects:
 
-   Preview for Connectivity Area
+    - long-range connectivity and,
+    - local connectivity.
+
+    .. figure:: screenshots/connectivity_area.jpg
+      :width: 90%
+      :align: center
+
+      Preview for Connectivity Area
 
 
 Long Range Connectivity
@@ -141,38 +146,56 @@ quadrants of the weights matrix can be observed.
 Local Connectivity
 ..................
 
-Generates the spatial profile of local connectivity.
+In this page, you can generate the spatial profile of local connectivity that 
+will be used in surface-based simulations.
 
-.. figure:: screenshots/connectivity_local.jpg
-   :width: 90%
-   :align: center
+    .. figure:: screenshots/connectivity_local.jpg
+      :width: 90%
+      :align: center
 
-   Local Connectivity editing page
+    Local Connectivity editing page
 
-Fields:
 
-- `Surface` : the spatial support
-- `Spatial` : the local connectivity function
-- `Cuttof distance`: distance at which the evaluation of the spatial function is truncated.
-- `Display name`: user defined name for the new local connectivity entity
+Required fields:
 
-To generate the Local Connectivity entity press the `Create Local Connectivity` button, located on the lower right corner.
+    - `Surface` : the spatial support
+    - `Spatial` : the local connectivity function
+    - `Cuttof distance`: distance at which the evaluation of the spatial function is truncated.
+    - `Display name`: user defined name for the new local connectivity entity
 
-The `View Local Connectivity` button launches a 3D brain visualizer to display the spatial profile of the newly generated entity.
 
-.. figure:: screenshots/local_connectivity_viewer.jpg
-   :width: 90%
-   :align: center
+On the lower right of the browser you have will access to different 
+functionalities by clicking on:
 
-   Local Connectivity Viewer
+    - `Create Local Connectivity` button: to generate the Local Connectivity entity.
 
-.. image:: screenshots/important.png
-   :align: left
+    - `View Local Connectivity` button: to launch a 3D brain visualizer displaying the spatial profile of the newly generated entity.
 
-Surfaces with vertices more than 256 * 256 * 256 are filtered out from Local Connectivity, because the algorithm for vertices pick only has so many colors to use. 
-On long-term, the intention is to have in TVB a surface-shrink algorithm, that given a huge surface builds a smaller one for usage inside TVB. 
+	.. figure:: screenshots/local_connectivity_viewer.jpg
+	  :width: 70%
+	  :align: center
 
-The `Edit Local Connectivity` takes you back to the main Local Connectivity editing page.
+	Local Connectivity Viewer
+
+
+    - `Edit Local Connectivity` button: to go back to the main Local Connectivity editing page.
+
+
+
+.. admonition:: Important
+
+    .. image:: screenshots/important.png
+	:align: left
+    
+    Surfaces with more vertices than 256 x 256 x 256 are filtered out from Model 
+    Parameters settings at the surface level, because the algorithm for vertices 
+    picking only has that many colors to use. 
+
+    We are planning, for the long-term, to have in |TVB| a surface shrinkage 
+    algorithm. Given a large surface, a smaller one will be built to meet the 
+    requirements for |TVB|. 
+
+
 
  
  

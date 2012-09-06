@@ -22,10 +22,15 @@ at different levels and formats:
   application, data can be exchanged in a custom TVB format or a commonly used
   format used in the neuroscience community (e.g. CFF, GIFTI, NIFTI ...)
 
-.. Important::
-    During export and import operations |TVB| does not apply any space
-    transformation, so users have to ensure their data (especially in case of
-    import) is generated/stored in the same space.
+.. admonition:: Important
+
+    .. image:: screenshots/important.png
+	:align: left
+
+    During export and import operations |TVB| does not apply any space 
+    Transformation, so users have to ensure their data (especially in case 
+    of import) is generated/stored in the same space.
+
 
 
 Before proceeding with more details about data exchange, it would be helpful to

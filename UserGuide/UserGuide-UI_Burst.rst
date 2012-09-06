@@ -4,11 +4,11 @@ Simulator Area
 A configurable multicolumn interface that combines |TVB| simulation, analysis 
 and visualization capabilities.
 
-.. figure:: screenshots/simulator.jpg
-   :width: 90%
-   :align: center
+    .. figure:: screenshots/simulator.jpg
+      :width: 90%
+      :align: center
 
-   Preview for Simulator Area
+      Preview for Simulator Area
 
 
 Through this page, you can not only explore the parameter space of the local 
@@ -28,6 +28,7 @@ for a given model or to save a simulation using a different model.
 
 SELECT: Burst
 .............
+
 On the left column, a history of all previous simulations is kept and can be 
 accessed at any time. Each simulation (*burst*) can be renamed or deleted by 
 clicking on the upper right `pencil` icon. 
@@ -37,11 +38,10 @@ clicking on the upper right `pencil` icon.
     been produced and were related to that particular simulation**.
 
 
-
 .. SIMULATOR COLUMN
 
-CONFIGURE: Simulation
-.....................
+Configuration: Simulation
+..........................
 
 On the central column, you have access to all the simulation configurable 
 settings.
@@ -54,41 +54,49 @@ fields are visible. `Launch` simulation button is on the right.
 
 
 Region-based simulations
-........................
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-The `Set up region Model` button leads you to an interactive phase-plane display. This tool let you see the 2-dimensional planes of the general n-dimensional phase space, and allows you to observe how the behaviour of the physical model changes as a function of its parameters. See the Reference Manual for more details about this interactive display.
+The `Set up region Model` button leads you to an interactive phase-plane display. 
+This tool let you see the 2-dimensional planes of the general n-dimensional 
+phase space, and allows you to observe how the behaviour of the physical model 
+changes as a function of its parameters. See the Reference Manual for more 
+details about this interactive display.
 
-.. figure:: screenshots/simulator_phase_plane_interactive.jpg
-   :width: 90%
-   :align: center
+    .. figure:: screenshots/simulator_phase_plane_interactive.jpg
+      :width: 90%
+      :align: center
 
-   Preview for region model configuration.
+      Preview for region model configuration.
 
 
 Surface-based simulations
-.........................
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you are launching a surface-based simulation, then it is possible to add 
-more complexity by spatially varying the model parameters. 
+more complexity by spatially varying the model parameters.
+ 
 Click on `Set up surface model`. A new configuration page will be loaded.
 
-.. figure:: screenshots/simulator_spatialized_parameters.jpg
-   :width: 90%
-   :align: center
+    .. figure:: screenshots/simulator_spatialized_parameters.jpg
+      :width: 90%
+      :align: center
 
-   Preview for surface model configuration.
+      Preview for surface model configuration.
 
 
-.. image:: screenshots/important.png
-   :align: left
+.. admonition:: Important
 
-Surfaces with vertices more than 256 * 256 * 256 are filtered out from Model 
-Parameters setter on surface level, because the algorithm for vertices pick 
-only has so many colors to use. 
-
-On long-term, the intention is to have in TVB a surface-shrink algorithm, 
-that given a huge surface builds a smaller one for usage inside TVB. 
+    .. image:: screenshots/important.png
+	:align: left
     
+    Surfaces with more vertices 256 x 256 x 256 are filtered out from Model 
+    Parameters settin at the surface level, because the algorithm for vertices 
+    picking only has that many colors to use. 
+
+    We are planning, for the long-term, to have in |TVB| a surface shrinkage 
+    algorithm. Given a large surface, a smaller one will be built to meet the 
+    requirements for |TVB|. 
+
 
 .. VIEW COLUMN
 
@@ -98,8 +106,8 @@ VIEW: Visualizers for selected burst
 On the right column, there are three `portlet` tabs. Each one of those can be 
 personalized by selecting:
 
-- TVB Visualizers or,
-- TVB Analyzer whose results will be displayed in its corresponding Visualizer.
+  - TVB Visualizers or,
+  - TVB Analyzer whose results will be displayed in its corresponding Visualizer.
 
 You can choose up to 4 Visualizers/Analyzers per `portlet` tab.
 
@@ -108,7 +116,6 @@ The `Burst Results` tab contains the current simulation data structure tree.
 .. note::
 
     Maximize this column by clicking on the icon located on its top right corner.
-
 
 
 .. include:: UserGuide-UI_Simulator-Visualizers.rst

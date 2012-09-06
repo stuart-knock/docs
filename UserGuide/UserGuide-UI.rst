@@ -116,7 +116,8 @@ Project:
     where projects are defined and administered.
 
 Simulator:
-    where simulations are launched, combined with the analyzers and visualiers. It allows to have quick overview of the ongoing Project.
+    where simulations are launched, combined with the analyzers and visualiers. 
+    It allows to have quick overview of the ongoing Project.
 
 Stimulus:
     where spatiotemporal stimuli can be generated.

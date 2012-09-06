@@ -171,7 +171,7 @@ deleting the project.
 Saved Figures
 ..............
 
-This page displays all the figures saved within one |TVB| session 
+This page displays all the figures saved within the current working Project.
 
     .. figure:: screenshots/project_saved_figures.jpg
         :width: 90%
