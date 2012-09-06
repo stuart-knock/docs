@@ -1,7 +1,21 @@
-User Area
----------
+User
+-----
 
-Gives access to the user management system which will allow the user to enable/disable
-or edit user capabilities for projects.
+This tab is where you come to login and logout of |TVB|, it also provides some
+basic information, such as:
 
-It is also the session tab where the user can log out from the current TVB session.
+- what version of |TVB| you are currently running 
+- a summary of recent changes to |TVB| software
+- availability of updated versions of |TVB|
+
+It is also where you access the user management system (for administrators), 
+which includes such functionality as: 
+
+- Managing other users
+- Editing settings, including, but not limited to:
+
+  - changing passwords
+  - selecting the storage directory used by |TVB|
+  - server configuration: address; ports; etc.
+  - number of threads |TVB| has access to
+
