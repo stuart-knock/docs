@@ -95,11 +95,15 @@ Tutorials
     #. Launch simulation
     #. Choose three points within the parameter space. Each parameter set is represented by a scalar measure.
     #. A discrete representation will be displayed on the right side of the screen and it will be updated each time several simulations are finished.
-    
-      .. figure:: screenshots/testcase_parameter_exploration.jpg
-	  :width: 70%
-	  :align: center
-    
+
+|
+
+.. figure:: screenshots/testcase_parameter_exploration.jpg
+	:width: 70%
+	:align: center
+
+|
+
       Each point in this two dimensional graph represents two metrics: by default
       Global Variance corresponds to the size of the point and Variance of the
       Variance of nodes maps the color scale. 
