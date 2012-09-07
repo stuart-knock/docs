@@ -8,6 +8,7 @@ We present here some basic simulation scenarios that the user should be able to
 reproduce through the |TVB| interface.
 
 .. |example| image:: icons/applications-science.png
+
 .. admonition:: |example| Example 1
 
     **Generating resting activity data using the default simulator configuration**
@@ -17,17 +18,23 @@ reproduce through the |TVB| interface.
     integration method.
 
 
-  1. Use the default long-range connectivity data.
-  2. Apply a linear coupling function (parameters: rescale connection strength=0.016, shift=0).
-  3. Leave the *Cortical Surface* and the *Stimulus* set to **None**.
-  4. Use the default population model and its parameters.
-  5. Select the Heun Stochastic integrator. Integration step set to :math:`dt=0.06103515625` and additive noise (with null correlation time and an amplitude standard deviation :math:`D=2^{-10}`, use the default random number generator parameters).
-  6. Use the default model initial conditions (basically random initial conditions).
-  7. Select a Temporal Average Monitor (sampling period = 0.48828125 ms)
-  8. Configure the portlets: select a Time Series Visualizer.
-  9. Set the simulation length to 16000 ms
-  10. Launch the simulation
-  11. Observe the results: the default model state variable (membrane potential in FitzHugh-Nagumo model).
+  #. Use the default long-range connectivity data.
+  #. Apply a linear coupling function (parameters: rescale connection 
+     strength=0.016, shift=0).
+  #. Leave the *Cortical Surface* and the *Stimulus* set to **None**.
+  #. Use the default population model and its parameters.
+  #. Select the Heun Stochastic integrator. Integration step set to 
+     :math:`dt=0.06103515625` and additive noise (with null correlation time 
+     and an amplitude standard deviation :math:`D=2^{-10}`, use the default 
+     random number generator parameters).
+  #. Use the default model initial conditions (basically random initial 
+     conditions).
+  #. Select a Temporal Average Monitor (sampling period = 0.48828125 ms)
+  #. Configure the portlets: select a Time Series Visualizer.
+  #. Set the simulation length to 16000 ms
+  #. Launch the simulation
+  #. Observe the results: the default model state variable (membrane potential 
+     in FitzHugh-Nagumo model).
 
   |
 
@@ -48,12 +55,16 @@ reproduce through the |TVB| interface.
 
     #. Follow steps 1 and 2 from the previous example.
     #. Build the stimulus (See How to create a stimulus)
-    #. Select a node from the 3D view on the left. Change its weight in the 'Current weight' cell.
+    #. Select a node from the 3D view on the left. Change its weight in the 
+       'Current weight' cell.
     #. Press the 'Update weight' button.
-    #. Do this for at least 5 nodes (assigning for instance 0.25, 0.15, 0.0625, 0.03125, 0.015625)
-    #. Use a Gaussian for the temporal evolution of the stimulus (mean=15000 and standard deviation=4)
+    #. Do this for at least 5 nodes (assigning for instance 0.25, 0.15, 0.0625, 
+       0.03125, 0.015625)
+    #. Use a Gaussian for the temporal evolution of the stimulus (mean=15000 
+       and standard deviation=4)
     #. Name the stimulus and press the 'Create the stimulus'
-    #. Go back to the Burst Area and choose this specific stimulus into the simulator.
+    #. Go back to the Burst Area and choose this specific stimulus into the 
+       simulator.
     #. Follow steps 4 to 11 from the previous example.
 
 |
@@ -73,7 +84,8 @@ Tutorials
   *Requirements*: minimal data set in place (connectivity matrix, surface and 
   parcellation, nodes, fibre lengths).
 
-    #. Set model family, parameters and generate network dynamics, as well as EEG and fMRI signals.
+    #. Set model family, parameters and generate network dynamics, as well as 
+       EEG and fMRI signals.
     #. Visualize time series of all nodes (or subset) and their FFT (or subset).
     #. Choose scalar measure: pick a single frequency component from FFT. 
     #. Set parameters and generate network dynamics
@@ -88,7 +100,7 @@ Tutorials
   **Parameter Space Exploration**
   
   **Objective**: First, to run a batch job on the cluster or parallel processes in the
-  local machine to compute. Second, to understand the parameter space display
+  local machine to compute. Second, to understand the parameter space display.
 
     #. Follow steps 1 to 3 from the Example 1.
     #. Click on the 'V' button next to the model parameters if you want to see
@@ -108,11 +120,15 @@ Tutorials
        Global Variance corresponds to the size of the point and Variance of the
        Variance of nodes maps the color scale. 
 
-    #. Choose three points and run longer simulations for these three parameter sets.
-    #. For each set, run the simulation four times for different degrees of noise.
+    #. Choose three points and run longer simulations for these three parameter 
+       sets.
+    #. For each set, run the simulation four times for different degrees of 
+       noise.
     #. Save data. These data will now be analyzed.
-    #. Generate cross correlation matrix and coherence across all EEG sensors (or subset) and for fMRI signal across all regions (or subset).
-    #. Visualize on EEG map (circular map à la LP plus surface à la SK) and cross sections (fMRI).
+    #. Generate cross correlation matrix and coherence across all EEG sensors 
+       (or subset) and for fMRI signal across all regions (or subset).
+    #. Visualize on EEG map (circular map à la LP plus surface à la SK) and 
+       cross sections (fMRI).
     #. Analyze EEG data via PCA. Visualize results:
 
       a. Plot modes of principal components and eigenvalues
@@ -122,25 +138,29 @@ Tutorials
 
 .. admonition:: Tutorial 3
 
-    **Perform a lesion**
+  **Perform a lesion**
 
-    **Objective**: learn how to use the connectivity editor by lesioning the 
-    connections between different brain regions.*
+  **Objective**: learn how to use the connectivity editor by lesioning the 
+  connections between different brain regions.
 
-    1. Display the connectivity matrix. Go to the `Connectivity` --> Long Range Connectivity
+    #. Go to the `Connectivity` --> `Long Range Connectivity` page.
     #. Launch the connectivity viewer. 
-    #. The Connectivity Matrix editor allows you to perform lesions and save this changes in a new connectivity matrix:
-    #. Deselect the nodes you want lesion by clicking directly on the region labels. This will remove all the incoming and ongoing connections into and from those nodes.
+    #. Deselect the nodes you want lesion by clicking directly on the region 
+       labels. This will remove all the incoming and ongoing connections into 
+       and from those nodes.
     #. Hit the `Save Interest` button to save the new connectivity matrix.
-    #. Press the `Refresh` button below the Connectivity Matrix field, to see your new matrix. Select it.
+    #. Press the `Refresh` button below the Connectivity Matrix field, to see 
+       your new matrix. Select it.
     #. `Launch` the viewer again.
-    #. Your new connectivity matrix should be displayed. The connection strengths of the lesioned nodes are now set to 0.
+    #. Your new connectivity matrix should be displayed. The connection 
+       strengths of the lesioned nodes are now set to 0.
+  
 
 |
 
 
-.. admonition:: Tutorial 3
+.. admonition:: Tutorial 4
 
   **Generate a complex spatiotemporal stimulus**
 
-  **Objective**
+  **Objective**: learn how to use the Stimulus editor 

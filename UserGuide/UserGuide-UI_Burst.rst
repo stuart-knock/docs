@@ -84,38 +84,26 @@ Click on `Set up surface model`. A new configuration page will be loaded.
       Preview for surface model configuration.
 
 
-.. admonition:: Important
-
-    .. image:: screenshots/important.png
-	:align: left
-    
-    Surfaces with more vertices 256 x 256 x 256 are filtered out from Model 
-    Parameters settin at the surface level, because the algorithm for vertices 
-    picking only has that many colors to use. 
-
-    We are planning, for the long-term, to have in |TVB| a surface shrinkage 
-    algorithm. Given a large surface, a smaller one will be built to meet the 
-    requirements for |TVB|. 
-
 
 .. VIEW COLUMN
 
 VIEW: Visualizers for selected burst
 ....................................
 
-On the right column, there are three `portlet` tabs. Each one of those can be 
-personalized by selecting:
+* On the right column, there are three `portlet` tabs. Each one of those can be 
+  personalized by selecting:
 
-  - TVB Visualizers or,
-  - TVB Analyzer whose results will be displayed in its corresponding Visualizer.
+  - TVB time-series Visualizers that directly display simualtion results, or
+  - TVB Visualizers associated with a TVB Analyzer. Simulation results are first
+    processed an the analysis results are shown in the corresponding visualizer.
 
-You can choose up to 4 Visualizers/Analyzers per `portlet` tab.
+You can set up to 4 Visualizers/Analyzers per `portlet` tab.
 
-The `Burst Results` tab contains the current simulation data structure tree.
+* The `Burst Results` tab contains the current simulation data structure tree.
 
 .. note::
 
-    Maximize this column by clicking on the icon located on its top right corner.
-
+    Maximize this column by clicking on the `zoom` icon located in the top right
+    corner.
 
 .. include:: UserGuide-UI_Simulator-Visualizers.rst
