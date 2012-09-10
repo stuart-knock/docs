@@ -113,12 +113,12 @@ Tutorials
        screen and it will be updated each time several simulations are finished:
            
            .. figure:: screenshots/testcase_parameter_exploration.jpg
-               :width: 60%
-               :align: center
+              :width: 60%
+              :align: center
                
-       Each point in this two dimensional graph represents two metrics: by default
-       Global Variance corresponds to the size of the point and Variance of the
-       Variance of nodes maps the color scale. 
+              Each point in this two dimensional graph represents two metrics: by default
+              Global Variance corresponds to the size of the point and Variance of the
+              Variance of nodes maps the color scale. 
 
     #. Choose three points and run longer simulations for these three parameter 
        sets.
