@@ -24,7 +24,7 @@ at different levels and formats:
 
 .. admonition:: Important
 
-    .. image:: screenshots/important.png
+    .. image:: icons/important.png
 	:align: left
 
     During export and import operations |TVB| does not apply any space 

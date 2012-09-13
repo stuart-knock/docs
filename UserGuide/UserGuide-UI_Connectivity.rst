@@ -204,7 +204,7 @@ functionalities by clicking on:
 
 .. admonition:: Important
 
-    .. image:: screenshots/important.png
+    .. image:: icons/important.png
 	:align: left
     
     Surfaces with more vertices than 256 x 256 x 256 are filtered out from Model 
