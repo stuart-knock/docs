@@ -184,7 +184,7 @@ will be used in surface-based simulations.
     Local Connectivity editing page
 
 
-On the lower right of the browser you have will access to different 
+On the lower right of the browser you will have access to different 
 functionalities by clicking on:
 
     - `Create Local Connectivity` button: to generate the Local Connectivity entity.
@@ -199,7 +199,6 @@ functionalities by clicking on:
 
 
     - `Edit Local Connectivity` button: to go back to the main Local Connectivity editing page.
-
 
 
 

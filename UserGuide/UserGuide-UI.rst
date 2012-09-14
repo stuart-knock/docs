@@ -13,7 +13,7 @@ following settings page:
    Settings Page
 
 These are the configurable settings for |TVB|. Note that the `Name` of the administrator
-is the only one that cannot be changed later on. The others will be accessible afterwards
+is the only one that cannot be changed later on. The others will be accessible afterward
 from the profile page of the administrator. These settings are:
 
 Administrator User Name:
@@ -33,7 +33,7 @@ Root folder for all projects:
 	as the logging file and the files used as input and output for the backend server.
 	Please provide here a valid folder path, on a drive which has enough space for storing TVB data.
 	This field will be present on the settings page later on, but you won't be able to change it.
-	In case you are forced to change this path/folder, we recoment that you export your 
+	In case you are forced to change this path/folder, we recommend that you export your 
 	existing projects, stop |TVB|, start it with clean option (and configure new folder)
 	then import your projects back in the system.
 
@@ -78,17 +78,13 @@ link` which gives the following form:
 
    |TVB| register page
 
-.. .. note:: 
-   
-   The roles should not contain 'researcher/clinician' since clinicians can also
-   do research but more specifically level of user 'basic/regular/advanced'
 
 When the `register` button is clicked, an email is sent to `ADMINISTRATOR_EMAIL`
 address. This is the administrator's task to validate the new account. The
 administrator needs to be logged in to validate an account.
 
-Login
------
+Log-in
+------
 
 You can log into the platform once registered and validated or by using the
 admin credentials you set in the `settings page`. Then, click on the `login` button on the
@@ -116,7 +112,7 @@ Project:
     where projects are defined and administered.
 
 Simulator:
-    where simulations are launched, combined with the analyzers and visualiers. 
+    where simulations are launched, combined with the analyzers and visualizers. 
     It allows to have quick overview of the ongoing Project.
 
 Stimulus:

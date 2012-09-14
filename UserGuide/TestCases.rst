@@ -109,16 +109,8 @@ Tutorials
     #. Launch simulation
     #. Choose three points within the parameter space. Each parameter set is 
        represented by a scalar measure.
-    #. A discrete representation will be displayed on the right side of the 
-       screen and it will be updated each time several simulations are finished:
-           
-           .. figure:: screenshots/testcase_parameter_exploration.jpg
-             :width: 60%
-             :align: center
-               
-           Each point in this two dimensional graph represents two metrics: by default
-           Global Variance corresponds to the size of the point and Variance of the
-           Variance of nodes maps the color scale. 
+    #. A 2D discrete representation will be displayed on the right side of the 
+       screen and it will be updated each time several simulations are finished.
 
     #. Choose three points and run longer simulations for these three parameter 
        sets.
@@ -134,6 +126,15 @@ Tutorials
       a. Plot modes of principal components and eigenvalues
       b. FFT or time series
    
+
+.. figure:: screenshots/testcase_parameter_exploration.jpg
+   :width: 60%
+   :align: center
+               
+   Each point in this two dimensional graph represents two metrics: by default
+   Global Variance corresponds to the size of the point and Variance of the
+   Variance of nodes maps the color scale. 
+
 |
 
 .. admonition:: Tutorial 3
@@ -163,4 +164,11 @@ Tutorials
 
   **Generate a complex spatiotemporal stimulus**
 
-  **Objective**: learn how to use the Stimulus editor 
+  **Objective**: learn how to use the Stimulus editor.
+
+    #. Go to `Stimulus` --> `Surface Stimulus` page.
+    #. Enter a new name for the new `Surface Stimulus`.
+    #. Choose the `Cortical Surface`.
+    #. Select the equation that defines the spatial spread of the stimulus.
+    #. Set the function parameters.
+    #. Create the entity
