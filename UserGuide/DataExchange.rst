@@ -195,6 +195,19 @@ and allows it's users to perform different analyses on it and visualize them.
 Since there is an abundance of formats available for neuroimaging data, TVB 
 tries to support as many as possible for an improved user experience.
 
+.. admonition:: Important
+
+    .. image:: icons/important.png
+	:align: left
+    
+    In case the imported data includes/represents a surface, TVB does an extra
+    check regarding the number of vertices of that surface. Basically you can 
+    not import into TVB a surface that has more vertices than a MAX value.
+    
+    This MAX value is defines and can be changed in the Application Settings 
+    area, depending on the configuration/performance of your hardware. 
+     
+    
 |
 
 Import Data in TVB Format

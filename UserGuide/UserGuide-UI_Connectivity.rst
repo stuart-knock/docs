@@ -202,19 +202,6 @@ functionalities by clicking on:
 
 
 
-.. admonition:: Important
-
-    .. image:: icons/important.png
-	:align: left
-    
-    Surfaces with more vertices than 256 x 256 x 256 are filtered out from Model 
-    Parameters settings at the surface level, because the algorithm for vertices 
-    picking only has that many colors to use. 
-
-    We are planning, for the long-term, to have in |TVB| a surface shrinkage 
-    algorithm. Given a large surface, a smaller one will be built to meet the 
-    requirements for |TVB|. 
-
 
 
  

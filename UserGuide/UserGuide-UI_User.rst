@@ -18,4 +18,5 @@ which includes such functionality as:
   - selecting the storage directory used by |TVB|
   - server configuration: address; ports; etc.
   - number of threads |TVB| has access to
+  - number of vertices for surface (represents the maxium number of vertices for a surface).
 
