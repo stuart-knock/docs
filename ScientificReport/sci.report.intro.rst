@@ -27,5 +27,9 @@ Direct data fusion aims for the direct comparison of data sets from different im
 
 Model-based approaches, on the other hand, are able to integrate information from different modalities in a complementary manner, while avoiding limitations arising from pure statistical comparisons that do not account for the distinct underlying neurophysiological sources that generate the respective signals and potentially relate to different aspects of brain activity. Thus, in our view, the most reasonable way to integrate multimodal neuroimaging data together with existing knowledge about brain functioning and physiology is by means of a computational model that describes the emergence of high-level phenomena on the basis of basic bottom-up interaction between elementary brain processing units. Instead of modelling the interaction between abstract entities or concepts, the building blocks of our model are neurons respectively neural populations. We advocate the use of model building blocks that correspond to real neurophysiological entities as most useful for expanding our knowledge about the generation of simulated signals that show similar dynamics like actual neuroimaging signals. 
 
+The ultimate scientific goal of |TVB| is to become a new revolutionary tool for clinical interventions. As an example case, a clinical researcher will be able 
+to upload brain imaging data from their patients unique neural architecture after a stroke, for example, into the synthetic healthy brain model to see how 
+it responds to the disruption of normal network patterns and attempts to re-stabilize. This will assist the clinician in determining the treatment interventions that will likely have the best outcomes for their patient.
+
 
 

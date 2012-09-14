@@ -1,5 +1,5 @@
 On Stimulation
-==============
+--------------
 
 
 .. search for equivalent stimuli. Example Jansen and Rit Evoked Potentials. Periodic inputs. 
