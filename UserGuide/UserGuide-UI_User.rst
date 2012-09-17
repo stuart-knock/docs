@@ -1,15 +1,15 @@
 User
 -----
 
-This tab is where you come to login and logout of |TVB|, it also provides some
-basic information, such as:
+This area is where you login and logout of |TVB|. 
+It also provides some basic information, such as:
 
-- what version of |TVB| you are currently running 
-- a summary of recent changes to |TVB| software
-- availability of updated versions of |TVB|
+- what version of |TVB| you are currently running, 
+- a summary of recent changes to |TVB| software and
+- availability of updated versions of |TVB|.
 
-It is also where you access the user management system (for administrators), 
-which includes such functionality as: 
+From this page you access the user management system (for administrators), 
+which includes the followinf functionalities: 
 
 - Managing other users
 - Editing settings, including, but not limited to:

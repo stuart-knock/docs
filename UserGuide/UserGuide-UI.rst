@@ -141,7 +141,7 @@ modifications that took place in the simulation chain.
 
 .. include:: UserGuide-UI_Project.rst
 
-.. include:: UserGuide-UI_Burst.rst
+.. include:: UserGuide-UI_Simulator.rst
 
 .. include:: UserGuide-UI_Analyze.rst
 

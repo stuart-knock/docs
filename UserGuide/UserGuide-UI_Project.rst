@@ -19,11 +19,11 @@ The `Project` tab provides access to the projects that you have created within
 |TVB|. The second level menu in the top left corner, next to the Project number,
 allows you to navigate between five main subpages, each of which is described in
 more detail in the sections below:
-    
+
     - View All Projects
+    - Basic Properties
     - Operations
     - Data Structure
-    - Project Properties
     - Saved Figures
     
     .. figure:: screenshots/project_area.jpg
@@ -62,6 +62,35 @@ way to:
 - Create a new project.
 - Import an existing project structure (for example, Exported from a
   colleague's installation of |TVB|).
+
+
+Basic Properties
+...................
+
+Enables you to edit the current project's properties, you are also directed
+to this page when you first create a new project:
+    
+    .. figure:: screenshots/project_form.jpg
+        :width: 90%
+        :align: center
+        
+        The Project Properties page
+        
+    .. note::
+        
+        You can also access this page for any existing project by clicking the
+        edit button near a projects name on the "View All Projects" page.
+    
+The central element of this page is a form where a project's name
+(*without spaces*) should be defined and a short description should be
+given. When other users are registered in the framework, you can choose to
+share the project with other users by checking their respective "Visible
+for" boxes. Then save changes by clicking on the `Save` button located on
+the right side and to get back to the "View All Projects" page. If you were
+creating a new project it should now be visible.
+
+The right hand menu for this page also provides a way of exporting or
+deleting the project.
 
 
 Operations
@@ -139,42 +168,25 @@ Currently the data-types and/or structures supported for upload are:
 * Upload Surface (zip)
 
 
-Project Properties
-...................
+Image Archive
+.............
 
-Enables you to edit the current project's properties, you are also directed
-to this page when you first create a new project:
-    
-    .. figure:: screenshots/project_form.jpg
+Enables you to manage all the images that can be saved within TVB.
+
+In this page you can: 
+  - edit figure title,
+  - create categories to group your images,
+  - search through your figure collection,
+  - visualize, download and delete your images.
+
+.. note::
+
+  Only the current project figures will be available. If you want to visualize 
+  images from another project, you will have to switch to that project.
+
+
+    .. figure:: screenshots/project_image_archive.jpg
         :width: 90%
         :align: center
         
-        The Project Properties page
-        
-    .. note::
-        
-        You can also access this page for any existing project by clicking the
-        edit button near a projects name on the "View All Projects" page.
-    
-The central element of this page is a form where a project's name
-(*without spaces*) should be defined and a short description should be
-given. When other users are registered in the framework, you can choose to
-share the project with other users by checking their respective "Visible
-for" boxes. Then save changes by clicking on the `Save` button located on
-the right side and to get back to the "View All Projects" page. If you were
-creating a new project it should now be visible.
-
-The right hand menu for this page also provides a way of exporting or
-deleting the project.
-
-
-Saved Figures
-..............
-
-This page displays all the figures saved within the current working Project.
-
-    .. figure:: screenshots/project_saved_figures.jpg
-        :width: 90%
-        :align: center
-        
-        The Saved Figures page
+        The Image Archive page
