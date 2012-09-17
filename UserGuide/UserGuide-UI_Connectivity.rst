@@ -24,16 +24,15 @@ matrix editor.
 Connectivity Matrix Editor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On the left of the page you find a visualizer to you 
-
 This 2D matrix representation allows you:
+
   - to easily edit the connectivity and the tract matrices, and
   - to save changes, i.e., create a modified version of your connectivity matrix
     that can be used in a new simulation.
 
 We only display one quadrant of the matrix at a time. You can select which 
-quadrant is shown on the 2D table by accesing the quadrant selector in the 
-upper left corner of the matrix.
+quadrant is shown on the 2D table by accesing the quadrant selector button in 
+the upper left corner of the matrix.
 
 .. note:: 
 
@@ -117,6 +116,9 @@ edges.
    Preview for Connectivity Viewer 3D Edges - Coloring incoming / outgoing edges
 
 
+|
+|
+
 Connectivty 3D View
 ~~~~~~~~~~~~~~~~~~~
 
@@ -130,6 +132,9 @@ different node sizes.
 
       Preview for Connectivity 3D Viewer
  
+
+|
+|
 
 Connectivity 2D Viewer
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -156,6 +161,8 @@ There are three main views:
    Preview for Connectivity 2D Viewer
 
 
+|
+|
 
 Matrix  MPLH5 View
 ~~~~~~~~~~~~~~~~~~

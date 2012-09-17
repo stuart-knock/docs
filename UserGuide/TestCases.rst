@@ -111,9 +111,9 @@ Tutorials
        represented by a scalar measure.
     #. A 2D discrete representation will be displayed on the right side of the 
        screen and it will be updated each time several simulations are finished.
-
-    #. Choose three points and run longer simulations for these three parameter 
-       sets.
+    #. From those results, the most relevant set of parameters can be 
+       distinguished. Choose three points and run longer simulations for those 
+       parameter sets.
     #. For each set, run the simulation four times for different degrees of 
        noise.
     #. Save data. These data will now be analyzed.
@@ -125,9 +125,11 @@ Tutorials
 
       a. Plot modes of principal components and eigenvalues
       b. FFT or time series
+
+
    
 
-.. figure:: screenshots/testcase_parameter_exploration.jpg
+.. figure:: screenshots/simulator_pse_configuration.jpg
    :width: 60%
    :align: center
                
