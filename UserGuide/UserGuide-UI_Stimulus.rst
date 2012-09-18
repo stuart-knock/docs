@@ -1,5 +1,5 @@
-Stimulus Area
---------------
+Stimulus
+--------
 
 Spatio-temporal patterns can be generated to create stimulation patterns.
 

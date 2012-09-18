@@ -1,5 +1,5 @@
-Analyze Area
-------------
+Analyze
+-------
 
 This area offers a set of techniques for data analysis.
 

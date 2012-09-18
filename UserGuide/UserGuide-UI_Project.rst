@@ -79,18 +79,33 @@ to this page when you first create a new project:
     .. note::
         
         You can also access this page for any existing project by clicking the
-        edit button near a projects name on the "View All Projects" page.
+        edit button near a projects name on the `List of all Projects` page.
     
-The central element of this page is a form where a project's name
-(*without spaces*) should be defined and a short description should be
-given. When other users are registered in the framework, you can choose to
-share the project with other users by checking their respective "Visible
-for" boxes. Then save changes by clicking on the `Save` button located on
-the right side and to get back to the "View All Projects" page. If you were
-creating a new project it should now be visible.
+Fill in the form by:
+  
+  - adding a project's name (*without spaces*) 
+  - writing a short description about the project.
 
-The right hand menu for this page also provides a way of exporting or
-deleting the project.
+.. tip::
+  
+  If there are other users registered in the framework, you can choose to
+  share the project with them by checking their respective "Visible for" 
+  boxes. 
+
+On the right side of the browser there is the `Action Column` from where you can:
+
+  - delete the project,
+  - export the project or,
+  - save changes. 
+
+Clicking on the "X" button takes you back to the `List of All Projects` page. 
+
+If you were creating a new project it should now be visible.
+
+.. warning::
+
+  Project properties cannot be edited while operations are running!
+
 
 
 Operations
@@ -171,9 +186,11 @@ Currently the data-types and/or structures supported for upload are:
 Image Archive
 .............
 
-Enables you to manage all the images that can be saved within TVB.
+|TVB| provides you with the possibility of saving images snapshots.
 
-In this page you can: 
+From this page you can manage all the images stored within the current working 
+`Project`, as well as:
+
   - edit figure title,
   - create categories to group your images,
   - search through your figure collection,

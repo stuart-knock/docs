@@ -1,5 +1,5 @@
-Connectivity Area
------------------
+Connectivity
+------------
 
 In this area you can edit both types of TVB connectivity objects:
 
@@ -17,22 +17,29 @@ In this area you can edit both types of TVB connectivity objects:
 Long Range Connectivity
 .......................
 
-From this page you can access one of |TVB| interactive tools: the connectivity
-matrix editor.
+    .. figure:: screenshots/connectivity_large_scale.jpg
+       :width: 90%
+       :align: center
+
+       Large Scale Connectivity configuration page
+
+
+
+From this page you can access an interactive display tool, the 
+connectivity matrix editor, as well as several connectivity visualizations.
 
 
 Connectivity Matrix Editor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This 2D matrix representation allows you:
+This 2D display allows you to:
 
-  - to easily edit the connectivity and the tract matrices, and
-  - to save changes, i.e., create a modified version of your connectivity matrix
+  - easily edit the connectivity and the tract matrices, and
+  - save changes, i.e., create a modified version of your connectivity matrix
     that can be used in a new simulation.
 
-We only display one quadrant of the matrix at a time. You can select which 
-quadrant is shown on the 2D table by accesing the quadrant selector button in 
-the upper left corner of the matrix.
+Additionally, you can select which quadrant is shown on the 2D table by accesing 
+the quadrant selector button in the upper left corner of the matrix.
 
 .. note:: 
 
@@ -44,7 +51,7 @@ the upper left corner of the matrix.
 	:width: 50%
 	:align: center
 
-      Preview for Quadrant Selection
+        Preview for Quadrant Selection
 
 
 The Selection View tab on top of the connectivity matrix, labeled as *Weights
@@ -59,18 +66,20 @@ strengths to be modified are going out or coming in from/to the selected nodes.
 
    Preview for Selection View
 
-Available operations are:
 
-- Assignation (set): assigns the given numeric value to all the nodes within 
-  the set.
-- Addition (add): adds the new value to the current value in the connectivity 
-  matrix.
-- Subtraction (decrease): subtracts the new value to the current value in the 
-  connectivity matrix.
-- Multiplication (multiply): multiplies the current value in the connectivity 
-  matrix by the given numeric value.
-- Division (divide): divides the current value in the connectivity matrix by 
-  the given numeric value.
+.. note:: 
+  Available operations are:
+
+  - Assignation (set): assigns the given numeric value to all the nodes within 
+    the set.
+  - Addition (add): adds the new value to the current value in the connectivity 
+    matrix.
+  - Subtraction (decrease): subtracts the new value to the current value in the 
+    connectivity matrix.
+  - Multiplication (multiply): multiplies the current value in the connectivity 
+    matrix by the given numeric value.
+  - Division (divide): divides the current value in the connectivity matrix by 
+    the given numeric value.
 
 
 Hit the `Run` button to perform the selected operation.
