@@ -17,7 +17,7 @@ and visualization capabilities.
 Configure a Simulation
 .......................
 
-.. |interrogationicon| image:: icons/online_help_green.jpg
+.. |interrogationicon| image:: icons/online_help_green.png
 
 |
 
@@ -118,7 +118,7 @@ will be loaded.
 Simulation History
 ..................
 
-.. |pencil_icon| image:: icons/pencil.jpg
+.. |pencil_icon| image:: icons/pencil.png
 
 On the left column, a history of all simulations is kept and can be 
 accessed at any time. Each simulation can be renamed or deleted by 

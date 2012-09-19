@@ -111,7 +111,7 @@ By default the set includes all the available nodes in the connectivity matrix.
 You can create a smaller selection by clicking on the `Quick-select` button and
 editing the list of node names. 
 
-.. |savetick| image:: icons/save_tick.jpg
+.. |savetick| image:: icons/save_tick.png
 
 To save a particular selection, enter a new name and click on |savetick|.
 
