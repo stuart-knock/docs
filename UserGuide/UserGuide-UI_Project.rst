@@ -107,82 +107,6 @@ If you were creating a new project it should now be visible.
   Project properties cannot be edited while operations are running!
 
 
-
-Operations
-...........
-
-A table with the history of operations related to the currently selected
-project is displayed. From this board the user can filter, view, reload or
-cancel any operation:
-    
-    .. figure:: screenshots/default_operations.jpg
-        :width: 90%
-        :align: center
-        
-        The operation page with default operations
-    
-
-
-Data Structure
-...............
-
-This page provides a way to navigate through the data associated with the
-current project, there is a tree view:
-    
-    .. figure:: screenshots/data.jpg
-        :width: 90%
-        :align: center
-        
-        The data structure of the default project -- which automatically
-        loads the default structural data necessary for a simulation.
-    
-and a graph view:
-    
-    .. figure:: screenshots/data_graph.jpg
-        :width: 90%
-        :align: center
-        
-        A graph view of the project's datastructure
-    
-
-Selecting a data node in the `View` column causes an overlay to appear:
-    
-    .. figure:: screenshots/data_overlay.jpg
-        :width: 90%
-        :align: center
-        
-        A data nodes overlay
-    
-
-From this overlay, the user can:
-
-- edit metadata
-- launch `Analyzers` and `Visualizers`
-- link data to other projects
-- export data.
-
-On the right hand menu for this page, an `upload` button appears. This
-launches an overlay with tabs for each type of TVB-compatible data:
-    
-    .. figure:: screenshots/data_uploaders.jpg
-        :width: 90%
-        :align: center
-        
-        The data upload overlay
-    
-Currently the data-types and/or structures supported for upload are:
-
-* CFF connectome format
-* Surface GIFTI
-* TimeSeries GIFTI
-* NIFTI
-* RegionMapping
-* TVB DataType
-* Sensors
-* Connectivity (zip)
-* Upload Surface (zip)
-
-
 Image Archive
 .............
 
@@ -207,3 +131,94 @@ From this page you can manage all the images stored within the current working
         :align: center
         
         The Image Archive page
+
+Operations
+...........
+
+A table with the history of operations related to the currently selected
+project is displayed. From this board the user can filter, view, reload or
+cancel any operation:
+    
+    .. figure:: screenshots/default_operations.jpg
+        :width: 90%
+        :align: center
+        
+        The operation page with default operations
+    
+
+
+Data Structure
+...............
+
+This page provides a way to navigate through the data associated with the
+current project, plus Upload capability.
+
+On the most-right area of this page, an `upload` button appears. This
+launches an overlay with tabs for each type of TVB-compatible data:
+    
+    .. figure:: screenshots/data_uploaders.jpg
+        :width: 90%
+        :align: center
+        
+        The data upload overlay
+    
+Currently the data-types and/or structures supported for upload are:
+
+* CFF connectome format
+* Surface GIFTI
+* TimeSeries GIFTI
+* NIFTI
+* RegionMapping
+* TVB DataType
+* Sensors
+* Connectivity (zip)
+* Upload Surface (zip)    
+
+Launching any uploader with success will generate you a new leaf in the Tree displayed centrally on this page.
+
+The left-most area of the Data Structure page contains basic filters for the entities display centrally.
+We display fixed filters (entities declared relevant / irrelevant) of free-text filtering (when using the input text field and then pressing Button 'Filter').
+Filtering based on free-test searches into all fields of an entity, and it is case insensitive.
+
+Data Structure page contains in the central area a Tree view:
+    
+    .. figure:: screenshots/data.jpg
+        :width: 90%
+        :align: center
+        
+        The data structure of the default project -- which automatically
+        loads the default structural data necessary for a simulation.
+    
+and a Graph view:
+    
+    .. figure:: screenshots/data_graph.jpg
+        :width: 90%
+        :align: center
+        
+        A graph view of the project's data-structure
+
+The main target for the Graph view is to show you in a mixed manner both DataTypes and Operations. 
+The edges that link the Graph are of type: 'Operation generated DataType' and 'DataType is input for Operation'.
+
+When switching from the Tree display to the Graph display, the same node (if DataType) remains selected.
+This way you could filter entities in the Tree display, check generic meta-data, then switch to the Graph display and see what Operation was parent for this entity.
+
+
+Selecting a data node in the Tree structure causes an overlay to appear:
+    
+    .. figure:: screenshots/data_overlay.jpg
+        :width: 90%
+        :align: center
+        
+        A data nodes overlay
+    
+
+From this overlay, the user can:
+
+- edit metadata
+- launch `Analyzers` and `Visualizers`
+- link data to other projects
+- export data.
+
+
+
