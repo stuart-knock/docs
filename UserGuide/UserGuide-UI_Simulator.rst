@@ -13,6 +13,7 @@ and visualization capabilities.
 
 .. SIMULATOR COLUMN
 
+
 Configure a Simulation
 .......................
 
@@ -58,6 +59,7 @@ You can find more detailed information by clicking on the |interrogationicon| ic
   **|TVB| performs region-based and surface-based simulations**
 
   You can access specific configuration pages for both types of simulation. 
+
 
 Region-based simulations
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -116,7 +118,6 @@ Simulation History
 ..................
 
 .. |pencil_icon| image:: icons/pencil.jpg
-
 
 On the left column, a history of all simulations is kept and can be 
 accessed at any time. Each simulation can be renamed or deleted by 

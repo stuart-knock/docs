@@ -24,9 +24,20 @@ Long Range Connectivity
        Large Scale Connectivity configuration page
 
 
+From this page you can access: 
 
-From this page you can access an interactive display tool, the 
-connectivity matrix editor, as well as several connectivity visualizations.
+  - an interactive display tool: the connectivity matrix editor and
+  - several Long Range Connectivity visualizations:
+
+      - 3D Views
+	- Edges
+	- Nodes
+      - 2D Projections
+	- Left
+	- Right
+	- Top
+      - a MPLH5 matrix plot
+
 
 
 Connectivity Matrix Editor
@@ -105,7 +116,7 @@ This connectivity visualizer allows you to see the structural information as
 base model part of TVB. On the left panel, the connectivity matrix is displayed
 in 3D.
 
-.. figure:: screenshots/connectivity.jpg
+.. figure:: screenshots/connectivity3d.jpg
    :width: 90%
    :align: center
 

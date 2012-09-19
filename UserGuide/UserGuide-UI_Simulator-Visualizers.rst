@@ -23,10 +23,7 @@
 All the snapshots you save can be managed in  `Projects` --> `Image Archive` 
 page.
 
-Next, we provide a brief description the visualizers that can be configured in
-the portlet tabs.
 
-4682B4
 Simple Visualizers
 ..................
 
