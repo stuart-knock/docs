@@ -26,16 +26,20 @@ Long Range Connectivity
 
 From this page you can access: 
 
-  - an interactive display tool: the connectivity matrix editor and
-  - several Long Range Connectivity visualizations:
+  - an interactive display tool on the `Control` right column and 
+  - several Long Range Connectivity visualizations on the left `View` column.
 
       - 3D Views
+
 	- Edges
 	- Nodes
+
       - 2D Projections
+
 	- Left
 	- Right
 	- Top
+
       - a (MPLH5) matrix plot
 
 
@@ -43,17 +47,21 @@ From this page you can access:
 Connectivity Matrix Editor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This 2D display allows you to:
+From the This 2D display allows you to:
 
-  - easily edit the connectivity and the tract matrices, and
-  - save changes, i.e., create a modified version of your connectivity matrix
-    that can be used in a new simulation.
+  - easily edit the connectivity (tract lengths) matrix, and
+  - create a modified version of your connectivity matrix
+  - select a small subset of nodes
+    - perform basic algebraic operations on that group
+  - save all changes to use the new Connectivity object in a simulation.
 
-Additionally, you can select which quadrant is shown on the 2D table by accesing 
-the quadrant selector button in the upper left corner of the matrix.
 
 .. note:: 
 
+    In the Matrix Editor only one quadrant at the time is being displayed.
+    You can select which quadrant is shown by accessing the quadrant selector 
+    button in the upper left corner of the matrix display.
+     
     - quadrants 1 and 4 are the intra-hemisphere connectivity weights,
     - and quadrants 2 and 3 are the inter-hemisphere connectivity weights.
 
@@ -62,7 +70,7 @@ the quadrant selector button in the upper left corner of the matrix.
 	:width: 50%
 	:align: center
 
-        Preview for Quadrant Selection
+      Preview for Quadrant Selection
 
 
 The `Weights` button opens a menu that allows you to perform basic algebraic 
