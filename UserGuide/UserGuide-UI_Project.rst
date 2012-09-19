@@ -138,7 +138,7 @@ current project, there is a tree view:
     
 and a graph view:
     
-    .. figure:: screenshots/data_description.jpg
+    .. figure:: screenshots/data_graph.jpg
         :width: 90%
         :align: center
         
