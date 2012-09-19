@@ -36,7 +36,7 @@ From this page you can access:
 	- Left
 	- Right
 	- Top
-      - a MPLH5 matrix plot
+      - a (MPLH5) matrix plot
 
 
 
@@ -65,17 +65,21 @@ the quadrant selector button in the upper left corner of the matrix.
         Preview for Quadrant Selection
 
 
-The Selection View tab on top of the connectivity matrix, labeled as *Weights
-Matrix*, allows you to perform basic algebraic operations on a set of nodes.
+The `Weights` button opens a menu that allows you to perform basic algebraic 
+operations on a set of selected nodes specifying the edge type:
 
-In addition to that, you can specify the edge type, i.e., if the connection
-strengths to be modified are going out or coming in from/to the selected nodes.
+    - Incoming --> Incoming
+    - Incoming --> Outgoing
+    - Outgoing --> Incoming
+    - Outgoing --> Outgoing
+
+.. i.e., if the connection strengths to be modified are going out or coming in from/to the selected nodes.
 
 .. figure:: screenshots/connectivity3d_edges_operations.jpg
    :width: 90%
    :align: center
 
-   Preview for Selection View
+   Preview for Operations on a selection of nodes
 
 
 .. note:: 
@@ -93,11 +97,15 @@ strengths to be modified are going out or coming in from/to the selected nodes.
     the given numeric value.
 
 
-Hit the `Run` button to perform the selected operation.
+Click on the `Apply weight change` button to perform the selected operation.
 
-By default the set includes all the nodes. You can deselect the nodes from the
-node list. If you wish to save a particular selection, enter a new name and hit
-the Save Selection button.
+By default the set includes all the available nodes in the connectivity matrix. 
+You can create a smaller selection by clicking on the `Quick-select` button and
+editing the list of node names. 
+
+.. |savetick| image:: icons/save_tick.jpg
+
+To save a particular selection, enter a new name and click on |savetick|.
 
     .. figure:: screenshots/connectivity3d_newselection.jpg
       :width: 90%
@@ -117,7 +125,7 @@ base model part of TVB. On the left panel, the connectivity matrix is displayed
 in 3D.
 
 .. figure:: screenshots/connectivity3d.jpg
-   :width: 90%
+   :width: 50%
    :align: center
 
    Preview for Connectivity Viewer 3D Edges
@@ -130,7 +138,7 @@ or outgoing edges. For each node you can choose a different color to apply to it
 edges.
 
 .. figure:: screenshots/connectivity3d_coloredges.jpg
-   :width: 90%
+   :width: 50%
    :align: center
 
    Preview for Connectivity Viewer 3D Edges - Coloring incoming / outgoing edges
@@ -139,18 +147,23 @@ edges.
 |
 |
 
-Connectivty 3D View
-~~~~~~~~~~~~~~~~~~~
+Connectivty 3D View (Nodes)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A 3D representation of the connectivity matrix. (WebGL)
-Two specific node-measures can be displayed here by gradient colors and
-different node sizes.
+A 3D representation of the connectivity matrix nodes. (WebGL)
 
-    .. figure:: screenshots/connectivity3d.jpg
-      :width: 30%
-      :align: center
+Two specific connectivity node-metrics, (previously computed) can be used to 
+independently set: 
+  
+  - the node color and
+  - the node size. 
 
-      Preview for Connectivity 3D Viewer
+
+.. figure:: screenshots/connectivity3d_viewer.jpg
+   :width: 50%
+   :align: center
+
+   Preview for Connectivity 3D Viewer
  
 
 |
@@ -159,8 +172,9 @@ different node sizes.
 Connectivity 2D Viewer
 ~~~~~~~~~~~~~~~~~~~~~~
 
-A 2D representation of the connectivity matrix. 
-There are three main views:
+A 2D representation of the connectivity matrix nodes and edges. 
+
+There are three main views (projections):
  
   - 2D Left
   - 2D Top
@@ -184,11 +198,11 @@ There are three main views:
 |
 |
 
-Matrix  MPLH5 View
-~~~~~~~~~~~~~~~~~~
+Matrix (MPLH5) View
+~~~~~~~~~~~~~~~~~~~~
 
-A 2D representation of the connectivity matrix (matplotlib). 
-Here, the the complete connectivity matrix is displayed. 
+A 2D matrix plot to have a complete overview of the initially selected connectivity 
+matrix.
 
 .. figure:: screenshots/connectivity_mplh5.jpg
    :width: 30%

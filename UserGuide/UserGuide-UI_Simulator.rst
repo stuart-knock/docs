@@ -52,7 +52,8 @@ settings:
   - Monitors
   - Simulation Length
 
-You can find more detailed information by clicking on the |interrogationicon| icon next to each element 
+You can find more detailed information by clicking on the |interrogationicon| 
+icon next to each element 
 
 .. note:: 
   
