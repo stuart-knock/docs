@@ -44,6 +44,12 @@ From the action bar in the right side click on:
 	- select the nodes to which the temporal stimulus will be applied and
         - set the scaling value (stimulus strength) for those nodes.
 
+	.. figure:: screenshots/stimulus_view_region.jpg
+	   :width: 90%
+	   :align: center
+
+	   Preview for node selection in Stimulus at a region level
+
    - `Save New Stimulus Region` button to create the new stimulus entity.
  
 
@@ -51,7 +57,26 @@ From the action bar in the right side click on:
 Surface level stimulus 
 ......................
 
+In the case of a surface level stimulus, besides the temporal profile, you can define the spatial profile
+of your pattern.
+
     .. figure:: screenshots/stimulus_surface.jpg
       :width: 90%
       :align: center
+
+On the left column:
+
+    - select the Spatial Equation that describes the spatial spread of the stimulus and
+    - set its parameters.
+
+
+
+.. tip::
+
+	You can increase the complexity of a stimulus pattern by keep building on top of one Stimulus entity.
+        For an example on how to do it, please read the Test Cases in the User Guide document.
+
+
+
+
 
