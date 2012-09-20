@@ -152,10 +152,11 @@ There are 4 tabs:
 	results undergo two steps: they are first analyzed and those secondqry results 
         are shown in a corresponding visualizer.
 
-  - one `Results` tab containing the current simulation data structure tree. You can inspect 
-    each element through this tree in the same way as in `Projects` --> `Data Structure`.
-    A full list of visualizers and analyzers is available from the component overlay menu.
-
+  - one `Results` tab containing the current simulation data structure tree. You
+    can inspect each element through this tree in the same way as in 
+    `Projects` --> `Data Structure`.
+    A full list of visualizers and analyzers is available from the component 
+    overlay menu.
 
 
 .. |launch_full_viz| image:: icons/button_launch_full_visualizer.png

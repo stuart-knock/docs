@@ -10,21 +10,6 @@ This area offers a set of techniques for data analysis.
    Current available analyzers
 
 
-TVB analyzers
-.............
-
-The techniques currently offered as part of |TVB| are:
-
-    - Continuous Wavelet Transform
-    - Fast Fourier Transform
-    - Cross Coherence of Nodes
-    - Principal Component Analysis
-    - Independent Component Analysis
-    - Cross Correlation of Nodes
-    - Time-series metrics
-    - Temporal Covariance of Nodes
-
-
 Brain Connectivity Toolbox Analyzers
 ....................................
 
@@ -42,6 +27,7 @@ Additional BCT techniques are:
     - Clustering Algorithms
     - Density Algorithms
 
+.. _BCT: https://sites.google.com/site/bctnet/
+
 For more details, please refer to BCT_ web site 
 
-.. _BCT: https://sites.google.com/site/bctnet/
