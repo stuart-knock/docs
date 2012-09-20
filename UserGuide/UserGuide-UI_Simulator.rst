@@ -143,7 +143,7 @@ your simulation results.
     corner.
 
 
-There are 4 main tabs: 
+There are 4 tabs: 
 
   - three `View` tabs you can set up by selecting:
 
@@ -154,8 +154,35 @@ There are 4 main tabs:
 
   - one `Results` tab containing the current simulation data structure tree. You can inspect 
     each element through this tree in the same way as in `Projects` --> `Data Structure`.
-    A full list of visualizers and analyzers is available from the component overlay menu. 
-  
+    A full list of visualizers and analyzers is available from the component overlay menu.
 
+
+
+.. |launch_full_viz| image:: icons/button_launch_full_visualizer.png
+.. |brainicon| image:: icons/action_bar_brain.png
+
+
+.. tip::
+
+    Once your results are available, by clicking on |launch_full_viz| you will be 
+    redirected to a new page where only the currently selected visualizer is 
+    presented. In this new page, you can click on |brainicon| in the top right corner 
+    to access a new menu which will allow you to:
+
+      - `Save` a snapshot of the current figure.
+      - `Relaunch` the visualizer using a different entity, if available. For instance, a 
+        different time-series.
+
+      .. figure:: screenshots/visualizer_save_figure.jpg
+	  :width: 90%
+	  :align: center
+            
+	  Preview for Full Visualizer mode.
+
+
+All the snapshots you save can be managed in  `Projects` --> `Image Archive` 
+page.
+
+  
 
 .. include:: UserGuide-UI_Simulator-Visualizers.rst

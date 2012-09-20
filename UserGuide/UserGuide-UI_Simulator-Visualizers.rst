@@ -1,28 +1,5 @@
 .. VISUALIZERS COLUMN
 
-.. |launch_full_viz| image:: icons/button_launch_full_visualizer.png
-.. |brainicon| image:: icons/action_bar_brain.png
-
-.. tip::
-    By clicking on |launch_full_viz| you will be redirected to a new page 
-    where the only the currently selected visualizer is displayed. In this new 
-    page, you can click on |brainicon| in the top right corner to access a 
-    new menu which will allow you to:
-
-      - `Save` a snapshot of the current figure.
-      - `Relaunch` the visualizer using a different entity. For instance, a 
-        different time-series.
-
-      .. figure:: screenshots/visualizer_save_figure.jpg
-	  :width: 90%
-	  :align: center
-            
-	  The main information about the selected project.
-
-
-All the snapshots you save can be managed in  `Projects` --> `Image Archive` 
-page.
-
 
 Simple Visualizers
 ..................
@@ -30,15 +7,14 @@ Simple Visualizers
 Brain Activity Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A 3D visualization of the brain activity (based on WebGL)
+A 3D scene of the brain activity:
 
-It displays the brain activity:
 
-- at the region level: the brain is represented by a coarse-granularity - each 
+- at the region level: the brain is represented by a coarse granularity - each 
   region is represented with only one color.
 
 .. figure:: screenshots/brain.jpg
-   :width: 50%
+   :width: 90%
    :align: center
 
    Preview for Brain Activity Visualizer at the region level
@@ -65,7 +41,8 @@ Analyzers + Visualizers
 Covariance Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Displays the covariance matrix. Axes represent brain nodes. 
+Displays the covariance matrix. 
+The matrix size is `number of nodes` x `number of nodes`
 
 .. figure:: screenshots/visualizer_covariance.jpg
    :width: 90%
@@ -78,8 +55,10 @@ Displays the covariance matrix. Axes represent brain nodes.
 Cross Coherence Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Displays the cross-coherence matrix. Axes represent brain nodes. 
+Displays the cross-coherence matrix. Axes represent brain nodes.
+The matrix size is `number of nodes` x `number of nodes`
 
+ 
 .. figure:: screenshots/visualizer_cross_coherence.jpg
    :width: 90%
    :align: center
@@ -91,14 +70,15 @@ Displays the cross-coherence matrix. Axes represent brain nodes.
 Cross Correlation Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Displays the cross-correlation matrix. Axes represent brain nodes. 
+Displays the cross-correlation matrix. Similar to the previous
+two visualizers.
 
 
 
 Fourier Spectrum Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Plots the power spectrum for each node time-series.
+Plots the power spectrum of each node time-series.
 
 .. figure:: screenshots/visualizer_fft.jpg
    :width: 90%
@@ -126,11 +106,25 @@ On the right, the first ten components are plotted against the brain nodes.
 Wavelet Spectrogram Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-2D representation that shows how the wavelet spectral coefficients (frequency) 
-of the signals variy with time.
+2D representation that shows how the signals wavelet spectral coefficients (frequency) 
+variy with time.
 
 .. figure:: screenshots/visualizer_wavelet.jpg
    :width: 90%
    :align: center
 
    Preview for Wavelet Visualizer
+
+
+Topographic Visualizer
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: screenshots/visualizer_topographic.jpg
+   :width: 90%
+   :align: center
+
+   Preview for Topographic Visualizer
+
+
+
+
