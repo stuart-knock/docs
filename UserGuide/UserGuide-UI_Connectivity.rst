@@ -47,7 +47,13 @@ From this page you can access:
 Connectivity Matrix Editor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-From the This 2D display allows you to:
+.. figure:: screenshots/connectivity_editor.jpg
+   :width: 90%
+   :align: center
+
+   Preview for the Matrix Editor
+
+From the this 2D display allows you to:
 
   - easily edit the connectivity (tract lengths) matrix, and
   - create a modified version of your connectivity matrix
@@ -56,7 +62,7 @@ From the This 2D display allows you to:
   - save all changes to use the new Connectivity object in a simulation.
 
 
-.. note:: 
+.. hint:: 
 
     In the Matrix Editor only one quadrant at the time is being displayed.
     You can select which quadrant is shown by accessing the quadrant selector 
@@ -73,7 +79,7 @@ From the This 2D display allows you to:
       Preview for Quadrant Selection
 
 
-The `Weights` button opens a menu that allows you to perform basic algebraic 
+The **Weights** button opens a menu that allows you to perform basic algebraic 
 operations on a set of selected nodes specifying the edge type:
 
     - Incoming --> Incoming
@@ -107,13 +113,23 @@ operations on a set of selected nodes specifying the edge type:
 
 Click on the `Apply weight change` button to perform the selected operation.
 
+.. note::
+
+    TVB is designed to handle connectivity matrices whose values are:
+    
+      - positive real values, meaning that there there is a connection, or
+      - zero values, meaning the absence of a connection
+
+.. warning:: 
+
+      - TVB does not handle unknowns such as NaNs or Infs.
+
+      - If your connectivity matrix contains negative values, such as -1 values
+        you should either set these values to zero or an estimated value based 
+        on your research assumptions. 
+ 
+
 By default the set includes all the available nodes in the connectivity matrix. 
-You can create a smaller selection by clicking on the `Quick-select` button and
-editing the list of node names. 
-
-.. |savetick| image:: icons/save_tick.png
-
-To save a particular selection, enter a new name and click on |savetick|.
 
     .. figure:: screenshots/connectivity3d_newselection.jpg
       :width: 90%
@@ -122,15 +138,37 @@ To save a particular selection, enter a new name and click on |savetick|.
       Preview for New Selection
 
 
+You can create a smaller selection by clicking on the `Quick-select` button and
+editing the list of node names. 
+
+.. figure:: screenshots/connectivity_quick_select.jpg
+   :width: 90%
+   :align: center
+
+   Preview for `Quick-select` list
+
+
+.. |savetick| image:: icons/save_tick.png
+.. |staricon| image:: icons/star_icon.png
+
+TVB enables you to save:
+ 
+  - a particular selection by entering a name and clicking on |savetick| or,
+  - a new `Connectivity` object by clicking on |staricon|. This entity can be 
+    used later on in |TVB| `Simulator`.
+
+
 |
 |
+
+Viewers
+~~~~~~~
 
 Connectivity 3D Edges
 ~~~~~~~~~~~~~~~~~~~~~
 
 This connectivity visualizer allows you to see the structural information as
-base model part of TVB. On the left panel, the connectivity matrix is displayed
-in 3D.
+base model part of TVB. 
 
 .. figure:: screenshots/connectivity3d.jpg
    :width: 50%
@@ -141,8 +179,10 @@ in 3D.
 The 3D semi-transparent surface arround the connectivity nodes, whether it is
 the cortical surface or the outer-skin, is used just for giving space guidance.
 
-You can select an individual node and righ-click on it to visualize the incoming
-or outgoing edges. For each node you can choose a different color to apply to its
+You can select an individual node and righ-click on it to activate the incoming
+or outgoing edges. 
+
+For each node you can choose a different color to apply to its
 edges.
 
 .. figure:: screenshots/connectivity3d_coloredges.jpg
@@ -160,8 +200,8 @@ Connectivty 3D View (Nodes)
 
 A 3D representation of the connectivity matrix nodes. (WebGL)
 
-Two specific connectivity node-metrics, (previously computed) can be used to 
-independently set: 
+Two specific connectivity node-metrics, (previously computed using one of BCT 
+analyzers) can be used to independently set: 
   
   - the node color and
   - the node size. 
@@ -189,16 +229,16 @@ There are three main views (projections):
   - 2D Right
 
 .. figure:: screenshots/connectivity2d_left.jpg
-   :width: 30%
-   :align: left
+   :width: 50%
+   :align: center
 
 .. figure:: screenshots/connectivity2d_top.jpg
-   :width: 30%
+   :width: 50%
    :align: center
 
 .. figure:: screenshots/connectivity2d_right.jpg
-   :width: 30%
-   :align: right
+   :width: 50%
+   :align: center
 
    Preview for Connectivity 2D Viewer
 
@@ -213,8 +253,8 @@ A 2D matrix plot to have a complete overview of the initially selected connectiv
 matrix.
 
 .. figure:: screenshots/connectivity_mplh5.jpg
-   :width: 30%
-   :align: right
+   :width: 50%
+   :align: center
    
    Preview for Matrix Display
 
@@ -232,11 +272,12 @@ will be used in surface-based simulations.
 
     Local Connectivity editing page
 
+.. |create_lc| image:: icons/action_bar_create_new_lc.png
 
 On the lower right of the browser you will have access to different 
 functionalities by clicking on:
 
-    - `Create Local Connectivity` button: to generate the Local Connectivity entity.
+    - |create_lc| button: to generate the Local Connectivity entity.
 
     - `View Local Connectivity` button: to launch a 3D brain visualizer displaying the spatial profile of the newly generated entity.
 
@@ -248,9 +289,3 @@ functionalities by clicking on:
 
 
     - `Edit Local Connectivity` button: to go back to the main Local Connectivity editing page.
-
-
-
-
- 
- 
