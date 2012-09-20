@@ -53,7 +53,7 @@ settings:
   - Simulation Length
 
 You can find more detailed information by clicking on the |interrogationicon| 
-icon next to each element 
+icon next to each element. 
 
 .. note:: 
   
@@ -100,8 +100,7 @@ will be loaded.
   **Parameter Space Exploration**
 
   It is possible to launch parallel simulations to systematically explore the 
-  parameter space of the local dynamics model. In the current TVB version, up to 
-  2 parameters can be inspected at the same time.
+  parameter space of the local dynamics model. In the current TVB version, up to  2 parameters can be inspected at the same time.
 
     .. figure:: screenshots/simulator_pse_configuration.jpg
       :width: 60%
@@ -109,8 +108,8 @@ will be loaded.
                
       The results will be presented in a discrete two dimensional graph. Each 
       point represents the results of a simulation for an unique combination of
-      parameters. The disk size corresponds to Global Variance and the color scale
-      corresponds to Variance of the Variance of nodes.  
+      parameters. The disk size corresponds to Global Variance and the color
+      scale corresponds to Variance of the Variance of nodes.  
 
 
 .. HISTORY COLUMN
@@ -134,20 +133,29 @@ clicking on the upper right |pencil_icon| icon.
 Display Simulation Results
 ...........................
 
-On the right column you will find:
+On the right column you will find an area where you can configure displays to exhibit
+your simulation results.
 
-  - three `View` tabs that you can personalize by selecting:
-
-      - TVB time-series `Visualizers` that directly display the resulting time-series or
-      - `TVB-Visualizers` associated with a `TVB-Analyzer`. In this case, simulation 
-	results are first processed and the analysis results are shown in a 
-	corresponding visualizer.
-
-  - one `Results` tab containing the current simulation data structure tree.
 
 .. hint::
 
     Maximize this column by clicking on the `zoom` icon located in the top right
     corner.
+
+
+There are 4 main tabs: 
+
+  - three `View` tabs you can set up by selecting:
+
+      - TVB time-series `Visualizers` that directly plot the resulting time-series or
+      - `TVB-Visualizers` associated with a `TVB-Analyzer`. In this case, simulation 
+	results undergo two steps: they are first analyzed and those secondqry results 
+        are shown in a corresponding visualizer.
+
+  - one `Results` tab containing the current simulation data structure tree. You can inspect 
+    each element through this tree in the same way as in `Projects` --> `Data Structure`.
+    A full list of visualizers and analyzers is available from the component overlay menu. 
+  
+
 
 .. include:: UserGuide-UI_Simulator-Visualizers.rst
