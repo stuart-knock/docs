@@ -441,3 +441,50 @@ archive. This file specifies what data types are packed (e.g. connectivity,
 surface, region mapping) and which files contain data for these types. In our
 demo data, files are in different formats: starting from raw data (numpy dump),
 GIFTI, NXGPickle.
+
+
+|
+
+Import Region Mapping
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+A Region Mapping in TVB is a vector, defining a map between a Cortical Surface and a Connectivity.
+At import time, you will need to have at least 2 entities in TVB system: Connectivity and Cortical Surface.
+The two entities need to be spatially aligned (overlap correctly in 3D space).
+
+File Format
+***********
+
+For this upload we expect a text file (possible compressed with bz2). The text file should have no headers,
+only numeric values separated with spaces.
+
+The file is expected to hold a vector of length number of vertices in the Cortical Surface. 
+The numeric values should be in the interval (0...n-1), where n is the number of regions in  the connectivity.
+
+
+|
+
+Import Projection Matrix
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A Projection Matrix, is intended to define a mapping from a source object and a set of sensors. 
+The source entity can be either a Cortical Surface or a Connectivity, in TVB. 
+In order for this import to work, you will need to have previously imported in TVB: 
+the source and the sensors entities.
+
+File Format
+***********
+
+For this upload we expect a single text file, with numeric values, space and line separated.
+The numeric values in the uploaded file should hold a matrix of size (n, m). 
+n is the number of sensors, and m is the  number of nodes. When the projection matrix we want to import is a 
+Surface Projection Matrix, m will be the number of vertices in the target Cortical Surface.
+When the projection matrix is a region-level one, m will be the number of regions in the Connectivity.
+Having headers in the text file is not accepted. An incorrect number of values (lines or rows) in the
+Projection Matrix will also raise an exception.
+
+
+
+
+
+
