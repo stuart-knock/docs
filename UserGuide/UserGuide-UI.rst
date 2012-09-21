@@ -37,6 +37,14 @@ Root folder for all projects:
 	existing projects, stop |TVB|, start it with clean option (and configure new folder)
 	then import your projects back in the system.
 
+Max Disk Size (in MB):
+	Is the amount of disk space that you (as administrator) can specify as limit for each user, 
+	to occupy with TVB Data. When a user exceeds this limit, he is no longer allowed to run simulations 
+	or other operations producing data. When this limit is exceeded, the user will still be able to 
+	visualize his previously created data, and, if desired, to remove data for making space for new results.
+	A default region level simulation with length 1000 ms takes approximatively 1 MB of disk space.
+	A surface level simulation, with Local Connectivity pre-computed, Raw monitor and length of 10 ms takes 280 MB.
+
 DB engine:
 	currently supported are *sqlite* and *postgresql* databases. You will need to provide a
 	valid database URL in case you choose postgresql. In the case of sqlite a default
