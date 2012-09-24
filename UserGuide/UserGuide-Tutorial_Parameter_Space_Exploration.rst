@@ -26,6 +26,7 @@ local machine to compute. Second, to understand the parameter space display.
   #. Visualize on EEG map (circular map à la LP plus surface à la SK) and 
       cross sections (fMRI).
   #. Analyze EEG data via PCA. Visualize results:
+  
     a. Plot modes of principal components and eigenvalues
     b. FFT or time series
 
