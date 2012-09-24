@@ -1,5 +1,5 @@
-Tutorial 3
-----------
+Tutorial
+--------
 
 **A simple lesion study using TVB**
 
@@ -14,30 +14,55 @@ removing all the incoming and ongoing connections into and from this node.
 
   - Assuming that you have already created your project:
   
-    - Enter the `Connectivity` Area and click on `Long Range Connectivity`.
-    - Select the default connectivity matrix and click the `Launch` button.
+  - Enter the `Connectivity` Area and click on `Long Range Connectivity`.
+  - Select the default connectivity matrix and click the `Launch` button.
     
-  - In the right side the node-by-node connectivity matrix is displayed. You can select the quadrant to be displayed on the screen by accessing the quadrant selector.  
+  - In the right side the node-by-node connectivity matrix is displayed. You 
+    can select the quadrant to be displayed on the screen by accessing the 
+    quadrant selector.  
     
-    - Unselect the nodes you want lesion by clicking directly on the region labels. This will remove all the incoming and ongoing connections into and from those nodes. Here we choose to lesion the following cortical areas: lCCA, lCCP, and lPFCORB. 
-    - Enter a name for this new selection, save it  and click on the star icon on the top-right to save the new matrix.
-    - Go to `Project` Area and enter the `Data Structure` page. The new connectivity matrix should be available in Intermediate Data. 
-    - By selecting the new Connectivity, you will access to its Datatype Details allowing you to get information about the data, visualize them and export them.
-    - From the `Visualizers` tab you can launch a display to see the new matrix.
+  - Unselect the nodes you want lesion by clicking directly on the region 
+    labels. This will remove all the incoming and ongoing connections into 
+    and from those nodes. Here we choose to lesion the following cortical 
+    areas: lCCA, lCCP, and lPFCORB. 
+
+  - Enter a name for this new selection, save it  and click on the star icon 
+    on the top-right to save the new matrix.
+
+  - Go to `Project` Area and enter the `Data Structure` page. The new 
+    connectivity matrix should be available in Intermediate Data. 
+
+  - By selecting the new Connectivity, you will access to its Datatype 
+    Details allowing you to get information about the data, visualize them 
+    and export them.
+
+  - From the `Visualizers` tab you can launch a display to see the new matrix.
 	
-  - Simulate data using both connectivity matrices. You can now use the new connectivity matrix to simulate brain activity, using the TVB `Simulator`. Here we choose the BOLD model with underlying FitzHugh-Nagumo equations for the local dynamics. We goal is to run two long simulations, one using an intact connectivity and another using the connectivity with lesions. Except for the connectivity matrix, all parameters are the same (including the random number generator seed). 
+  - Simulate data using both connectivity matrices. You can now use the new 
+    connectivity matrix to simulate brain activity, using the TVB `Simulator`. 
+    Here we choose the BOLD model with underlying FitzHugh-Nagumo equations for 
+    the local dynamics. We goal is to run two long simulations, one using an 
+    intact connectivity and another using the connectivity with lesions. Except 
+    for the connectivity matrix, all parameters are the same (including the 
+    random number generator seed). 
     
-    - In the `Simulator` Area - central column - you can choose the long-range connectivity. Select the new connectivity matrix containing the lesions. 
+    - In the `Simulator` Area - central column - you can choose the long-range 
+      connectivity. Select the new connectivity matrix containing the lesions. 
     - Set the local dynamic model to Fitz-Hugh Nagumo.
     - Select BOLD in Monitors. 
     - Name the new simulation and launch it. 
-    - Repeat the previous steps but choosing the default matrix (intact) as the Long-range connectivity. 
+    - Repeat the previous steps but choosing the default matrix (intact) as the 
+      Long-range connectivity. 
 	
-  - Go to the `Operations` board. You can follow the state of the simulations. When simulations are finished your results will be represented by its datatype icons.
+  - Go to the `Operations` board. You can follow the state of the simulations. 
+    When simulations are finished your results will be represented by its 
+    datatype icons.
     
   - Export the results of both simulations and the connectivity matrices. 
   
-    - You can export the results by choosing `Export`: -> TVB format. The data will be stored in an HDF5 file ("filename.h5") which can be used to do further analysis using other softwares. 
+    - You can export the results by choosing `Export`: -> TVB format. The data 
+      will be stored in an HDF5 file ("filename.h5") which can be used to do 
+      further analysis using other softwares. 
 
 
 
