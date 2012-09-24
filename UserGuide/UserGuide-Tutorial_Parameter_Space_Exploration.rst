@@ -36,7 +36,9 @@ local machine to compute. Second, to understand the parameter space display.
 .. figure:: screenshots/simulator_pse_configuration.jpg
   :width: 60%
   :align: center
+  
+  Parameter Space Exploration (PSE)
 	      
-  Each point in this two dimensional graph represents two metrics: by default
-  Global Variance corresponds to the size of the point and Variance of the
-  Variance of nodes maps the color scale. 
+Each point in this two dimensional graph represents two metrics: by default
+Global Variance corresponds to the size of the point and Variance of the
+Variance of nodes maps the color scale. 
