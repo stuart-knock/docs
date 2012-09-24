@@ -26,11 +26,16 @@ local machine to compute. Second, to understand the parameter space display.
   #. Visualize on EEG map (circular map à la LP plus surface à la SK) and 
       cross sections (fMRI).
   #. Analyze EEG data via PCA. Visualize results:
-
     a. Plot modes of principal components and eigenvalues
     b. FFT or time series
 
-	      
-Each point in this two dimensional graph represents two metrics: by default
-Global Variance corresponds to the size of the point and Variance of the
-Variance of nodes maps the color scale. 
+
+  
+
+.. figure:: screenshots/simulator_pse_configuration.jpg
+  :width: 60%
+  :align: center
+  
+  Each point in this two dimensional graph represents two metrics: by default
+  Global Variance corresponds to the size of the point and Variance of the
+  Variance of nodes maps the color scale. 
