@@ -1,10 +1,13 @@
 Tutorial 2
 ----------
 
-**Parameter Space Exploration**
+**Performing parameter space exploration**
 
-**Objective**: First, to run a batch job on the cluster or parallel processes in the
-local machine to compute. Second, to understand the parameter space display.
+**Objective**: 
+learn how to sweep and search across different simulation 
+settings that run on a distributed infrastructure. We illustrate this process 
+with a case study in larg-escale brain modelling within |TVB|.
+
 
   #. Follow steps 1 to 3 from the Example 1.
   #. Click on the 'V' button next to the model parameters if you want to see
@@ -29,8 +32,6 @@ local machine to compute. Second, to understand the parameter space display.
   
     a. Plot modes of principal components and eigenvalues
     b. FFT or time series
-
-
   
 
 .. figure:: screenshots/simulator_pse_configuration.jpg
