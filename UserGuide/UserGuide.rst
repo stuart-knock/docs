@@ -87,7 +87,7 @@ program database and deleting all the |TVB| created folders.
 
 .. TEST CASES
 
-.. include:: TestCases.rst
+.. include:: UserGuide-Tutorial.rst
 
 .. DATA EXCHANGE
 

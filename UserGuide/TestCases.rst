@@ -137,29 +137,6 @@ Tutorials
    Global Variance corresponds to the size of the point and Variance of the
    Variance of nodes maps the color scale. 
 
-|
-
-.. admonition:: Tutorial 3
-
-  **Perform a lesion**
-
-  **Objective**: learn how to use the connectivity editor by lesioning the 
-  connections between different brain regions.
-
-    #. Go to the `Connectivity` --> `Long Range Connectivity` page.
-    #. Launch the connectivity viewer. 
-    #. Deselect the nodes you want lesion by clicking directly on the region 
-       labels. This will remove all the incoming and ongoing connections into 
-       and from those nodes.
-    #. Hit the `Save Interest` button to save the new connectivity matrix.
-    #. Press the `Refresh` button below the Connectivity Matrix field, to see 
-       your new matrix. Select it.
-    #. `Launch` the viewer again.
-    #. Your new connectivity matrix should be displayed. The connection 
-       strengths of the lesioned nodes are now set to 0.
-  
-
-|
 
 
 .. admonition:: Tutorial 4
