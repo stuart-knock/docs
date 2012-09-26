@@ -24,15 +24,44 @@ A 3D scene of the brain activity:
 
 
 
-Time Series Visualizer
-~~~~~~~~~~~~~~~~~~~~~~
+Time Series Visualizer (svg/d3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: screenshots/visualizer_timeseries_svgd3.jpg
    :width: 90%
    :align: center
 
-   Preview for Time-Series Visualizer
+   Preview for Time-Series Visualizer (svg/d3)
 
+
+Time Series Visualizer (mplh5)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: screenshots/visualizer_timeseries_mplh5.jpg
+   :width: 90%
+   :align: center
+
+   Preview for Time Series Visualizer (mplh5)
+
+
+Time Series Visualizer
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: screenshots/visualizer_timeseries_eeg.jpg
+   :width: 90%
+   :align: center
+
+   Preview for Time Series Visualizer
+
+
+This display allows you to select the channels (regions if you are plotting a
+TimeSeriesRegion datatype):
+
+.. figure:: screenshots/visualizer_timeseries_eeg_channel_selection.jpg
+   :width: 90%
+   :align: center
+
+   Selecting the "channels" to be displayed.
 
 
 Analyzers + Visualizers
@@ -93,7 +122,8 @@ Principal Component Visualizer
 On the left, the ring plot displays the fraction of the variance that is 
 explained by each component.
 
-On the right, the first ten components are plotted against the brain nodes. 
+On the right, the first ten components are plotted against the brain nodes 
+(variables). 
 
 .. figure:: screenshots/analyzers_pca.jpg
    :width: 90%
@@ -126,5 +156,5 @@ Topographic Visualizer
    Preview for Topographic Visualizer
 
 
-
-
+This display is available for ConnectivityMeasure datatypes obtained by means of
+a BCT analyzer. 

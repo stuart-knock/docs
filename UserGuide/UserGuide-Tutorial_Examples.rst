@@ -16,13 +16,13 @@ reproduce through the |TVB| interface.
 
 
   #. Use the default long-range connectivity data.
-  #. Apply a linear coupling function (parameters: rescale connection 
-     strength=0.016, shift=0).
+  #. Apply a linear coupling function (parameters: `a`- rescale connection 
+     strength=0.016, `b`- shift=0).
   #. Leave the *Cortical Surface* and the *Stimulus* set to **None**.
   #. Use the default population model and its parameters.
-  #. Select the Heun Stochastic integrator. Integration step set to 
+  #. Select the Heun Stochastic integrator. Set the integration step to 
      :math:`dt=0.06103515625` and additive noise (with null correlation time 
-     and an amplitude standard deviation :math:`D=2^{-10}`, use the default 
+     and standard deviation :math:`D=2^{-10}`, use the default 
      random number generator parameters).
   #. Use the default model initial conditions (basically random initial 
      conditions).

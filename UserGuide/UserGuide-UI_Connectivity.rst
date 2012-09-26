@@ -263,6 +263,7 @@ matrix.
 Local Connectivity
 ..................
 
+
 In this page, you can generate the spatial profile of local connectivity that 
 will be used in surface-based simulations.
 
@@ -277,7 +278,7 @@ will be used in surface-based simulations.
 On the lower right of the browser you will have access to different 
 functionalities by clicking on:
 
-    - |create_lc| button: to generate the Local Connectivity entity.
+    - `Create new Local Connectivity` button: to generate the Local Connectivity entity.
 
     - `View Local Connectivity` button: to launch a 3D brain visualizer displaying the spatial profile of the newly generated entity.
 
@@ -289,3 +290,23 @@ functionalities by clicking on:
 
 
     - `Edit Local Connectivity` button: to go back to the main Local Connectivity editing page.
+
+
+On the right column there is a display showing different estimations of the 
+spatial profile based on the length of :
+
+  - Theoretical case: is the ideal case.
+  - Most probable case: resolution is based on the mean length of the edges of the surface mesh. 
+  - Worst case: resolution is based on the longest edge in the surface mesh.
+  - Best case: resolution is based on the shortest edge in the surface mesh.
+
+
+      .. figure:: screenshots/local_connectivity_estimations.jpg
+	 :width: 70%
+         :align: center 
+
+         Local connectivity profile estimations.
+
+and the red-dotted vertical line represents the cut-off distance. 
+
+The x-axis range is automatically set to two times the cut-off distance.
