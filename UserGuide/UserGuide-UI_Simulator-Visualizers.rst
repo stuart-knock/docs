@@ -44,24 +44,47 @@ Time Series Visualizer (mplh5)
    Preview for Time Series Visualizer (mplh5)
 
 
-Time Series Visualizer
-~~~~~~~~~~~~~~~~~~~~~~
+EEG Time Series Visualizer
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: screenshots/visualizer_timeseries_eeg.jpg
    :width: 90%
    :align: center
 
-   Preview for Time Series Visualizer
+   Preview for EEG Time Series Visualizer
 
 
-This display allows you to select the channels (regions if you are plotting a
-TimeSeriesRegion datatype):
+If you used an EEG monitor to record the activity of your large-scale brain 
+simulation, this display allows you to select the channels of the 62-sensors 
+EEG recording. 
 
 .. figure:: screenshots/visualizer_timeseries_eeg_channel_selection.jpg
    :width: 90%
    :align: center
 
    Selecting the "channels" to be displayed.
+   
+   
+Dual Brain - EEG Visualizer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: screenshots/visualizer_timeseries_eeg.jpg
+   :width: 90%
+   :align: center
+
+   Preview for EEG Time Series Visualizer
+
+
+This visualizer combines the brain activity on top of a 3D display of the pacient's 
+head and on the right column, the EEG channels recordings. Channel selection is 
+also available.
+
+
+.. figure:: screenshots/visualizer_dual_head_eeg.jpg
+   :width: 90%
+   :align: center
+
+   Brain activity wit EEG recordings.
 
 
 Analyzers + Visualizers
