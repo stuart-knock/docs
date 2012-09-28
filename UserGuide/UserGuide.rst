@@ -85,12 +85,28 @@ program database and deleting all the |TVB| created folders.
 
 .. include:: UserGuide-UI.rst
 
+.. raw:: pdf
+
+   PageBreak
+
 .. TEST CASES
 
 .. include:: UserGuide-Tutorial.rst
 
+.. raw:: pdf
+
+   PageBreak
+
 .. DATA EXCHANGE
 
 .. include:: DataExchange.rst
+
+.. raw:: pdf
+
+   PageBreak
+
+.. COPYRIGHT
+
+.. include:: ../templates/copyright_notice.rst
 
 

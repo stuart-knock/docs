@@ -32,5 +32,18 @@
 
 .. include:: sci.report.cognitive.rst
 
+.. raw:: pdf
+
+   PageBreak
+
 .. include:: sci.report.bib.rst
+
+.. raw:: pdf
+
+   PageBreak
+
+.. COPYRIGHT
+
+.. include:: ../templates/copyright_notice.rst
+
 

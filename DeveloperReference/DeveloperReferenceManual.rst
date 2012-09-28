@@ -29,7 +29,7 @@ Legend
 +---------------------+-----------------------------------------------------------------------------+
 | TVB Team            | Randy McIntosh, Viktor Jirsa, Laurent Pezard, Jean-Luc Blanc,               | 
 |                     | Stuart Knock, Yann Manhoun, Noelia Montejo, Marmaduke Woodman,              |
-|                     | Jochen Mersmann, Lia Domide                                                 |
+|                     | Jochen Mersmann, Lia Domide, Paula Sanz Leon                                |
 +---------------------+-----------------------------------------------------------------------------+
 
 
@@ -973,6 +973,15 @@ References
 .. _Connectome: http://www.connectomics.org/documentation/users/connectomefileformat.html
 .. _NITRC: http://www.nitrc.org/ 
 .. _EEGLAB: http://sccn.ucsd.edu/eeglab/
+
+
+.. raw:: pdf
+
+   PageBreak
+
+.. COPYRIGHT
+
+.. include:: ../templates/copyright_notice.rst
 
 
 
