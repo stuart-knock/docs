@@ -160,7 +160,7 @@ Wavelet Spectrogram Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 2D representation that shows how the signals wavelet spectral coefficients (frequency) 
-variy with time.
+vary with time.
 
 .. figure:: screenshots/visualizer_wavelet.jpg
    :width: 90%

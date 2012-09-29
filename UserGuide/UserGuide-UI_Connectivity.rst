@@ -40,7 +40,7 @@ From this page you can access:
 	- Right
 	- Top
 
-      - a (MPLH5) matrix plot
+      - a MPLH5 matrix plot
 
 
 
@@ -64,7 +64,7 @@ From the this 2D display allows you to:
 
 .. hint:: 
 
-    In the Matrix Editor only one quadrant at the time is being displayed.
+    In the Matrix Editor only one quadrant is displayed at a time.
     You can select which quadrant is shown by accessing the quadrant selector 
     button in the upper left corner of the matrix display.
      
@@ -117,7 +117,7 @@ Click on the `Apply weight change` button to perform the selected operation.
 
     TVB is designed to handle connectivity matrices whose values are:
     
-      - positive real values, meaning that there there is a connection, or
+      - positive real values, meaning that there is a connection, or
       - zero values, meaning the absence of a connection
 
 .. warning:: 
@@ -167,7 +167,7 @@ Viewers
 Connectivity 3D Edges
 ~~~~~~~~~~~~~~~~~~~~~
 
-This connectivity visualizer allows you to see the structural information as
+This connectivity visualizer allows you to see the structural information as a
 base model part of TVB. 
 
 .. figure:: screenshots/connectivity3d.jpg
@@ -179,7 +179,7 @@ base model part of TVB.
 The 3D semi-transparent surface arround the connectivity nodes, whether it is
 the cortical surface or the outer-skin, is used just for giving space guidance.
 
-You can select an individual node and righ-click on it to activate the incoming
+You can select an individual node and right-click on it to activate the incoming
 or outgoing edges. 
 
 For each node you can choose a different color to apply to its

@@ -9,13 +9,13 @@ activity.
 
 **Summary**
 The intention is to have a platform capabable of having a representation of 
-stabilizing and unestabilizing sources. The goal is to observe the effect of
+stable and unstable sources. The goal is to observe the effect of
 the stimulation. 
 
 
   -  Assuming that you have already created your project:
 
-  -  Go to the `Stimulus` Area --> `Surface Stimulus` page.
+  -  Go to the `Stimulus` area --> `Surface Stimulus` page.
   -  Enter a new name for the new `Surface Stimulus`.
   -  Choose the default `Cortical Surface`.
   -  Select the `Mexican-hat` equation to define the spatial spread of the 
@@ -54,7 +54,7 @@ the stimulation.
 
   - Go back to `Edit Stimulus Equation`
 
-  - Set new equations and parameters for both spatial and tamporal profiles.
+  - Set new equations and parameters for both spatial and temporal profiles.
 
   - Add 10 focal nodes on the left hemisphere.
 

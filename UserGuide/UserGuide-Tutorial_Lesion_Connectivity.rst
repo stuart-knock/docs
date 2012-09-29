@@ -14,14 +14,14 @@ removing all the incoming and ongoing connections into and from this node.
 
   - Assuming that you have already created your project:
   
-  - Enter the `Connectivity` Area and click on `Long Range Connectivity`.
+  - Enter the `Connectivity` area and click on `Long Range Connectivity`.
   - Select the default connectivity matrix and click the `Launch` button.
     
-  - In the right side the node-by-node connectivity matrix is displayed. You 
+  - On the right side the node-by-node connectivity matrix is displayed. You 
     can select the quadrant to be displayed on the screen by accessing the 
     quadrant selector.  
     
-  - Unselect the nodes you want lesion by clicking directly on the region 
+  - Unselect the nodes you want to lesion by clicking directly on the region 
     labels. This will remove all the incoming and ongoing connections into 
     and from those nodes. Here we choose to lesion the following cortical 
     areas: lCCA, lCCP, and lPFCORB. 
@@ -29,10 +29,10 @@ removing all the incoming and ongoing connections into and from this node.
   - Enter a name for this new selection, save it  and click on the star icon 
     on the top-right to save the new matrix.
 
-  - Go to `Project` Area and enter the `Data Structure` page. The new 
+  - Go to `Project` area and enter the `Data Structure` page. The new 
     connectivity matrix should be available in Intermediate Data. 
 
-  - By selecting the new Connectivity, you will access to its Datatype 
+  - By selecting the new Connectivity, you will access its Datatype 
     Details allowing you to get information about the data, visualize them 
     and export them.
 
@@ -41,12 +41,12 @@ removing all the incoming and ongoing connections into and from this node.
   - Simulate data using both connectivity matrices. You can now use the new 
     connectivity matrix to simulate brain activity, using the TVB `Simulator`. 
     Here we choose the BOLD model with underlying FitzHugh-Nagumo equations for 
-    the local dynamics. We goal is to run two long simulations, one using an 
+    the local dynamics. The goal is to run two long simulations, one using an 
     intact connectivity and another using the connectivity with lesions. Except 
     for the connectivity matrix, all parameters are the same (including the 
     random number generator seed). 
     
-    - In the `Simulator` Area - central column - you can choose the long-range 
+    - In the `Simulator` area - central column - you can choose the long-range 
       connectivity. Select the new connectivity matrix containing the lesions. 
     - Set the local dynamic model to Fitz-Hugh Nagumo.
     - Select BOLD in Monitors. 
@@ -62,7 +62,7 @@ removing all the incoming and ongoing connections into and from this node.
   
     - You can export the results by choosing `Export`: -> TVB format. The data 
       will be stored in an HDF5 file ("filename.h5") which can be used to do 
-      further analysis using other softwares. 
+      further analysis using other software of your choice. 
 
 
 
@@ -100,8 +100,8 @@ of nodes. To asses significant changes we calculated the correlation matrix
 in non-overlapping time windows of 200 time points. In this way, we obtained 
 a distribution for each pair-wise correlation coefficient, allowing 
 statistical treatment. Correlation coefficients were fisher z-transformed and 
-compared (t-tests) in intact vs. lesion conditions. We found that lesions 
-induced both significant increases and decreases of correlation between 
+compared (by means of t-tests) in intact vs. lesion conditions. We found that lesions 
+induced both significant increases and decreases of correlations between 
 intact nodes, even for pairs of nodes in different hemispheres.
 
     .. figure:: screenshots/tutorial_lesion_results.jpg
@@ -121,4 +121,4 @@ intact nodes, even for pairs of nodes in different hemispheres.
     correlations. 
     C) Example of seed-based based correlations. Dark and 
     light colors indicate significant and non-significant differences of 
-    correlation coefficients, respectively. Seed: left Prefrontal polar cortex.
+    correlation coefficients, respectively. Seed: left prefrontal polar cortex.

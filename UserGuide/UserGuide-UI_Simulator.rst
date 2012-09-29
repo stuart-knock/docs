@@ -57,7 +57,7 @@ icon next to each element.
 
 .. note:: 
   
-  **|TVB| performs region-based and surface-based simulations**
+  **TVB performs region-based and surface-based simulations**
 
   You can access specific configuration pages for both types of simulation. 
 
@@ -149,7 +149,7 @@ There are 4 tabs:
 
       - TVB time-series `Visualizers` that directly plot the resulting time-series or
       - `TVB-Visualizers` associated with a `TVB-Analyzer`. In this case, simulation 
-	results undergo two steps: they are first analyzed and those secondqry results 
+	results undergo two steps: they are first analyzed and those secondary results 
         are shown in a corresponding visualizer.
 
   - one `Results` tab containing the current simulation data structure tree. You

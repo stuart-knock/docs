@@ -10,7 +10,7 @@ settings that run on a distributed infrastructure.
 **Summary**: 
 In |TVB| platform it is possible to launch parallel simulations to explore the 
 changes in dynamics of the brain as a function of the local dynamics parameters.
-We illustrate this process with a case study in larg-escale brain simulations 
+We illustrate this process with a case study in larg-scale brain simulations 
 within |TVB|.
 
 
@@ -39,7 +39,7 @@ Variance of nodes maps the color scale.
   - From those results, critical combination of parameters can be 
     distinguished. 
  
-  -  If you go to `Project` Area and enter the `Data Structure` page. The results 
+  -  If you go to `Project` area and enter the `Data Structure` page. The results 
      of all simulations will be held under one object called DataTypeGroup.
 
   - Export the results of all simulations. 
@@ -50,4 +50,4 @@ Variance of nodes maps the color scale.
 
   - Within this folder you will find the TimeSeries for each possible parameter 
     combination. Data are stored as HDF5 files ("filename.h5") which can be used 
-    to do further analysis using other softwares. 
+    to do further analysis using other software of your choice. 

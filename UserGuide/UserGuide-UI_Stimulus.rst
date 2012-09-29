@@ -29,9 +29,11 @@ independently.
 
 - On the left column, you will find configurable fields that will allow you to:
 	
-    - load a  preexistent `Region Stimulus` entity,
+    - load a  preexisting `Region Stimulus` entity,
     - enter the name for a new entity and
     - select the associated `Connectivity` matrix that will be used to create a stimulus pattern.
+
+|
 
 Additionally, you can:
 
@@ -40,7 +42,11 @@ Additionally, you can:
 
 - On the right column, the stimulus temporal profile is presented.  
 
+|
+
 From the action bar in the right side you have access to:
+
+|
 
 **Set Region Scaling** page where you can:
 
@@ -67,10 +73,12 @@ define the spatial profile of your pattern.
     .. figure:: screenshots/stimulus_surface_edit.jpg
       :width: 90%
       :align: center
+      
+      Preview for Stimulus Surface edits
 
 On the left column:
     
-    - choose a preexistent `Surface Stimulus` or
+    - choose a preexisting `Surface Stimulus` or
     - enter the name for a new entity and :
 
       - select the associated `Surface` datatype. 
@@ -80,15 +88,16 @@ On the left column:
 
 From the action bar in the right side you have access to:
 
-**View Stimulus Progress** page where you are enabled to:
+**View Stimulus Progress** page where you are able to:
 
       - select the spatial focal points:
 
-	- click on the surface, a blue pin will point the selected point;  
+	- click on the surface, a blue pin will point to the selected point;  
         - click on `Add Focal Point` button to select this vertex, an orange 
           arrow will mark the added point;
 	- repeat for each focal point.
 
+|
 
 .. figure:: screenshots/stimulus_surface_set_focal_points.jpg
    :width: 90%
@@ -106,7 +115,7 @@ delete them independently.
 
 
 Finally, after clicking on **Save New Stimulus Surface** button to create the 
-new stimulus entity, you can visualize the evolution ofthe spatiotemporal pattern.
+new stimulus entity, you can visualize the evolution of the spatiotemporal pattern.
 
 .. |play_icon| image:: icons/play_icon.png
 
@@ -115,6 +124,8 @@ Click on the |play_icon| button to launch the animation.
 .. figure:: screenshots/stimulus_surface_play.jpg
    :width: 90%
    :align: center
+   
+   Preview of a spatiotemporal stimulus animation
 
 
 .. tip::

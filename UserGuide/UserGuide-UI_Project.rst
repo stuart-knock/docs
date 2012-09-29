@@ -20,7 +20,7 @@ The `Project` tab provides access to the projects that you have created within
 allows you to navigate between five main subpages, each of which is described in
 more detail in the sections below:
 
-    - View All Projects
+    - List of All Projects
     - Basic Properties
     - Operations
     - Data Structure
@@ -33,8 +33,8 @@ more detail in the sections below:
         The Project second level menu
     
 
-View All Projects
-..................
+List of All Projects
+.....................
 
 This page provides a list of all the existing projects. Upon first user
 registration, a default project is created for you:
@@ -54,7 +54,7 @@ as well as providing mechanisms for:
 
 - selecting which project is currently active.
 - editing any project's properties
-- directly accessing `Operations` and `Data Structure` pages for any project.
+- direct  access to `Operations` and `Data Structure` pages for any project.
 
 In addition to the list of existing projects, the right hand menu provides a
 way to:
@@ -110,7 +110,7 @@ If you were creating a new project it should now be visible.
 Image Archive
 .............
 
-|TVB| provides you with the possibility of saving images snapshots.
+|TVB| provides you with the possibility of saving image snapshots.
 
 From this page you can manage all the images stored within the current working 
 `Project`, as well as:
@@ -174,13 +174,18 @@ Currently the data-types and/or structures supported for upload are:
 * Connectivity (zip)
 * Upload Surface (zip)    
 
-Launching any uploader with success will generate you a new leaf in the Tree displayed centrally on this page.
+Launching any uploader with success will generate you a new leaf in the Tree 
+displayed centrally on this page.
 
-The left-most area of the Data Structure page contains basic filters for the entities display centrally.
-We display fixed filters (entities declared relevant / irrelevant) of free-text filtering (when using the input text field and then pressing Button 'Filter').
+The left-most area of the Data Structure page contains basic filters for the 
+centrally displayed entities.
+We display fixed filters (entities declared relevant / irrelevant) of free-text 
+filtering (when using the input text field and then pressing Button 'Filter').
 Filtering based on free-test searches into all fields of an entity, and it is case insensitive.
 
-Data Structure page contains in the central area a Tree view:
+Data Structure page contains 2 options for viewing in the central area:
+
+a Tree view:
     
     .. figure:: screenshots/data.jpg
         :width: 90%

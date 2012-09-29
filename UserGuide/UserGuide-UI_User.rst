@@ -4,8 +4,10 @@ User
 TVB Settings
 .............
 
-Once started, |TVB| should automatically open your default browser and start on the
-default `http://127.0.0.1:8080/settings/settings`. If not, you should manually open your favorite browser from our list of supported browsers and open the before mentioned URL. This should open up the following settings page:
+Once started, |TVB| should automatically open your default browser and start on 
+the default `http://127.0.0.1:8080/settings/settings`. If not, you should 
+manually open your favorite browser from our list of supported browsers and 
+open the before mentioned URL. This should open up the following settings page:
 
 .. figure:: screenshots/settings.jpg
    :width: 90%
@@ -35,25 +37,31 @@ Root folder for all projects:
 	Please provide here a valid folder path, on a drive which has enough space for storing TVB data.
 	This field will be present on the settings page later on, but you won't be able to change it.
 	In case you are forced to change this path/folder, we recommend that you export your 
-	existing projects, stop |TVB|, start it with clean option (and configure new folder)
-	then import your projects back in the system.
+	existing projects, stop |TVB|, start it with the clean option (and configure 
+	new folder) and then import your projects back into the system.
 
 Max Disk Size (in MB):
-	Is the amount of disk space that you (as administrator) can specify as limit for each user, 
-	to occupy with TVB Data. When a user exceeds this limit, he is no longer allowed to run simulations 
-	or other operations producing data. When this limit is exceeded, the user will still be able to 
-	visualize his previously created data, and, if desired, to remove data for making space for new results.
-	A default region level simulation with length 1000 ms takes approximatively 1 MB of disk space.
-	A surface level simulation, with Local Connectivity pre-computed, Raw monitor and length of 10 ms takes 280 MB.
+	Is the amount of disk space that you (as administrator) can specify as the 
+	limit for each user, to occupy with |TVB| data. When a user exceeds this limit, 
+	they are no longer allowed to run simulations or other operations producing 
+	data. When this limit is exceeded, the user will still be able to 
+	visualize their previously created data, and, if desired, to remove data for making space for new results.
+	For instance:
+	 
+	    - A default region level simulation with length 1000 ms takes 
+	      approximatively 1 MB of disk space.
+	    - A surface level simulation, with Local Connectivity pre-computed, 
+	      Raw monitor and length of 10 ms takes 280 MB.
 
 DB engine:
-	currently supported are *sqlite* and *postgresql* databases. You will need to provide a
-	valid database URL in case you choose postgresql. In the case of sqlite a default
-	`tvb-database.db` will always be used. Please take into consideration that when
-	switching to a new database **your existing data will be lost**.
+	For benchmarking purposes currently supported are *sqlite* and *postgresql* 
+	databases. You will need to provide a valid database URL in case you choose 
+	postgresql. In the case of sqlite a default `tvb-database.db` will always 
+	be used. Please take into consideration that when switching to a new database 
+	**your existing data will be lost**.
 
 Server name:
-	usually the IP of the server that will run |TVB|. You can also leave it to the default
+	usually the IP of the server that will run |TVB|. You can also leave it as the default
 	if you are just running |TVB| locally.
 
 Cherrypy port:
@@ -94,7 +102,7 @@ link` which gives the following form:
 
 
 When the `register` button is clicked, an email is sent to `ADMINISTRATOR_EMAIL`
-address. This is the administrator's task to validate the new account. The
+address. It is the administrator's task to validate the new account. The
 administrator needs to be logged in to validate an account.
 
 

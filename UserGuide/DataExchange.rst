@@ -11,15 +11,15 @@ backgrounds to have quick access to their recorded data.
 To achieve this, we have implemented some mechanisms to **IMPORT / EXPORT** data
 at different levels and formats:
 
-- **Project** - As you may know, |TVB| (TVB) data is organized in projects and
+- **Project** - As you may know, |TVB| data is organized in projects and
   one of the options is to transfer projects (with attached data) entirely
-  between TVB installations. This mechanism can be used only between TVB
+  between |TVB| installations. This mechanism can be used only between |TVB|
   applications, and no other external tools.
 
 - **Simple Data** - This feature allows you to transfer independent data (e.g.
-  surface, connectivity, time series) between two TVB instances or between TVB
+  surface, connectivity, time series) between two |TVB| instances or between |TVB|
   and an external application. As you may note later, depending on the targeted
-  application, data can be exchanged in a custom TVB format or a commonly used
+  application, data can be exchanged in a custom |TVB| format or a commonly used
   format used in the neuroscience community (e.g. CFF, GIFTI, NIFTI ...)
 
 .. admonition:: Important
@@ -28,7 +28,7 @@ at different levels and formats:
 	:align: left
 
     During export and import operations |TVB| does not apply any space 
-    Transformation, so users have to ensure their data (especially in case 
+    transformation, so users have to ensure their data (especially in case 
     of import) is generated/stored in the same space.
 
 
@@ -45,19 +45,19 @@ storage areas:
    (http://www.hdfgroup.org/HDF5). This means that for each data type (e.g.
    surface, connectivity, time series) we store on the disk, it is given a 
    folder structure in an HDF5 / H5 file which contains all data (e.g. vertices,
-   triangles ...). This format has the following advantages which made it an
+   triangles, etc ...). This format has the following advantages which made it an
    optimal solution for our product:
 
    - can store huge pieces of data and can access it very fast (even random
      access)
    - can organize data in a tree structure (groups and leaves)
-   - allow assignment of metadata on every level
-   - is a format agreed by the community and can be used/opened with
+   - allows assignment of metadata on every level
+   - is a format agreed upon by the community and can be used/opened with
      different tools/languages (Python, Matlab, java, C++ ...)
 
 |
 
-An important aspect of TVB storage is that each data/datatype has associated a
+An important aspect of |TVB| storage is that each data/datatype has associated a
 GUID, which makes it unique on every system where that data exists.
 
 
@@ -65,16 +65,16 @@ GUID, which makes it unique on every system where that data exists.
 Exchange Projects
 -----------------
 
-TVB product can be installed both on a server, to be used concurrent by multiple
+|TVB| product can be installed both on a server, to be used concurrent by multiple
 users, but also as a standalone application on a desktop/laptop for personal use.
 Specifically for the second scenario, there was an important request to allow
-people to exchange data. So, TVB has a mechanism to export and import an entire
+people to exchange data. So, |TVB| has a mechanism to export and import an entire
 project to another system.
 
 Export Project
 ..............
 
-Using TVB interface, any user can export their projects in a custom format that
+Using |TVB| interface, any user can export their projects in a custom format that
 can be transferred to other users.
 
 
@@ -92,7 +92,7 @@ contains:
     
     .. Note:: 
         each of the H5 files has a structure as described above in 
-        "TVB Storage" section.
+        |TVB| Storage section.
     
 |
 
@@ -100,14 +100,14 @@ Import Project
 ..............
 
 A project exported on one system can now be imported on another machine. In the
-projects area, TVB offers the possibility to import a project packed as ZIP
+projects area, |TVB| offers the possibility to import a project packed as ZIP
 file.
 
 
 File Format
 ~~~~~~~~~~~
 
-To import a project, user has to provide a ZIP with the same structure like the
+To import a project, the user has to provide a ZIP with the same structure like the
 one described above for 'Export Project'.
 
 .. Important::
@@ -118,8 +118,8 @@ one described above for 'Export Project'.
 Export/Import Data
 ------------------
 
-Apart from exchanging projects between TVB instances, there is another option to
-transfer data, but at a lower level - that is to exchange only data types
+Apart from exchanging projects between |TVB| instances, there is another option to
+transfer data, but at a lower level - that is to exchange only **datatypes**
 (generated during 'Simulation' or 'Analyze').
 
 
@@ -127,21 +127,21 @@ transfer data, but at a lower level - that is to exchange only data types
 Export Data
 ...........
 
-Using TVB interface, users can view all data types associated with a project and
+Using |TVB| interface, users can view all data types associated with a project and
 choose to export any of them in different formats. Below you can see supported 
 export formats and file formats for each of them.
 
 
 
-Export Data in TVB Format
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Export Data in |TVB| Format
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This export operation results in a file with a format specific to TVB; it is not
+This export operation results in a file with a format specific to |TVB|; it is not
 a standard format that can be used automatically by other software. This is 
 basically HDF5/H5 format
 [`http://www.hdfgroup.org/HDF5 <http://www.hdfgroup.org/HDF5>`_] which, for each
 data type, contains both data and metadata. These files can be easily opened in
-Python / Matlab / Java / C++ or additional processing.
+Python / Matlab / Java / C++ for additional processing.
 
 In case you want to process HDF5 files with Matlab you can find API
 documentation here:
@@ -155,7 +155,7 @@ documentation here:
 File Format
 ***********
 
-As a result of a Simulation or Analyze function, TVB can generate either a data
+As a result of a Simulation or Analyze function, |TVB| can generate either a data
 type or a group of data types. Each of such structures can be exported as follows:
 
 1. if a simple data type is exported, the result is an HDF5 file which has a root
@@ -166,7 +166,7 @@ type or a group of data types. Each of such structures can be exported as follow
      generated the data types
    - a list of HDF5 files, one for each data type included in the exported
      group. Each file has structure/details as described above in the case of
-     simple data type export. *This format applies to any TVB data type.*
+     simple data type export. *This format applies to any |TVB| data type.*
 
 |
 
@@ -190,9 +190,9 @@ Import Data
 ...........
 
 Probably this is the most important feature of data exchange, since it allows
-TVB to bring together data generated independently by other systems/applications
+|TVB| to bring together data generated independently by other systems/applications
 and allows it's users to perform different analyses on it and visualize them.
-Since there is an abundance of formats available for neuroimaging data, TVB 
+Since there is an abundance of formats available for neuroimaging data, |TVB| 
 tries to support as many as possible for an improved user experience.
 
 .. admonition:: Important
@@ -200,9 +200,9 @@ tries to support as many as possible for an improved user experience.
     .. image:: icons/important.png
 	:align: left
     
-    In case the imported data includes/represents a surface, TVB does an extra
+    In case the imported data includes/represents a surface, |TVB| does an extra
     check regarding the number of vertices of that surface. Basically you can 
-    not import into TVB a surface that has more vertices than a MAX value.
+    not import into |TVB| a surface that has more vertices than a MAX value.
     
     This MAX value is defines and can be changed in the Application Settings 
     area, depending on the configuration/performance of your hardware. 
@@ -210,12 +210,12 @@ tries to support as many as possible for an improved user experience.
     
 |
 
-Import Data in TVB Format
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Import Data in |TVB| Format
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In correlation with export operations, TVB interface allows import of data in
-TVB format that has been exported from other systems. This format applies to any
-TVB data type. Depending on the uploaded file format, imported data can be as
+In correlation with export operations, |TVB| interface allows import of data in
+|TVB| format that has been exported from other systems. This format applies to any
+|TVB| data type. Depending on the uploaded file format, imported data can be as
 follows:
 
 
@@ -246,13 +246,13 @@ Format Working Group" and allows the exchange of data with different meanings
 mesh). NIFTI data can be stored in <.nii> or <.hdr+.img> files, or any of these
 in zipped format (<.gz> files).
 
-For the moment, TVB accommodates import of Volume Time Series from NIFTI files.
+For the moment, |TVB| accommodates import of Volume Time Series from NIFTI files.
 
 
 File Format
 ***********
 
-For import, TVB users can upload either .nii or .gz files containing NIFTI data
+For import, |TVB| users can upload either .nii or .gz files containing NIFTI data
 in the format specified by [http://www.nitrc.org/projects/nifti]
 
 |
@@ -261,8 +261,8 @@ in the format specified by [http://www.nitrc.org/projects/nifti]
 Import Sensors
 ~~~~~~~~~~~~~~
 
-TVB allows users to import data about sensors used for brain imaging. More
-specifically, TVB supports three types of sensors: EEG, MEG and INTERNAL. During
+|TVB| allows users to import data about sensors used for brain imaging. More
+specifically, |TVB| supports three types of sensors: EEG, MEG and INTERNAL. During
 the import process, the user has to select a file to import and the type of the
 imported sensors. Based on the selected type, the data from the uploaded file
 will be processed accordingly.
@@ -377,7 +377,7 @@ as follow:
 There are systems/applications that generate and store surface data in two parts:
 for left and right side. If this is the case, the imported ZIP file is expected
 to contain text files with the same naming and format, but the name should
-contain after prefix letter "r" or "l" (e.g. <trianglesl.txt> and 
+contain letter "r" or "l" at the end of the suffix (e.g. <trianglesl.txt> and 
 <trianglesr.txt>)
 
 |
@@ -387,17 +387,17 @@ Import Surface and TimeSeries from GIFTI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This is a geometry format (http://www.nitrc.org/projects/gifti/) under the 
 Neuroimaging Informatics Technology Initiative (NIfTI) that allows exchange of
-brain data (surface, time series, shapes, labels ...). Basically this is format
+brain data (surface, time series, shapes, labels ...). Basically format is
 XML based which stores both data and associated metadata in a single file, with
 .gii extension.
 
 If uploaded .gii file contains a surface (Cortical Surface or SkinAir) during
-import TVB stores found vertices / triangles and computes normals for them.
+import |TVB| stores found vertices / triangles and computes normals for them.
 
 In case .gii file contains a TimeSeries, user will be asked to specify what is
 the surface for which TimeSeries is imported. Important to know: number of
-vertices from imported time series must be the same like the one of the selected
-surface. Otherwise import procedure will fail.
+vertices from imported time series must be the same as the one selected for surface.
+Otherwise import procedure will fail.
 
 File Format
 ***********
@@ -448,14 +448,14 @@ GIFTI, NXGPickle.
 Import Region Mapping
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Region Mapping in TVB is a vector, defining a map between a Cortical Surface and a Connectivity.
-At import time, you will need to have at least 2 entities in TVB system: Connectivity and Cortical Surface.
+A Region Mapping in |TVB| is a vector, defining a map between a Cortical Surface and a Connectivity.
+At import time, you will need to have at least 2 entities in |TVB| system: Connectivity and Cortical Surface.
 The two entities need to be spatially aligned (overlap correctly in 3D space).
 
 File Format
 ***********
 
-For this upload we expect a text file (possible compressed with bz2). The text file should have no headers,
+For this upload we expect a text file (possibly compressed with bz2). The text file should have no headers,
 only numeric values separated with spaces.
 
 The file is expected to hold a vector of length number of vertices in the Cortical Surface. 
@@ -468,18 +468,19 @@ Import Projection Matrix
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A Projection Matrix, is intended to define a mapping from a source object and a set of sensors. 
-The source entity can be either a Cortical Surface or a Connectivity, in TVB. 
-In order for this import to work, you will need to have previously imported in TVB: 
-the source and the sensors entities.
+The source entity can be either a Cortical Surface or a Connectivity, in |TVB|. 
+In order for this import to work, you will need to have previously imported in |TVB|: 
+both the source and the sensors entities.
 
 File Format
 ***********
 
 For this upload we expect a single text file, with numeric values, space and line separated.
 The numeric values in the uploaded file should hold a matrix of size (n, m). 
-n is the number of sensors, and m is the  number of nodes. When the projection matrix we want to import is a 
-Surface Projection Matrix, m will be the number of vertices in the target Cortical Surface.
-When the projection matrix is a region-level one, m will be the number of regions in the Connectivity.
+**n** is the number of sensors, and **m** is the  number of nodes. When the 
+projection matrix we want to import is a 
+Surface Projection Matrix, **m** will be the number of vertices in the target Cortical Surface.
+When the projection matrix is a region-level one, **m** will be the number of regions in the Connectivity.
 Having headers in the text file is not accepted. An incorrect number of values (lines or rows) in the
 Projection Matrix will also raise an exception.
 
