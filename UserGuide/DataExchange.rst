@@ -331,6 +331,17 @@ ZIP file should include files with the following naming schema and format:
    connectivity areas and the parse process expects the following format:
 
    - text file containing one area on each line (as float value)
+   
+#. If any file name contains "cortical" it will be considered as container for
+   connectivity cortical/non-cortical region flags, and the parse process expects the following format:
+
+   - text file containing one boolean value on each line (as 0 or 1 value) being 1 when corresponding region is cortical.
+   
+#. If any file name contains "hemisphere" it will be considered as container for
+   hemisphere inclusion flag for connectivity regions, and the parse process expects the following format:
+
+   - text file containing one boolean value on each line (as 0 or 1 value) being 1 when corresponding 
+   region is in the right hemisphere and 0 when in left hemisphere.
 
 |
 
