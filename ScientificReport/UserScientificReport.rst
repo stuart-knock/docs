@@ -26,11 +26,12 @@
 
 .. include:: sci.report.theoretical_framework.rst
 
-.. include:: sci.report.tvb_simulator.rst
 
-.. include:: sci.report.neuroimaging.rst
 
-.. include:: sci.report.cognitive.rst
+.. DO NOT INCLUDE THIS SECTIONS FOR THE MOMENT
+   include:: sci.report.tvb_simulator.rst
+   include:: sci.report.neuroimaging.rst
+   include:: sci.report.cognitive.rst
 
 .. raw:: pdf
 

@@ -153,4 +153,6 @@ Test data can be useful as a check against most kinds of bugs and as a way to
 produce repeatable results, and to compare and contrast with new data. It also
 useful for stress testing.
 
-.. include:: sci.report.analysis.rst
+
+.. DO NOT INCLUDE THIS
+   include:: sci.report.analysis.rst

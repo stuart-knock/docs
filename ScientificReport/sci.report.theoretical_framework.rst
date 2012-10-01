@@ -3,6 +3,7 @@ Theoretical Framework
 
 .. include:: sci.report.multi_scale_dynamics.rst
 
-.. include:: sci.report.connectivity.rst
 
-.. include:: sci.report.stimulation.rst
+.. DO NOT INCLUDE THIS
+   include:: sci.report.connectivity.rst
+   include:: sci.report.stimulation.rst
