@@ -5,6 +5,8 @@ In this area you can edit both types of TVB connectivity objects:
 
     - long-range connectivity and,
     - local connectivity.
+    
+|
 
     .. figure:: screenshots/connectivity_area.jpg
       :width: 90%
@@ -88,6 +90,8 @@ operations on a set of selected nodes specifying the edge type:
     - Outgoing --> Outgoing
 
 .. i.e., if the connection strengths to be modified are going out or coming in from/to the selected nodes.
+
+|
 
 .. figure:: screenshots/connectivity3d_edges_operations.jpg
    :width: 90%
@@ -195,8 +199,8 @@ edges.
 |
 |
 
-Connectivty 3D View (Nodes)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Connectivty 3D Nodes
+~~~~~~~~~~~~~~~~~~~~
 
 A 3D representation of the connectivity matrix nodes. (WebGL)
 
@@ -241,6 +245,41 @@ There are three main views (projections):
    :align: center
 
    Preview for Connectivity 2D Viewer
+
+|
+
+The node size can be defined using a ConnectivityMeasure datatype 
+(e.g. the output of a BCT Anlayzer). Additionally, a threshold can be set for 
+the node color. The nodes with values above the threshold will be red and those
+whose value are below the threshold will be yellow.
+
+To display the changes, click on the `Show details` button.
+
+.. figure:: screenshots/connectivity2d_left_metrics.jpg
+   :width: 50%
+   :align: center
+   
+   Preview of 2D Connectivity Viewer (left lateral view). Node size is defined
+   by the Participation Coefficient. Color threshold is 1.8; this values is based 
+   on the the Clustering Coefficient (BU) of the default Connectivity matrix.
+
+
+
+.. tip::
+
+    If you wish to change: 
+
+                            - the color threshold,
+                            - the metrics used to define the node features,
+                            - the colormap used in the Connectivity Matrix Editor, or
+                            - the Connectivity entity
+
+   go to the `brain` menu on the top right corner
+   
+   .. figure:: screenshots/connectivity_context_menu.jpg
+      :width: 50%
+      :align: center
+
 
 
 |
