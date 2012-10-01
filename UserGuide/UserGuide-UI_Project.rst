@@ -26,6 +26,8 @@ more detail in the sections below:
     - Data Structure
     - Saved Figures
     
+|
+
     .. figure:: screenshots/project.jpg
         :width: 90%
         :align: center

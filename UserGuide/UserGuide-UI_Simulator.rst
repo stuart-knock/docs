@@ -100,7 +100,8 @@ will be loaded.
   **Parameter Space Exploration**
 
   It is possible to launch parallel simulations to systematically explore the 
-  parameter space of the local dynamics model. In the current TVB version, up to  2 parameters can be inspected at the same time.
+  parameter space of the local dynamics model. In the current TVB version, up to  
+  2 parameters can be inspected at the same time.
 
     .. figure:: screenshots/simulator_pse_configuration.jpg
       :width: 60%
@@ -123,9 +124,37 @@ On the left column, a history of all simulations is kept and can be
 accessed at any time. Each simulation can be renamed or deleted by 
 clicking on the upper right |pencil_icon| icon. 
 
+.. figure:: screenshots/simulator_history_edits.jpg
+   :width: 20%
+   :align: center
+   
+   Simulation editing menu
+
+
 .. caution:: 
     Please notice that **deleting a simulation will also delete all 
     resulting data that had been produced**.
+
+Each simulation has a color label that represents its current status:
+
+    - pale blue: simulation is running,
+    - green: simulation is finished,
+    - red: an error occured during the simulation.
+
+
+.. note::
+
+   You cannot rename a Simulation while it is running.
+   
+        .. figure:: screenshots/simulator_history_running.jpg
+           :width: 20%
+           :align: center
+           
+.. tip::
+
+    The star button allows you to create a new simulation.
+    using the default 
+    `Simulator` parameters. 
 
 
 .. VIEW COLUMN
