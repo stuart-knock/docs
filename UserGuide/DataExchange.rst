@@ -301,6 +301,7 @@ ZIP file should include files with the following naming schema and format:
 
    - text file containing values separated by spaces / tabs
    - contains a matrix of weights
+   - any value greater than zero is considered as a connection. You should not have negative values in your weights file.
 
 #. If any file name contains "position" it will be considered as the container
    for connectivity centers and the parse process expects the following format:
@@ -317,6 +318,7 @@ ZIP file should include files with the following naming schema and format:
 
    - text file containing values separated by spaces / tabs
    - contains a matrix of tract lengths
+   - any value greater than zero is considered as a connection. You should not have negative values in your tract file.
 
 #. If any file name contains "orientation" it will be considered as container
    for connectivity center orientations and parse process expects the following
