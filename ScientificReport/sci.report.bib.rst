@@ -6,7 +6,7 @@ Bibliography
 .. Articles
 
 .. _Amari 1978:
-.. [A_1978] Amari S., *Needs reference*
+.. [A_1978] Amari S., *Dynamics of pattern formation in lateral-inhibition type neural fields*, Biological Cybernetics, 27, 77-87, 1977.
 
 .. _FitzHugh 1961:
 .. [FH_1961] FitzHugh, R., *Impulses and physiological states in theoretical models of nerve membrane*, Biophysical Journal 1: 445, 1961.
@@ -51,22 +51,22 @@ Bibliography
 .. [JS_2010] Jirsa, V., K., and Stefanescu,  R., A., *Neural population modes capture biologically realistic large scale network dynamics*, Bulltin of Mathematical Biology, 73(2), 325-343, 2011.
 
 .. _Jirsa et al. 2010:
-.. [J_2010] **needs reference**
+.. [J_2010] Jirsa V. K., Sporns, O., Breakspear, M., Deco, G., and McIntosh, A. R., *Towards the virtual brain: network modeling of the intact and the damaged brain*, Archives Italiennes de Biologie, Vol 148, No 3, 2010. 
 
 .. _Jirsa 2009:
-.. [J_2009] **needs reference**
+.. [J_2009] Jirsa, V., K., *Neural field dynamics with local and global connectivity and time delay*, Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences, vol. 367 no. 1891, 1131-1143, 2009.
 
 .. _Deco et al. 2011:
-.. [D_2011] **needs reference**
+.. [D_2011] Deco, G., Jirsa, V. K. and McIntosh, A. R., *Emerging concepts for the dynamical organization of resting-state activity in the brain*,  Nature Reviews in Neuroscience, volume: 12, pages: 43-56,  2011.
 
 .. _McIntosh et al. 2010:
-.. [Mc_2010] **needs reference**
+.. [Mc_2010] McIntosh, A. R., Kovacevic, N., Lippe, S., Garrett, D., Grady, C and Jirsa V., *The Development of a Noisy Brain*, Archives Italiennes de Biologie, Vol 148, No 3, 2010.
 
 .. _Petzold, Albeanu et al. 2008:
-.. [PA_2008] **needs reference**
+.. [PA_2008] Petzold G., C., Albeanu, D.,F., Sato T., F., and Murthy V., N., *Coupling of neural activity to blood flow in olfactory glomeruli is mediated by astrocytic pathways*, Neuron 58: 897–910, 2008.
 
 .. _Giaume, Koulakoff et al. 2010:
-.. [GK_2010] **needs reference**
+.. [GK_2010] Giaume C., Koulakoff A., Roux L., Holcman D., Rouach N., *Astroglial networks: a step further in neuroglial and gliovascular interactions*, Nature Reviews in Neuroscience, 11:87–99, 2010.
 
 .. _Haken 1972:
 .. [H_1972] H. Haken: *Synergetics, an Introduction: Nonequilibrium Phase Transitions and Self-Organization in Physics, Chemistry, and Biology*, 3rd rev. enl. ed. New York: Springer-Verlag, 1983.
