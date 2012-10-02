@@ -1,6 +1,6 @@
 .. Bibliographic References
 
-Bilbiography
+Bibliography
 ============
 
 .. Articles
@@ -17,7 +17,7 @@ Bilbiography
 .. _Morris Lecar 1981:
 .. [ML_1981] Morris, C. and Lecar, H. *Voltage oscillations in the Barnacle giant muscle fibre*, Biophysical Journal 35: 193, 1981.
 
-.. _Hindmarsh Rose 1984
+.. _Hindmarsh Rose 1984:
 .. [HR_1984] Hindmarsh, J. L., and Rose, R. M., *A model of neuronal bursting using three coupled first order differential equations*, Proceedings of the Royal society of London. Series B. Biological sciences 221: 87, 1984.
 
 .. _Stefanescu Jirsa 2008:
