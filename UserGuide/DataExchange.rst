@@ -342,8 +342,8 @@ ZIP file should include files with the following naming schema and format:
 #. If any file name contains "hemisphere" it will be considered as container for
    hemisphere inclusion flag for connectivity regions, and the parse process expects the following format:
 
-   - text file containing one boolean value on each line (as 0 or 1 value) being 1 when corresponding 
-   region is in the right hemisphere and 0 when in left hemisphere.
+   - text file containing one boolean value on each line (as 0 or 1 value) being 1 when corresponding region is in the right hemisphere and 0 when in left hemisphere.
+
 
 |
 
