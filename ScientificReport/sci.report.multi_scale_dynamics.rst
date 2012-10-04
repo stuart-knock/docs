@@ -66,6 +66,7 @@ When traversing the scale to the large-scale network, then each network node is 
 
 .. math::
     \dot{\Psi(x,t)} = N(\Psi(x,t)) + \int_{\Gamma}g_{local}(x,x')S(\Psi(x',t))dx' + 
+    
 .. math::
     \int_{\Gamma}g_{global}S(\Psi(x',t - \frac{|x-x'|}{\nu}))dx' +  I(x,t) + \xi (x,t)
 
