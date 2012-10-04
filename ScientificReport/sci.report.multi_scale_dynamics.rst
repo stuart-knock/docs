@@ -61,13 +61,10 @@ Various mean-field models are available in |TVB| reproducing typical features of
 The generic large-scale brain network equation in |TVB|
 ------------------------------------------------------------------------------
 
-When traversing the scale to the large-scale network, then each network node is governed by its own intrinsic dynamics in interaction with the dynamics of all other network nodes. This interaction happens through the connectivity matrix via specific connection weights and time delays due to signal transmission delays. The following (generic) evolution equation (`Jirsa 2009`_) captures all the above features and underlies the emergence of the spatiotemporal network dynamics in |TVB|:
+When traversing the scale to the large-scale network, then each network node is governed by its own intrinsic dynamics in interaction with the dynamics of all other network nodes. This interaction happens through the connectivity matrix via specific connection weights and time delays due to signal transmission delays. The following (generic) evolution equation (`Jirsa 2009`_) captures all the above features and underlies the emergence of the spatiotemporal network dynamics in |TVB|::
 
 
-.. math::
     \dot{\Psi(x,t)} = N(\Psi(x,t)) + \int_{\Gamma}g_{local}(x,x')S(\Psi(x',t))dx' + 
-    
-.. math::
     \int_{\Gamma}g_{global}S(\Psi(x',t - \frac{|x-x'|}{\nu}))dx' +  I(x,t) + \xi (x,t)
 
 
