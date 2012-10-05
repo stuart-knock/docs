@@ -1,5 +1,5 @@
-Tutorial
---------
+|example| Tutorial
+------------------
 
 **Simulating EEG-fMRI whole brain dynamics for individual connectivity matrices**
 

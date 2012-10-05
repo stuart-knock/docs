@@ -1,8 +1,15 @@
 Examples and Tutorials
 ======================
 
+.. |example| image:: icons/applications-science.png
 
 .. include:: UserGuide-Tutorial_Examples.rst
+
+.. raw:: pdf
+
+   PageBreak
+
+.. include:: UserGuide-Tutorial_Quick_Start.rst
 
 .. raw:: pdf
 

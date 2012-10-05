@@ -1,5 +1,5 @@
-Tutorial
---------
+|example| Tutorial
+------------------
 
 **Generate a  spatiotemporal stimulus**
 
@@ -61,6 +61,12 @@ the stimulation.
   - Enter a new name for this new `Stimulus Surface` and save it.
 
   - You can visualize the new pattern.
+
+|
+
+.. figure:: screenshots/stimulus_surface_play.jpg
+   :width: 90%
+   :align: center
 
 
 .. warning::

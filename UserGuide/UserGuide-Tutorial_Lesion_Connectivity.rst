@@ -1,5 +1,5 @@
-Tutorial
---------
+|example| Tutorial
+------------------
 
 **A simple lesion study using TVB**
 

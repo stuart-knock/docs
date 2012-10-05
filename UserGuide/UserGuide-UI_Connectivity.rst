@@ -228,9 +228,9 @@ A 2D representation of the connectivity matrix nodes and edges.
 
 There are three main views (projections):
  
-  - 2D Left
-  - 2D Top
-  - 2D Right
+  - Left sagittal view
+  - Transverse view
+  - Right sagittal view
 
 .. figure:: screenshots/connectivity2d_left.jpg
    :width: 50%
@@ -285,17 +285,17 @@ To display the changes, click on the `Show details` button.
 |
 |
 
-Matrix (MPLH5) View
-~~~~~~~~~~~~~~~~~~~~
+Matrix Overview
+~~~~~~~~~~~~~~~~
 
-A 2D matrix plot to have a complete overview of the initially selected connectivity 
-matrix.
+A 2D matrix plot to have a complete overview of the initially selected weighted
+connectivity matrix.
 
 .. figure:: screenshots/connectivity_mplh5.jpg
    :width: 50%
    :align: center
    
-   Preview for Matrix Display
+   Preview for Matrix Overview display
 
 
 

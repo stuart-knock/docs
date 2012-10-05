@@ -1,5 +1,5 @@
-Tutorial
---------
+|example| Tutorial
+------------------
 
 **Performing parameter space exploration**
 
@@ -39,8 +39,8 @@ Variance of nodes maps the color scale.
   - From those results, critical combination of parameters can be 
     distinguished. 
  
-  -  If you go to `Project` area and enter the `Data Structure` page. The results 
-     of all simulations will be held under one object called DataTypeGroup.
+  - If you go to `Project` area and enter the `Data Structure` page. The results 
+    of all simulations will be held under one object called DataTypeGroup.
 
   - Export the results of all simulations. 
     
