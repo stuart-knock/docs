@@ -37,17 +37,15 @@ The generic large-scale brain network equation in |TVB|
 .............................................................
 When traversing the scale to the large-scale network, then each network node is governed by its own intrinsic dynamics in interaction with the dynamics of all other network nodes. This interaction happens through the connectivity matrix via specific connection weights and time delays due to signal transmission delays. The following (generic) evolution equation (`Jirsa 2009`_) captures all the above features and underlies the emergence of the spatiotemporal network dynamics in |TVB|:
 
-.. math::
-
-    \dot{\Psi(x,t)} = N(\Psi(x,t)) + \int_{\Gamma}g_{local}(x,x')S(\Psi(x',t))dx' + 
-    \int_{\Gamma}g_{global}S(\Psi(x',t - \frac{|x-x'|}{\nu}))dx' +  I(x,t) + \xi (x,t)
+	:math:`\dot{\Psi(x,t)} = N(\Psi(x,t)) + \int_{\Gamma}g_{local}(x,x\prime)S(\Psi(x\prime,t))dx\prime +`
+	:math:`\int_{\Gamma}g_{global}S(\Psi(x\prime,t - \frac{|x-x\prime|}{\nu}))dx\prime +  I(x,t) + \xi (x,t)`
 
 
 The equation describes the stochastic differential equation of a network of connected neural populations. :math:`\Psi(x,t)` is the neural population activity vector at the location :math:`x` in 3D physical space and time point :math:`t`. It has as many state variables as are defined by the neural population model, which is specified by
-:math:`N(\Psi(x,t))`. The connectivity distinguishes local and global connections, which are captured separately in two expressions. The local network connectivity :math:`g_{local}(x,x')` is described by connection weights between :math:`x` and :math:`x'`, whereas global connectivity is defined by :math:`g_{global}`. The critical difference between the two types of connectivity is threefold: 
+:math:`N(\Psi(x,t))`. The connectivity distinguishes local and global connections, which are captured separately in two expressions. The local network connectivity :math:`g_{local}(x,x\prime)` is described by connection weights between :math:`x` and :math:`x\prime`, whereas global connectivity is defined by :math:`g_{global}`. The critical difference between the two types of connectivity is threefold: 
 
 #. Local connectivity is short range (order of cm) and global connectivity is long range (order of 10cm). 
-#. Signal transmission via local connections is instantaneous, but via global connections undergoes a time delay dependent on the distance :math:`|x-x'|` and the transmission speed :math:`\nu`. 
+#. Signal transmission via local connections is instantaneous, but via global connections undergoes a time delay dependent on the distance :math:`|x-x\prime|` and the transmission speed :math:`\nu`. 
 #. Local connectivity is typically spatially invariant (of course with variations from area to area, but generally it falls off with distance), global connectivity is highly heterogeneous. 
 
 Stimuli of any form, such as perceptual, cognitive or behavioral perturbations, are introduced into |TVB| via the expression :math:`I(x,t)` and are defined over a location :math:`x` with a particular time course. 
