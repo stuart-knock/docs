@@ -1,6 +1,8 @@
 Theoretical Framework
 =====================
 
+
+.. include:: sci.report.sfn.rst
 .. include:: sci.report.multi_scale_dynamics.rst
 
 

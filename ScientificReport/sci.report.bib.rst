@@ -1,8 +1,5 @@
 .. Bibliographic References
 
-Bibliography
-============
-
 .. Articles
 
 .. _Amari 1978:
@@ -97,8 +94,11 @@ Bibliography
 .. [B_2011] Bojak, I., T. F. Oostendorp, et al. *Towards a model-based integration of co-registered electroencephalography/functional magnetic resonance imaging data with realistic neural population meshes.* Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences, 369(1952): 3785-3801, 2011. 
 
 
-.. Hamalainen 1992:
+.. _Hamalainen 1992:
 .. [H_1992] Hamalainen, M. S., *Magnetoencephalography: a tool for functional brain imaging*, Brain Topography, 5(2): 95-102, 1992.
+
+.. _Friston, Harrison et al. 2003:
+.. [KH_2003] Friston, K., J., Harrison, L., and Penny, W., *Dynamic causal modelling*, Neuroimage 19, 1273-1302, 2003.
 
 
 .. Books

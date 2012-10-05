@@ -22,9 +22,19 @@
         Test cases with clinical/scientific relevance.
 .. Created and Maintained by: Researchers. Should be updated before SFN meeting or any other major releases.
 
-.. include:: sci.report.intro.rst
+
+.. DO NOT INCLUDE THIS SECTIONS FOR THE MOMENT
+   include:: sci.report.intro.rst
 
 .. include:: sci.report.theoretical_framework.rst
+
+.. raw:: pdf
+
+   PageBreak
+
+.. COPYRIGHT
+
+.. include:: ../templates/copyright_notice.rst
 
 
 
@@ -39,12 +49,6 @@
 
 .. include:: sci.report.bib.rst
 
-.. raw:: pdf
 
-   PageBreak
-
-.. COPYRIGHT
-
-.. include:: ../templates/copyright_notice.rst
 
 

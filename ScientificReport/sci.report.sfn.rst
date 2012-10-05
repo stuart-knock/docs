@@ -1,0 +1,17 @@
+.. OVERVIEW TEXT VJ
+.. might be used in the web page
+
+What is |TVB| and why is it needed now?
+----------------------------------------
+
+TheVirtualBrain (TVB) is a computational framework for the virtualization of brain structure and function. This is accomplished by simulating network dynamics using biologically realistic large-scale connectivity. TVB merges structural information on individual brains including 3D geometry of neocortex, white matter connectivity, etc. and then simulates the emergent brain dynamics. The logic of TVB is the following: structural information provides certain constraints on the type of network dynamics that may emerge. While these constraints limit arbitrary brain dynamics, structural connectivity provides the foundation on top of which a dynamic repertoire of functional configurations can emerge. When brain structure is changed, as maturation, aging, or from damage or disease, then the brain’s dynamic repertoire changes. TVB allows the systematic investigation of the dynamic repertoire as a function of structure. It moves away from the investigation of isolated regional responses and considers the function of each region in terms of the interplay among brain regions.  This allows us to (1) re-classify lesions in terms of the network of nodes (regions) and connections (axons, white matter tracts) that have been damaged and to (2) investigate the mechanisms that preserve function by understanding how regional damage affects the function of other parts of the network.  In this context, brain repair (recovery of function) depends on the restoration and rebalancing of activity in the remaining nodes in the network. 
+
+Predicting and treating the consequences of brain damage has been notoriously difficult. This is because the relationship between the nature of the lesion and the functional deficit is highly variable across patients who have been grouped according to some classification metric (e.g. type of brain damage); and within individual patients who recover or deteriorate over time. A formalized explanation of such variability calls for (1) a re-evaluation of our classification metrics, (2) a better understanding of the mechanisms that preserve and/or restore function and (3) the ability to make use of an individual’s brain to better characterize the deficit and prognosis. TVB offers a neuroinformatic framework to address these challenges.
+
+
+What are the core elements in |TVB|?
+-------------------------------------
+.. might be used in the web page
+
+
+TVB uses either existing cortical connectivity information (e.g., CoCoMac database) or tractographic data (DTI/DSI) or a fusion of both (individual tractography with generic directionality from CoCoMac) to generate connectivity matrices and build cortical and subcortical brain networks.  The connectivity matrix defines the connection strengths and time delays via signal transmission between all network nodes. Various neural mass models are available in TVB and define the dynamics of a network node.  Together, the neural mass models at each network node, the connectivity matrix and the 3D layered brain surface define The Virtual Brain. TVB simulates and generates the time courses of various forms of neural activity including Local Field Potentials (LFP) and firing rate, as well as brain imaging data such as EEG (electroencephalography), MEG (magnetoencephalography) and BOLD (blood oxygen level dependent contrast) activations as observed in fMRI.
