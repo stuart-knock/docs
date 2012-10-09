@@ -43,8 +43,66 @@ working with |TVB|, version 1.0. As |TVB| will be updated regularly, please
 check for updates on our web site: http://www.thevirtualbrain.org.
 
 
-Launch the Application
-======================
+Installing the Application
+===========================
+
+As |TVB| redefines what's possible in neuroscience utilizing off-the-shelf computer hardware, a few requirements are essential when using the software.
+
+Requirements for front-end visualization:
+
+- **High definition monitor** -
+  Your monitor should be capable of displaying at least 1600 x 1000 pixels. Some views might be truncated if TVB is run on smaller monitors.
+
+- **WebGL and WebSockets compatible browser** -
+  We've tested the software on Mozilla Firefox 14+, Apple Safari 5.1+ and Google Chrome 20+.
+  Using a different, less capable browser might result in some features not working or the user interface looking awkward at times.
+
+- **WebGL-compatible graphics card** - 
+  The graphic card has to support OpenGL version 2.0 or higher. The operating system needs to have a proper card driver as well to expose the graphic card towards WebGL.
+  This requirement only affects PCs, not (somewhat recent) Macs.
+
+
+Requirements for computation/storage power, dependent on the number of parallel simulations that will be executed concurrently:
+
+- **CPU power** - 
+  1 CPU core is needed for one simulation. When launching more simulations than the number of available cores, a serialization is recommended.
+  This can be done by setting the "maximum number of parallel threads" (in TVB settings) to the same value as the number of cores. 
+
+- **Memory** - 
+  For a single simulation 8GB of RAM should be sufficient but 16GB are recommended.
+
+- **Disk space** is also important, as simulating only 10 ms on surface level will occupy 280MB of disk space. A minimum of 50GB of space per user is a rough approximation.
+   
+- 32 bit packages will work fine, also when running on a 64 bit architecture.
+  Please take note that some simulations on surface level might require more memory that 32 bit programs can address, 
+  at which point the TVB software will notify you about this with a "Memory Error".
+
+- Optional **MatLab or Octave** -
+  A special feature in TVB is utilizing functions from the Brain Connectivity Toolbox.
+  This feature thus requires a MatLab or Octave package on your computer (installed, activated and added to your OS' global PATH variable).
+  The Brain Connectivity Toolbox doesn't need to be installed or enabled separately in any way, as TVB will temporarily append it to your MatLab/Octave path.
+
+
+The TVB software package can be used in 3 different configurations:
+
+- on a single machine (personal usage).
+  This machine will need to meet the technical requirements from above for both the visualization and the computation/storage part.
+  Any operation launched will use resources from current machine (graphic card, CPU, disk and RAM).
+  
+- in a client/server configuration, where TVB is installed on a server and made accessible to an unlimited number of users.
+
+  This configuration is recommended when you have a powerful server to be used as back-end, where TVB is running and simulation or analysis operations are to be executed.
+  The server machine will not require powerful graphics, as visualization will not be done here at all. Only the computation requirements from above will need to be met by the server.
+  
+  The visualization can be accessed from a personal computers by a browser (via HTTP).
+  A network connection needs to exist between the server where TVB is running and the computer doing the visualization and access.
+  http://${SERVER-IP}:8080 is the default URL. 
+  
+- using a cluster (similar with server installation, but with parallelization support).
+  Please note that for cluster installations, OAR is expected to be configured separately from TVB and accessible to the user for which the TVB software is launched.
+     
+      
+Launching the application is described in the next paragraphs, on all supported platforms.
 
 On Linux
 --------
@@ -53,31 +111,41 @@ Unzip the package and it will create a folder TVB_Distribution. In this folder
 you should find a number of scripts. To start |TVB| you should run the
 `tvb_start.sh` script. You can at any time run the `tvb_start_clean.sh` which
 will start |TVB| in a clean state, resetting your program database and deleting
-all the |TVB| created folders.
+all folders created by |TVB|.
 
-To make sure that no processes will remain opened after you use the application,
+To make sure that no processes will remain open after you use the application,
 you should always close |TVB| by running the `tvb_stop.sh` script.
+
+The current |TVB| package was tested on Debian Squeeze and Fedora 16. 
+Other Linux flavors might also work as long as you have installed a glibc version of 2.11 or higher.
 
 On MacOS
 --------
 
 Unzip the package and it will create a folder TVB_Distribution. In this folder
 you should find a number of scripts and an application package. To start |TVB|
-you should double click on the `tvb.app` application. You can at any time run
-the `tvbStartClean.command` which will start tvb in a clean state, resetting
-your program database and deleting all the |TVB| created folders.
+you should double-click on the `tvb.app` application. 
+This will launch the TVB software as a background process and will also try to fire a browser window for you to start working with TVB.
 
-To make sure that no processes will remain opened after you use the application,
+You can at any time run the `tvbStartClean.command` which will start tvb in a clean state, resetting
+your program database and deleting all folders created by |TVB|.
+
+To make sure that no processes will remain open after you use the application,
 you should always close |TVB| by running the `tvbStop.command` script.
+
+The current |TVB| version was tested on Mac OS X 10.5.8 (Leopard), 10.6.8 (Snow Leopard) and 10.7.2 (Lion) but should also run smoothly on subsequent versions.
 
 On Windows
 ----------
 
 Unzip the package and it will create a folder TVB_Distribution. In this folder
-you should find a number of bat scripts and an executable. To start |TVB| you
-should double click on the `tvbStart.exe` executable. You can at any time run
+you should find a number of .bat scripts and an executable. To start |TVB| you
+should double-click on the `tvbStart.exe` executable. You can at any time run
 the `tvbStartClean.bat` which will start |TVB| in a clean state, resetting your
-program database and deleting all the |TVB| created folders.
+program database and deleting all folders created by |TVB|.
+
+This version was tested on Windows XP (x32), Windows Server 2008 (x64) and Windows 7 (x64).
+
 
 
 .. raw:: pdf
