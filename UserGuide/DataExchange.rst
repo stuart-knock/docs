@@ -146,7 +146,7 @@ Python / Matlab / Java / C++ for additional processing.
 In case you want to process HDF5 files with Matlab you can find API
 documentation here:
     
-    http://www.mathworks.com/help/techdoc/ref/f16-5702.html#f16-15000
+    http://www.mathworks.com/help/matlab/ref/hdf5read.html
 
 .. NOTE::
     The HDF5 functionality referenced above was only introduced in Matlab 2011a.
