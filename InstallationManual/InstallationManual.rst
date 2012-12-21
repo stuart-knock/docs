@@ -59,6 +59,8 @@ Cygwin on Windows).
 
 - minixsv (for genxmlif) : easy_install, pip
 
+- h5py: easy_install, pip
+
 We've tested the Enthought package with Python 2.7.1 (EPD 7.0-2) and Python 2.7.2 (EPD 7.1-1)
 
 
