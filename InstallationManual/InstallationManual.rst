@@ -6,22 +6,35 @@
 .. include:: ../templates/pdf_template.rst
       
 
-This file will guide you in installing and using The Virtual Brain project correctly.
-For a more detailed solution to any of your problems related to TVB software, please contact us at admin@thevirtualbrain.org
+This file will guide you in installing and using The Virtual Brain project (TVB)
+correctly.  For a more detailed solution to any of your problems related to TVB
+software, please contact us at admin@thevirtualbrain.org
 
 
 1. INSTALL REQUIREMENTS
 =======================
 
-If you are using a stand-alone distribution package, you can skip step 1 here, and go directly to number 2.
-If you are not sure whether you have a "stand-alone distribution" package or not, then 99% you are, so skip to step number 2 ;-)
+TVB has been packaged into stand-alone distributions, and using one of these
+distributions is often the most convenient choice because it does not require
+downloading or installing anything else. 
 
-If you need to install TVB from sources you will need a number of dependencies installed. Two distributions of
-Python are available, PythonXY (http://www.pythonxy.com - licensed GLP v3) or Enthought Python Distribution
-(http://www.enthought.com - not open source), that when installed, provide most of the dependencies. Otherwise,
-most dependencies should be installed using easy_install or pip(http://pypi.python.org/pypi/pip), though you may
-wish to try your operating system's package system (apt-get, rpm on Linux, macports or homebrew for Mac OS X, or
-Cygwin on Windows).
+If you wish to install or run TVB from source, you will need to install 
+several dependencies. We assume however that you already have installed 
+CPython 2.6 or 2.7, along with NumPy, SciPy and Matplotlib. On Linux, this
+is most easily done via the system's package manager. On Mac OS X & Windows
+we recommend using a prepackaged distribution of Python such as PythonXY
+(http://www.pythonxy.com) or Enthought Python Distribution
+(http://www.enthought.com), that when installed, provide most
+of the dependencies.
+
+The non-standard libraries that are required for the TVB can be most easily
+installed via the command 
+
+pip install cherrypy formencode sqlalchemy sqlalchemy-migrate genshi simplejson cfflib networkx nibabel apscheduler mod_pywebsocket psutil minixsv h5py
+
+where pip is the standard Python package manager.
+
+If you have a non-standard situation, please try installing the packages by hand:
 
 - Python 2.7.1 : other versions of python might not work as expected, so we recommend that you have this version installed with all the dependencies. You should find instructions on installing Python here: http://diveintopython.org/installing_python/
 
@@ -61,29 +74,33 @@ Cygwin on Windows).
 
 - h5py: easy_install, pip
 
-We've tested the Enthought package with Python 2.7.1 (EPD 7.0-2) and Python 2.7.2 (EPD 7.1-1)
-
 
 2. OTHER REQUIREMENTS
 =====================
 
-A. You need a WebGL compatible browser.
----------------------------------------
+A. Modern web browser
+---------------------
 
-The application was tested on:
+The Virtual Brain's web interface uses several newer technologies for the
+web, including Scalable Vector Graphics and WebGL, so you will need a browser
+that supports these standards. The following browsers have been tested and 
+are available for most platforms:
 
-	- Google Chrome (http://www.google.com/chrome?hl=en), versions 17 - 18
+	- Google Chrome (http://www.google.com/chrome?hl=en), versions 17 - 23
 	- Safari 5.1.1 (with Developer -Enable WebGL checked)
 	- and Mozilla Firefox (http://www.mozilla.org/en-US/firefox/new/), version 17 - 18.
 
-The application does NOT support Internet Explorer.
+Because current versions of Internet Explorer do not support the required standards, it is
+not advised or support to use Internet Explorer.
 
-Some other browsers might work but the browser should support WebGL as a requirement for part of the visualisers.
-A list of browsers that support WebGL is found at the following link: http://en.wikipedia.org/wiki/WebGL.
-Further details about WebGL can be found here: http://learningwebgl.com/blog/?p=11 .
+Some other browsers might work but the browser should support WebGL as a
+requirement for part of the visualisers.  A list of browsers that support WebGL
+is found at the following link: http://en.wikipedia.org/wiki/WebGL.  Further
+details about WebGL can be found here: http://learningwebgl.com/blog/?p=11 .
 
-Your default browser will be used when starting the application.
-If you have an unsupported browser as default, you will need to copy the URL (http://127.0.0.1:8080/ by default) into a supported browser.
+Your default browser will be used when starting the application.  If you have
+an unsupported browser as default, you will need to copy the URL
+(http://127.0.0.1:8080/ by default) into a supported browser.
 
 B. Octave or Matlab (optional)
 ------------------------------
@@ -95,6 +112,7 @@ https://sites.google.com/a/brain-connectivity-toolbox.net/bct/Home
 
 C. WebSocket compatible browser
 -------------------------------
+
 Most of the modern browsers have this capability.
 
 
