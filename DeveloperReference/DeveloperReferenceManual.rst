@@ -1,7 +1,7 @@
 .. |TITLE| replace:: Developers's Reference Manual
 .. |DESCRIPTION| replace:: Describes the function and architecture of |TVB|
 .. |VERSION| replace:: 1.0
-.. |REVISION| replace:: 0.1
+.. |REVISION| replace:: 0.2
 
 .. include:: ../templates/pdf_template.rst 
 
@@ -27,9 +27,9 @@ Legend
 |                     | This version is to be decided if it will have the same web interface, or    |
 |                     | will have a stand-alone graphical or console interface.                     |
 +---------------------+-----------------------------------------------------------------------------+
-| TVB Team            | Randy McIntosh, Viktor Jirsa, Laurent Pezard, Jean-Luc Blanc,               | 
-|                     | Stuart Knock, Yann Manhoun, Noelia Montejo, Marmaduke Woodman,              |
-|                     | Jochen Mersmann, Lia Domide, Paula Sanz Leon                                |
+| TVB Team            | Randy McIntosh, Viktor Jirsa, Laurent Pezard, Yann Manhoun, Jean-Luc Blanc, | 
+|                     | Stuart Knock, Noelia Montejo, Marmaduke Woodman, Paula Sanz Leon            |
+|                     | Jochen Mersmann, Calin Pavel, Bogdan Neacsa, Ionel Ortelecan, Lia Domide    |
 +---------------------+-----------------------------------------------------------------------------+
 
 
