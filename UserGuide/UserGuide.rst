@@ -138,10 +138,10 @@ The current |TVB| version was tested on Mac OS X 10.5.8 (Leopard), 10.6.8 (Snow 
 On Windows
 ----------
 
-Unzip the package and it will create a folder TVB_Distribution. In this folder
-you should find a number of .bat scripts and an executable. To start |TVB| you
-should double-click on the `tvbStart.exe` executable. You can at any time run
-the `tvbStartClean.bat` which will start |TVB| in a clean state, resetting your
+Unzip the package and it will create a folder TVB_Distribution. 
+In this folder you should find a number of .bat scripts. 
+To start |TVB| you should use `tvb_start.bat`. 
+You can at any time run `tvb_clean.bat` which will start |TVB| in a clean state, resetting your
 program database and deleting all folders created by |TVB|.
 
 This version was tested on Windows XP (x32), Windows Server 2008 (x64) and Windows 7 (x64).
