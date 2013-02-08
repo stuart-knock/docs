@@ -157,9 +157,15 @@ On Windows
 
 Unzip the package and it will create a folder TVB_Distribution. 
 In this folder you should find a number of .bat scripts. 
-To start |TVB| you should use `tvb_start.bat`. 
-You can at any time run `tvb_clean.bat` which will start |TVB| in a clean state, resetting your
-program database and deleting all folders created by |TVB|.
+
+To start |TVB| you should use `tvb_start.bat`. This will launch the TVB software as a console 
+process and will also try to fire a browser window for you to start working with TVB web interface.
+
+You can at any time run `tvb_clean.bat` which will start tvb in a clean state, resetting
+your program database and deleting all folders created by |TVB|.
+
+To make sure that no processes will remain open after you use the application,
+you should close |TVB| by running `tvb_stop.bat`, or close the previous opened console.
 
 This version was tested on Windows XP (x32), Windows Server 2008 (x64) and Windows 7 (x64).
 
