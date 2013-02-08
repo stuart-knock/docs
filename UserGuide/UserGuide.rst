@@ -140,11 +140,15 @@ On MacOS
 Unzip the package and it will create a folder TVB_Distribution. In this folder
 you should find a number of scripts and an application package. 
 
-To start |TVB|
-you should double-click on the `tvb.app` application. 
-This will launch the TVB software as a background process and will also try to fire a browser window for you to start working with TVB.
+To start |TVB| in your web browser you should double-click on the `tvb.app` 
+application. If you rather use the shell interface, then double-click
+'tvbConsole.command'
 
-You can at any time run the `tvbStartClean.command` which will start tvb in a clean state, resetting
+
+This will launch the TVB software as a background process and will also try to 
+fire a browser window for you to start working with TVB.
+
+You can at any time run the `tvbClean.command` which will start tvb in a clean state, resetting
 your program database and deleting all folders created by |TVB|.
 
 To make sure that no processes will remain open after you use the application,

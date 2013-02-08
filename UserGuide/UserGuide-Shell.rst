@@ -1,3 +1,10 @@
+Shell Interface of |TVB|
+========================
+
+
+Getting started with Python IDLE 
+---------------------------------
+
 .. figure:: screenshots/linux_shell.jpg
    :width: 90%
    :align: center
