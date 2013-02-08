@@ -108,22 +108,39 @@ On Linux
 --------
 
 Unzip the package and it will create a folder TVB_Distribution. In this folder
-you should find a number of scripts. To start |TVB| you should run the
-`tvb_start.sh` script. You can at any time run the `tvb_start_clean.sh` which
+you should find a number of scripts:
+
+- tvb_start.sh
+- tvb_clean.sh
+- tvb_stop.sh
+- tvb_console.sh
+ 
+
+To start |TVB| graphical interface in your web-browser, run the
+`tvb_start.sh` script. You can run at any time `tvb_clean.sh` which
 will start |TVB| in a clean state, resetting your program database and deleting
-all folders created by |TVB|.
+ALL folders and their content created by |TVB|. Be careful!
 
 To make sure that no processes will remain open after you use the application,
 you should always close |TVB| by running the `tvb_stop.sh` script.
 
+
+To access the console interface, on a terminal, run `tvb_console.sh`.
+The interactive Python shell will appear. To stop all the processes
+run `tvb_stop.sh`. See the User Interface section for more details
+on how to use this interface.
+
 The current |TVB| package was tested on Debian Squeeze and Fedora 16. 
-Other Linux flavors might also work as long as you have installed a glibc version of 2.11 or higher.
+Other Linux flavors might also work as long as you have installed a glibc 
+version of 2.11 or higher.
 
 On MacOS
 --------
 
 Unzip the package and it will create a folder TVB_Distribution. In this folder
-you should find a number of scripts and an application package. To start |TVB|
+you should find a number of scripts and an application package. 
+
+To start |TVB|
 you should double-click on the `tvb.app` application. 
 This will launch the TVB software as a background process and will also try to fire a browser window for you to start working with TVB.
 
@@ -151,8 +168,11 @@ This version was tested on Windows XP (x32), Windows Server 2008 (x64) and Windo
 .. raw:: pdf
 
    PageBreak
+
+.. SHELL INTERFACE
+.. inclide:: UserGuide-Shell.rst
    
-.. USER INTERFACE
+.. GRAPHICAL USER INTERFACE
 
 .. include:: UserGuide-UI.rst
 
