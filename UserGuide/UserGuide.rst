@@ -180,7 +180,7 @@ This version was tested on Windows XP (x32), Windows Server 2008 (x64) and Windo
    PageBreak
 
 .. SHELL INTERFACE
-.. inclide:: UserGuide-Shell.rst
+.. include:: UserGuide-Shell.rst
    
 .. GRAPHICAL USER INTERFACE
 
