@@ -18,37 +18,145 @@
 .. Created and Maintained by: Developers. Should be updated in case any changes to contribution flow.
 
 
-	GIT setup for contributors
+GIT setup for contributors
+==========================	
 
-The following steps assume you have the latest TVB package from www.thevirtualbrain.org. You also need to make sure you have a GIT client installed and available from command line. You can test this by trying to run git --version.
+The following steps assume you have the latest TVB package from http://www.thevirtualbrain.org. You also need to make sure you have a GIT client installed and available from command line. You can test this by trying to run *git --version*.
 
 The official TVB Github repository can be found https://github.com/tvb-admin/tvb_scientific_library . The first step you need to do is fork this repository. You should now have your own Github clone. 
 
-Now assuming you have your TVB distribution package in ~/TVB_Distribution. Go into the bin folder located at ~/TVB_Distribution/bin .
+Now assuming you have your TVB distribution package in *~/TVB_Distribution*. Go into the bin folder located at *~/TVB_Distribution/bin*.
 
-Depending on the operating system you are using open a terminal / command line prompt in this directory and the execute the following:
+Depending on the operating system you are using open a terminal/command line prompt in this directory and the execute the following:
 
-On linux: sh contributor_setup.sh ${github_url}
+**On linux:** sh contributor_setup.sh ${github_url}
 
-On windows: contributor_setup.bat ${github_url}
+**On windows:** contributor_setup.bat ${github_url}
 
-In the commands above replace ${github_url} with the url of your forked repositiory on github.
+In the commands above replace *${github_url}* with the url of your forked repositiory on github.
 
-The steps above should create a folder ~/TVB_Distribution/tvb_scientific_library which contains the simulator, analyzers, basic and logger subfolders. This is the clone of your GIT forked repository and you are now ready to contribute to TVB!
+The steps above should create a folder *~/TVB_Distribution/tvb_scientific_library* which contains the simulator, analyzers, basic and logger subfolders. This is the clone of your GIT forked repository and you are now ready to contribute to TVB!
 
 
-	Contribution tutorial.
+Contribution tutorial
+=====================
 
-You should always create a separate branch with a self-explanatory name for the new features you want to add to TVB. In order to do this just (from ~/TVB_Distribution/tvb_scientific_library folder): git checkout my-awesome-new-feature . During feature development make sure you make pulls from master often in order to quickly fix any conflicts that might appear.
+You should always create a separate branch with a self-explanatory name for the new features you want to add to TVB. In order to do this just (from *~/TVB_Distribution/tvb_scientific_library* folder): *git checkout my-awesome-new-feature* . During feature development make sure you make pulls from master often in order to quickly fix any conflicts that might appear.
 
-Once you are done with your changes and believe they can be integrated into TVB, go to your github repository, switch to your feture branch and issue a Pull Request describing the improvements you did. 
+Once you are done with your changes and believe they can be integrated into TVB, go to your github repository, switch to your feture branch and issue a **Pull Request** describing the improvements you did. 
 
 	
-	Console mode usage with enables storage.
+Console mode usage with enables storage
+=======================================
 	
-The TVB distribution package comes with a working IDLE based environment which you can use if this is more comfortable for you than using the Web Interface. You can start this from the same ~/TVB_Distribution/bin folder above by running sh tvb_console.sh / tvb_console.bat .
+The TVB distribution package comes with a working IDLE based environment which you can use if this is more comfortable for you than using the Web Interface. You can start this from the same *~/TVB_Distribution/bin* folder above by running *sh tvb_console.sh* / *tvb_console.bat*.
 
-.. include:: console_storage_true.py
+The following is a demo of using the console mode for various operations. You can try running the code in the IDLE console you started with the above mentioned command.
+
+Python code below here
+----------------------
+
+	#Make sure you set use_storage to True as the first thing you do if you want your results to be available after Python session ends
+	import tvb.basic.config.settings as cfg
+	cfg.TVBSettings.TRAITS_CONFIGURATION.use_storage = True
+	
+	# Need to atach db events so storage paths and traited attributes work properly
+	from tvb.core.traits import db_events
+	db_events.attach_db_events()
+	
+	from tvb.core.entities.storage import dao
+	from tvb.core.services.operationservice import OperationService
+	from tvb.core.adapters.abcadapter import ABCAdapter
+	from tvb.basic.filters.chain import FilterChain
+	
+	import numpy
+	from tvb.simulator import (
+	        simulator, models, coupling, integrators, monitors, noise
+	        )
+	from tvb.datatypes import connectivity, surfaces, equations, patterns
+	from tvb.simulator.common import get_logger
+	LOG = get_logger(__name__)
+	
+	# We need a user and a project in order to run operations and store results
+	user = dao.get_user_by_name('admin')
+	project = dao.get_projects_for_user(user.id)[0]
+	
+	# Here is an example of how one would launch a TVB adapter (in this case an uploader)
+	launcher = OperationService()
+	tmp_storage = "/home/bogdan.neacsa/TVB"
+	algo_group = dao.find_group('tvb.adapters.uploaders.zip_connectivity_importer', 'ZIPConnectivityImporter')
+	adapter = ABCAdapter.build_adapter(algo_group)
+	launch_args = {'uploaded' : '/home/bogdan.neacsa/Work/TVB/svn/tvb/trunk/demoData/connectivity/connectivity_regions_96.zip'}
+	result = launcher.initiate_operation(user, project.id, adapter, tmp_storage, **launch_args)
+	op_id = [int(s) for s in result.split() if s.isdigit()][0]
+	# Should get output: "Operation X has finished"  You can later on use X to get resulted datatypes if you want.
+	
+	# Lets retrieve the connectivity based on the operation id (in this case 11) and change the subject on this connectivity
+	conn_result = dao.get_results_for_operation(op_id)[0]
+	conn_result.subject = "My fancy subject"
+	dao.store_entity(conn_result)
+	
+	# Now let's get all the connectivities for our custom subject
+	from tvb.datatypes.connectivity import Connectivity
+	dt_filter = FilterChain(fields = [FilterChain.datatype + '.subject'], operations = ["=="], values = ['My fancy subject'])
+	returned_values = dao.get_values_of_datatype(project.id, Connectivity, dt_filter)
+	LOG.info("Got from database values: %s" %(returned_values,))
+	
+	
+	# An example from the simulator demos run now with our connectivity we got above
+	
+	LOG.info("Configuring...")
+	#Initialise a Model, Coupling, and Connectivity.
+	oscilator = models.Generic2dOscillator(a=1.42)
+	white_matter = ABCAdapter.load_entity_by_gid(returned_values[0][2])   # You can also load a datatype if you have the gid or id of it.
+	white_matter.speed = numpy.array([4.0])
+	#
+	white_matter_coupling = coupling.Linear(a=0.016)
+	
+	#Initialise an Integrator
+	hiss = noise.Additive(nsig = numpy.array([2**-10,]))
+	heunint = integrators.HeunStochastic(dt=0.06103515625, noise=hiss) 
+	
+	#Initialise a Monitor with period in physical time
+	what_to_watch = monitors.TemporalAverage(period=0.48828125) #2048Hz => period=1000.0/2048.0
+	
+	#Initialise a Simulator -- Model, Connectivity, Integrator, and Monitors.
+	sim = simulator.Simulator(model = oscilator, connectivity = white_matter, 
+	                          coupling = white_matter_coupling, 
+	                          integrator = heunint, monitors = what_to_watch)
+	
+	sim.configure()
+	
+	#Perform the simulation
+	tavg_data = []
+	tavg_time = []
+	LOG.info("Starting simulation...")
+	for tavg in sim(simulation_length=1600):
+	    if tavg is not None:
+	        tavg_time.append(tavg[0][0]) #TODO:The first [0] is a hack for single monitor
+	        tavg_data.append(tavg[0][1]) #TODO:The first [0] is a hack for single monitor
+	        
+	# ----------------- ---------------------------------- -----------------
+	# ----------------- From generate region data demo ends ----------------
+	# ----------------- ---------------------------------- -----------------
+	
+	# We have the data but it's still transient unless we store it in a timeseries
+	import tvb.datatypes.time_series as time_series
+	# Using TimeSeriesRegion since that is what we got here
+	data_result = time_series.TimeSeriesRegion()
+	data_result.set_operation_id(1) # Need an operation. Maybe create a dummy one special for console mode?
+	data_result.connectivity = white_matter
+	data_result.write_data_slice(tavg_data)
+	data_result.write_time_slice(tavg_time)
+	data_result.close_file()
+	LOG.info("Saving simulator result to db.")
+	dao.store_entity(data_result)
+	LOG.info("Loading from db to check results are properly stored")
+	loaded_dt = ABCAdapter.load_entity_by_gid(data_result.gid)
+	LOG.info("Time shape is %s"%(loaded_dt.get_data_shape('time'),))
+	LOG.info("Data shape is %s"%(loaded_dt.get_data_shape('data'),))
+	LOG.info(loaded_dt.get_data('time'))
+	LOG.info(loaded_dt.get_data('data'))
 
 .. raw:: pdf
 

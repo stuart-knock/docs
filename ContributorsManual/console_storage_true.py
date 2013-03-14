@@ -25,6 +25,7 @@ Demo using console mode with storage.Note that consolde profile must have TRAITS
 
 .. moduleauthor:: Bogdan Neacsa <bogdan.neacsa@codemart.ro>
 """
+#NOTE: The demo code from this file should also be duplicated in ContributorsManual.rst
 import tvb.basic.config.settings as cfg
 cfg.TVBSettings.TRAITS_CONFIGURATION.use_storage = True
 
