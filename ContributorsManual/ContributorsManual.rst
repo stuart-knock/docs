@@ -18,8 +18,11 @@
 .. Created and Maintained by: Developers. Should be updated in case any changes to contribution flow.
 
 
+Contributors manual
+===================
+
 GIT setup for contributors
-==========================	
+--------------------------	
 
 The following steps assume you have the latest TVB package from http://www.thevirtualbrain.org. You also need to make sure you have a GIT client installed and available from command line. You can test this by trying to run *git --version*.
 
@@ -39,7 +42,7 @@ The steps above should create a folder *~/TVB_Distribution/tvb_scientific_librar
 
 
 Contribution tutorial
-=====================
+---------------------
 
 You should always create a separate branch with a self-explanatory name for the new features you want to add to TVB. In order to do this just (from *~/TVB_Distribution/tvb_scientific_library* folder): *git checkout my-awesome-new-feature* . During feature development make sure you make pulls from master often in order to quickly fix any conflicts that might appear.
 
@@ -47,16 +50,26 @@ Once you are done with your changes and believe they can be integrated into TVB,
 
 	
 Console mode usage with enables storage
-=======================================
+---------------------------------------
 	
 The TVB distribution package comes with a working IDLE based environment which you can use if this is more comfortable for you than using the Web Interface. You can start this from the same *~/TVB_Distribution/bin* folder above by running *sh tvb_console.sh* / *tvb_console.bat*.
 
 The following is a demo of using the console mode for various operations. You can try running the code in the IDLE console you started with the above mentioned command.
 
-Python code below here
-----------------------
 
-	#Make sure you set use_storage to True as the first thing you do if you want your results to be available after Python session ends
+Storage demo - python code
+----------------------------
+
+Note that we'll use some placeholders in the demo presented below;
+
+	$TMP_STORAGE$ = a string representing the path to a folder on your disk that will be used as temporary storage
+	
+	$ZIP_ATCHIVE_PATH$ = a string representing the path to a zip archive on your disk with a valid connectivity
+
+.. code:: python
+
+	# First lines should always be setting use_storage flag to true if you want
+	# persisted data.
 	import tvb.basic.config.settings as cfg
 	cfg.TVBSettings.TRAITS_CONFIGURATION.use_storage = True
 	
@@ -70,47 +83,61 @@ Python code below here
 	from tvb.basic.filters.chain import FilterChain
 	
 	import numpy
-	from tvb.simulator import (
-	        simulator, models, coupling, integrators, monitors, noise
-	        )
+	from tvb.simulator import simulator, models, coupling, integrators, monitors, noise
 	from tvb.datatypes import connectivity, surfaces, equations, patterns
 	from tvb.simulator.common import get_logger
 	LOG = get_logger(__name__)
 	
 	# We need a user and a project in order to run operations and store results
+	# A default user named 'admin' should already exist.
 	user = dao.get_user_by_name('admin')
 	project = dao.get_projects_for_user(user.id)[0]
 	
 	# Here is an example of how one would launch a TVB adapter (in this case an uploader)
 	launcher = OperationService()
-	tmp_storage = "/home/bogdan.neacsa/TVB"
-	algo_group = dao.find_group('tvb.adapters.uploaders.zip_connectivity_importer', 'ZIPConnectivityImporter')
-	adapter = ABCAdapter.build_adapter(algo_group)
-	launch_args = {'uploaded' : '/home/bogdan.neacsa/Work/TVB/svn/tvb/trunk/demoData/connectivity/connectivity_regions_96.zip'}
-	result = launcher.initiate_operation(user, project.id, adapter, tmp_storage, **launch_args)
-	op_id = [int(s) for s in result.split() if s.isdigit()][0]
-	# Should get output: "Operation X has finished"  You can later on use X to get resulted datatypes if you want.
+	tmp_storage = $TMP_STORAGE$
 	
-	# Lets retrieve the connectivity based on the operation id (in this case 11) and change the subject on this connectivity
+	# In case you want to use an adapter, you need it's module and classname.
+	algo_group = dao.find_group('tvb.adapters.uploaders.zip_connectivity_importer', 
+								'ZIPConnectivityImporter')
+	adapter = ABCAdapter.build_adapter(algo_group)
+	launch_args = {'uploaded' : $ZIP_ATCHIVE_PATH$}
+	result = launcher.initiate_operation(user, project.id, adapter, tmp_storage, 
+										 **launch_args)
+	# Should get output: "Operation X has finished" where X is the operation id
+	# You can later on use X to get resulted datatypes if you want.
+	op_id = [int(s) for s in result.split() if s.isdigit()][0]
+	
+	# Lets retrieve the connectivity based on the operation id (in this case 11) 
+	# and change the subject on this connectivity
 	conn_result = dao.get_results_for_operation(op_id)[0]
 	conn_result.subject = "My fancy subject"
 	dao.store_entity(conn_result)
 	
-	# Now let's get all the connectivities for our custom subject
+	# We can also retrieve a datatype by specific filters we create.
+	# Now let's get all the connectivities for a custom subject
 	from tvb.datatypes.connectivity import Connectivity
-	dt_filter = FilterChain(fields = [FilterChain.datatype + '.subject'], operations = ["=="], values = ['My fancy subject'])
+	dt_filter = FilterChain(fields = [FilterChain.datatype + '.subject'],
+							operations = ["=="], 
+							values = ['My fancy subject'])
 	returned_values = dao.get_values_of_datatype(project.id, Connectivity, dt_filter)
 	LOG.info("Got from database values: %s" %(returned_values,))
 	
 	
-	# An example from the simulator demos run now with our connectivity we got above
+	# Below is an example from tvb/simulator/demos with console storage enabled
+	# ----------------- ---------------------------------- -----------------
+	# ----------------- From generate region data demo below -----------------
+	# ----------------- ---------------------------------- -----------------
+	##----------------------------------------------------------------------------##
+	##-                      Perform the simulation                              -##
+	##----------------------------------------------------------------------------##
 	
 	LOG.info("Configuring...")
 	#Initialise a Model, Coupling, and Connectivity.
 	oscilator = models.Generic2dOscillator(a=1.42)
-	white_matter = ABCAdapter.load_entity_by_gid(returned_values[0][2])   # You can also load a datatype if you have the gid or id of it.
+	# You can also load a datatype if you have the gid or id of it.
+	white_matter = ABCAdapter.load_entity_by_gid(returned_values[0][2])   
 	white_matter.speed = numpy.array([4.0])
-	#
 	white_matter_coupling = coupling.Linear(a=0.016)
 	
 	#Initialise an Integrator
@@ -118,7 +145,7 @@ Python code below here
 	heunint = integrators.HeunStochastic(dt=0.06103515625, noise=hiss) 
 	
 	#Initialise a Monitor with period in physical time
-	what_to_watch = monitors.TemporalAverage(period=0.48828125) #2048Hz => period=1000.0/2048.0
+	what_to_watch = monitors.TemporalAverage(period=0.48828125) 
 	
 	#Initialise a Simulator -- Model, Connectivity, Integrator, and Monitors.
 	sim = simulator.Simulator(model = oscilator, connectivity = white_matter, 
@@ -140,11 +167,15 @@ Python code below here
 	# ----------------- From generate region data demo ends ----------------
 	# ----------------- ---------------------------------- -----------------
 	
+	# At this point simulation is done but data is not yet stored.
 	# We have the data but it's still transient unless we store it in a timeseries
 	import tvb.datatypes.time_series as time_series
 	# Using TimeSeriesRegion since that is what we got here
 	data_result = time_series.TimeSeriesRegion()
-	data_result.set_operation_id(1) # Need an operation. Maybe create a dummy one special for console mode?
+	# Need an operation for each datatypes that is to be stored in database. Just use 
+	# dummy operation here for demo purposes.
+	data_result.set_operation_id(1) 
+	# A timeseries needs a reference to the connectivity that was generated.
 	data_result.connectivity = white_matter
 	data_result.write_data_slice(tavg_data)
 	data_result.write_time_slice(tavg_time)
