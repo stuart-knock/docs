@@ -46,10 +46,10 @@ Contribution tutorial
 
 You should always create a separate branch with a self-explanatory name for the new features you want to add to TVB. In order to do this just (from *~/TVB_Distribution/tvb_scientific_library* folder): *git checkout my-awesome-new-feature* . During feature development make sure you make pulls from master often in order to quickly fix any conflicts that might appear.
 
-Once you are done with your changes and believe they can be integrated into TVB, go to your github repository, switch to your feture branch and issue a **Pull Request** describing the improvements you did. 
+Once you are done with your changes and believe they can be integrated into TVB, go to your github repository, switch to your faeture branch and issue a **Pull Request** describing the improvements you did. 
 
 	
-Console mode usage with enables storage
+Console mode usage with enabled storage
 ---------------------------------------
 	
 The TVB distribution package comes with a working IDLE based environment which you can use if this is more comfortable for you than using the Web Interface. You can start this from the same *~/TVB_Distribution/bin* folder above by running *sh tvb_console.sh* / *tvb_console.bat*.
