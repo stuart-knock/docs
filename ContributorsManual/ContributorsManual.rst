@@ -89,7 +89,13 @@ The following is a demo script for using the console mode for various operations
 	## First lines should always be setting use_storage flag to true if you want to persisted data.
 	import tvb.basic.config.settings as cfg
 	cfg.TVBSettings.TRAITS_CONFIGURATION.use_storage = True
-
+	
+	## We need and user and a project. You can initialize your database with
+	## the following. Care this will also reset all the data from your database.
+	from tvb.core.services.initializer import reset, initialize
+	reset()
+	initialize(['tvb'])
+	
 	## Import necessary libraries
 	import numpy
 	from tvb.basic.filters.chain import FilterChain
