@@ -1,90 +1,100 @@
 .. |TITLE| replace:: TVB Contributors Manual
 .. |DESCRIPTION| replace:: Provides a tutorial with the steps you need to take in order to start contributing into TVB code, as well as a demo of using TVB Framework in console mode.
 .. |VERSION| replace:: 1.0
-.. |REVISION| replace:: 2
+.. |REVISION| replace:: 3
 
 .. include:: ../templates/pdf_template.rst   
       
-
-.. Purpose:
-
-.. To provide a step by step flow that will get TVB set-up and ready for contributions. 
-.. To offer a short tutorial of how TVB can be used from a console script with storage activated as part of TVB framework.
-.. Created and Maintained by: Developers. You should expect changes as the contribution flow evolves.
-
-
 .. _TVB Web Page: http://www.thevirtualbrain.org
 .. _TVB Git Repository: https://github.com/tvb-admin/tvb_scientific_library
+
 
 TVB Contributors manual
 =======================
 
+The purpose of this document is to provide a step by step flow that will get TVB set-up and ready for code contributions, 
+and to offer a short tutorial of how TVB can be used from a console script with storage activated as part of TVB framework.
+Current document is created and maintained by developers. You should expect changes as the contribution flow evolves.
+For details about TVB architecture, please check the adjacent document, or send us an email at tvb.admin@thevirtualbrain.org.
+
+
 GIT Setup
 -----------	
 
-The following steps assume you have the latest distribution package from `TVB Web Page`_. You also need to make sure you have a GIT client installed and available from command line. You can test this by trying to execute *git --version*.
+The following steps assume you have the latest distribution package from `TVB Web Page`_. You also need to make sure you have a GIT client installed and available from command line. 
+You can test this by trying to execute *git --version*.
 
-You should access `TVB Git Repository`_. The first step you need to do is fork this repository. You should now have your own git clone. 
+You should access `TVB Git Repository`_. The first step you need to do is to create a free GitHub account, then fork TVB-Library repository for your account. 
+You should now have your own git clone of TVB-Library. 
 
-Now assuming you have your TVB Distribution package in *~/TVB_Distribution*. Go into the bin folder located at *~/TVB_Distribution/bin*.
+Now, assuming you have your TVB Distribution package unpacked in a folder *TVB_Distribution*, go into *TVB_Distribution/bin*.
+Depending on the operating system you are using, open a terminal or command line prompt in this directory and then execute the following:
 
-Depending on the operating system you are using, open a terminal/command line prompt in this directory and the execute the following:
+- On Unix systems: *sh contributor_setup.sh ${github_url}*
 
-- On unix systems: *sh contributor_setup.sh ${github_url}*
+- On Windows machines: *contributor_setup.bat ${github_url}*
 
-- On windows machine: *contributor_setup.bat ${github_url}*
+In the commands above replace *${github_url}* with the URL of your previously forked repository on GitHub.
 
-In the commands above replace *${github_url}* with the url of your forked repository on GitHub.
-
-The steps above should create a folder *~/TVB_Distribution/tvb_scientific_library* which contains the Simulator, Analyzers, Basic and DataTypes subfolders. This is the clone of your Git forked repository and you are now ready to contribute to TVB!
+The steps above should create a folder *TVB_Distribution/tvb_scientific_library* which contains the Simulator, Analyzers, Basic and DataTypes as subfolders. 
+This is a clone of your previously Git forked repository. You are now ready to contribute to TVB. Good luck!
 
 
 Contribution guidelines
 ------------------------
 
-- You should always create a separate branch with a self-explanatory name for the new features you want to add to TVB. In order to do this just execute (from *~/TVB_Distribution/tvb_scientific_library* folder): *git checkout my-awesome-new-feature-url* . 
+- You should always create a separate branch with a self-explanatory name for the new features you want to add to TVB. In order to do this just execute (from *TVB_Distribution/tvb_scientific_library* folder): *git checkout {my-awesome-new-feature-url}* . 
 
-- During feature development make sure you make pull requests from master often in order to quickly fix any conflicts that might appear.
+- During your development, make sure you make pull requests from master often, in order to quickly solve any conflicts which might appear.
 
-- You should put explanatory comments and documentation for your code.
+- If you have problems, send us an email, and we will do our best to help you.
 
-- You should attach uni-tests for the new code, to prove that is correct and that it fits into the overall architecture.
+- You should put explanatory comments and documentation in your code.
 
-- Once you are done with your changes and believe they can be integrated into TVB master repository, go to your github repository, switch to your feature branch and issue a *pull request*, describing the improvements you did. We will later test that your changes are fit to be included, and notify you of the integration process.
+- You should attach unit-tests for your new code, to prove that it is correct and that it fits into the overall architecture of TVB.
+
+- Once you are done with your changes and you believe that they can be integrated into TVB master repository, go to your GitHub repository, switch to your feature branch and issue a *pull request*, describing the improvements you did. We will later test that your changes are fit to be included, and notify you of the integration process.
 
 
 	
-Use TVB Framework from Command Line
----------------------------------------
+Use TVB Framework from Console Interface
+-----------------------------------------
 	
-You can use TVB Framework Distribution package through two different interfaces: one is through the web interface (where you will have an HTML interface with buttons and pages for manipulating your TVB objects), and the other is through a console interface.
+You can use TVB Framework Distribution package through two different interfaces: one is the web interface 
+(where you will have an HTML face with buttons and pages for manipulating TVB objects), and the other is through a console interface.
 
-TVB Distribution package comes with a working IDLE console which you can use as a low-level alternative to the Web Interface. You can fire the console from the folder *~/TVB_Distribution/bin*, by running *sh tvb_console.sh* or *tvb_console.bat* (on Windows). In the console interface you can directly play with TVB Python objects and execute the same steps as in the web interface, or more; but you need to have programming knowledge.
-
-
-Examples of using TVB Command Line without Storage
-***************************************************
-
-TVB Console can work in two manners: with and without storage enabled.
-
-When storage is disabled, the manipulation of objects is entirely at your hand. When you close the console any computed data will be lost, unless you store results yourself.
-
-Examples of how TVB command line can be used are found in *tvb/simulator/demos/*. Please try them, in the IDLE console of TVB.
-
-Even more about TVB Command-Line without storage is described in *tvb/simulator/README.txt* document.
+For the second available interface, TVB Distribution package comes with a working IDLE Console which you can use as a low-level alternative to the Web Interface. 
+In the console interface you can directly play with TVB Python objects and execute the same steps as in the web interface, or more; but you need to have programming knowledge.
 
 
-Example of using TVB Command Line with Storage mode enabled
-************************************************************
+Examples of using TVB Console without Storage (Library Profile)
+******************************************************************
 
-Note that we'll use placeholders in the demo below::
+TVB Console can work in two manners: with or without storage enabled. We call the mode with storage enabled *Command Profile*, and the one without storage *Library Profile*.
+You can fire one of the two profiles, by launching the corresponding command file from inside *TVB_Distribution/bin*: *tvb_command* or *tvb_library*
+
+When storage is disabled (in Library Profile), the manipulation of objects is entirely at your hand. 
+When you close the console any computed data will be lost, unless you store results yourself.
+
+Examples of how TVB Library Profile is in action, are found in folder *TVB_Distribution/tvb_scientific_library/tvb/simulator/demos/*. Please try them, in the IDLE console of TVB.
+
+Even more details about TVB Library Profile (without storage) are found in file *TVB_Distribution/tvb_scientific_library/tvb/simulator/README.txt*.
+
+
+Example of using TVB Console with Storage enabled (Command Profile)
+*********************************************************************
+
+You can launch TVB Command profile (with File and DB storage enabled) by using *tvb_command* in *bin* folder. 
+An example of what you can further write in the IDLE console which will get fired is placed bellow.
+
+Note that we'll use placeholders in the demo script below::
 
 	$TMP_STORAGE$ = a string representing the path to a folder on your disk that will be used as temporary storage
 	
-	$ZIP_ATCHIVE_PATH$ = a string representing the path to a zip archive on your disk with a valid connectivity
+	$ZIP_ATCHIVE_PATH$ = a string representing the path to a ZIP archive on your disk with a valid Connectivity DataType.
 
 
-The following is a demo script for using the console mode for various operations, with storage mode enabled. You can try running the code in the IDLE console you started with the above mentioned command::
+The following is a demo script for using TVB Command mode for various operations, with storage mode enabled ::
 
 	## First lines should always be setting use_storage flag to true if you want to persisted data.
 	import tvb.basic.config.settings as cfg

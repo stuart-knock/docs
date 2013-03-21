@@ -26,7 +26,7 @@ run a simulation.
 
 To run any demo use the `execfile` command::
 
-execfile('/home/user/Downloads/TVB_Distribution/tvb_data/tvb/simulator/demos/region_deterministic.py')
+	execfile('/home/user/Downloads/TVB_Distribution/tvb_data/tvb/simulator/demos/region_deterministic.py')
 
 
 .. figure:: screenshots/linux_shell_run_demo.jpg
@@ -51,7 +51,7 @@ from the Run menu. The script will be executed.
 
 To work interactively in the Python shell you need a few modules::
 
-from tvb.simulator.lab import *
+	from tvb.simulator.lab import *
 
 
 This will import all the scientific simulator modules as well as some datatypes

@@ -139,31 +139,36 @@ In case you are accessing the application from a different machine, or the defau
 
 A. MAC OS
 ---------
-In order to start the application simply double click 'tvb.app'. This will run the application with default settings and start a default browser with the starting URL. You can also start an IDLE console with the proper environment to use TVB from a console mode by using the 'tvbConsole.command'.
+In order to start the application simply double click 'tvb.app'. This will run the application with default settings and start a default browser with the starting URL. 
+You can also start an IDLE console with the proper environment to use TVB from a console mode by using the 'tvb_command' or 'tvb_library' in 'bin' folder.
 
-If by some reason you need to reset the database (for example when an important release is done, and previous DB structure can not be reused - highly not probable to happen) you can start with a fresh database by running the 'tvbClean.command' and after that start normally.
+If by some reason you need to reset the database (for example when an important release is done, and previous DB structure can not be reused - highly not probable to happen), 
+you can start with a fresh database by running the 'tvb_clean.command' and after that start normally.
 NOTE: This will reset you database and delete all your data folders so you will lose all previous data unless you have a previous backup.
 
-The application and the backend server will run in background. In order to stop them you need to use the 'tvbStop.command'.
-Please keep in mind that simply closing the terminal WILL NOT guarantee that the processes will be killed with them.
+The application might still will run in background. In order to stop it you need to use the 'tvb_stop.command'.
 
 B. WINDOWS
 ----------
 
-In order to start the application simply double click tvbStart.exe. This will start a command terminal and run the application with default settings. You can also start an IDLE console with the proper environment to use TVB from a console mode by double clicking 'tvbConsole.exe'.
+In order to start the application simply execute tvb_start.bat. This will start a command terminal and run the application with default settings. 
+You can also start an IDLE console with the proper environment to use TVB from a console mode by executing 'tvb_console.bat' or 'tvb_library.bat' in 'bin' folder.
 
-If by some reason you need to reset the database (for example when an important release is done, and previous DB structure can not be reused - highly not probable to happen) you can start with a fresh database by running the tvbClean.bat file located in current folder, and after that start normally.
+If by some reason you need to reset the database (for example when an important release is done, and previous DB structure can not be reused - highly not probable to happen) 
+you can start with a fresh database by running the 'tvb_clean.bat' file located in 'bin' folder, and after that start normally.
 NOTE: This will reset you database and delete all your data folders so you will lose all previous data unless you have a previous backup.
 
 In order to stop the application all you need to do is close the terminal that was started initially.
 
-! When starting with a different user than the Administrator, on windows 7, you will be asked if you give permission to Python (the main programming language used in TVB) to start a server. You should answer positively if you want to have TVB running locally.
+! When starting with a different user than the Administrator, on windows 7, you will be asked if you give permission to Python (the main programming language used in TVB) 
+to start a server. You should answer positively if you want to have TVB running locally.
 
 C. LINUX
 --------
 
-In order to start the application simply execute: 'sh tvb_start.sh'.
-This will run the application with default settings and start a default browser with the starting URL. You can also start an IDLE console with the proper environment to use TVB from a console mode by using the 'tvb_console.sh'.
+In order to start the application simply execute: 'sh tvb_start.sh' in 'bin' folder of TVB Distribution.
+This will run the application with default settings and start a default browser with the starting URL. 
+You can also start an IDLE console with the proper environment to use TVB from a console mode by using the 'tvb_command.sh' or 'tvb_library.sh'.
 
 If by some reason you need to reset the database you can start with a fresh database by executing 'sh tvb_clean.sh' and after that start normally.
 (NOTE: This will reset you database and delete all your data folders so you will lose all previous data unless you have a backup)
