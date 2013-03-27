@@ -53,8 +53,7 @@ phases of a component versus its frequency.
 
 In order to perform a Fourier analysis of your time-series data follow these steps:
 
- - Go to the `Fourier Spectral Analysis` interface and select a `Windowing function`, 
-   you can choose among ‘hamming’, ‘bartlett’, ‘blackman’ and ‘hanning’.
+ - Go to the `Fourier Spectral Analysis` interface and select a `Windowing function`, you can choose among ‘hamming’, ‘bartlett’, ‘blackman’ and ‘hanning’.
  - Select the time-series.
  - Select a segment length.
  - Hit `Launch`.
