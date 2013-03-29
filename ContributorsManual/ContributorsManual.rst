@@ -104,12 +104,13 @@ The following is a demo script for using TVB Command mode for various operations
 	## the following. Care this will also reset all the data from your database.
 	from tvb.core.services.initializer import reset, initialize
 	reset()
-	initialize(['tvb'])
+	initialize(['tvb.config'])
 	
 	## Import necessary libraries
 	import numpy
 	from tvb.basic.filters.chain import FilterChain
 	from tvb.core.traits import db_events
+	from tvb.core.entities import model
 	from tvb.core.entities.storage import dao
 	from tvb.core.services.operationservice import OperationService
 	from tvb.core.adapters.abcadapter import ABCAdapter
@@ -122,7 +123,8 @@ The following is a demo script for using TVB Command mode for various operations
 	## We need a user and a project in order to run operations and store results
 	## A default user named 'admin' should already exist in the system.
 	user = dao.get_user_by_name('admin')
-	project = dao.get_projects_for_user(user.id)[0]
+	project = model.Project('my_project_name', user.id)
+	project = dao.store_entity(project)
 	
 	##----------------------------------------------------------------------------##
 	##-                      Import a Connectivity ZIP                           -##
