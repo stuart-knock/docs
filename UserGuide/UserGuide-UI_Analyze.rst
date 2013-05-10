@@ -142,7 +142,7 @@ select the 4D-TimeSeries object from the drop-down list in the `Independent Comp
 interface and hit `Launch`.
 
 The algorithm returns an IndependentComponents object that is a xD-Matrix with the 
-Dimensions {x,y,z}. The resulting time-series can be viewed with the xxx viewer.
+Dimensions {x,y,z}. The resulting time-series can be viewed with the the corresponding ICA viewer.
 
 
 
