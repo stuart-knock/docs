@@ -34,15 +34,6 @@ Time Series Visualizer (svg/d3)
    Preview for Time-Series Visualizer (svg/d3)
 
 
-Time Series Visualizer (mplh5)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. figure:: screenshots/visualizer_timeseries_mplh5.jpg
-   :width: 90%
-   :align: center
-
-   Preview for Time Series Visualizer (mplh5)
-
 
 EEG Time Series Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -87,6 +78,77 @@ also available.
    Brain activity wit EEG recordings.
 
 
+Connectivity Measure Visualizer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This visualizer can be used for displaying various Brain Connectivity Measures, related to a given Connectivity.
+
+On the X axis, we will see the Connectivity nodes listed, and for each of them, we see the computed measure on the Y axis.
+
+.. figure:: screenshots/visualizer_histogram.jpg
+   :width: 90%
+   :align: center
+
+   Connectivity Measure Visualizer.
+
+
+Topographic Visualizer
+~~~~~~~~~~~~~~~~~~~~~~
+
+This visualizer can be used for displaying various Brain Connectivity Measures, related to a given Connectivity.
+Its input is same as for the previous visualizer (Connectivity Measure Visualizer), but the display is completely different.
+Instead of a discrete view, this time, we can have a continous display (with gradients).
+
+.. figure:: screenshots/visualizer_topographic.jpg
+   :width: 90%
+   :align: center
+
+   Preview for Topographic Visualizer
+
+
+Group Display
+.......................
+
+Discrete PSE Visualizer
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Discrete Parameter Space Exploration View, will show up to two measures of the Simulator results,
+after varying input Simulator Parameters. The two displayed measures are emphasized in the node shapes and node colors.
+
+When running a range of Simulations in TVB, it is possible to do it by varying up to 2 input parameters (displayed on
+the X and Y axis of current viewer).This visualizer supports to display results when the resulting space is not bigger
+than 200 points.
+
+.. figure:: screenshots/simulator_pse_configuration.jpg
+   :width: 90%
+   :align: center
+
+   Preview for Discrete PSE Visualizer, when varying two input parameters of the simulator
+
+When moving with your mouse cursor over a graph node, you will see a few details about that particular simulation result.
+When clicking a node, an overlay window will open, which gives you full access to view or further analyze that
+particular Simulation result.
+
+Isocline PSE Visualizer
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Continuous Parameter Space Exploration View, will show the effect of varying Simulator parameters in a continuous form.
+
+When running a range of Simulations in TVB, it is possible to do it by varying up to 2 input parameters (displayed on
+the X and Y axis of current viewer). This visualizer supports ranges with 2 dimensions only, it does not support ranges
+with only one dimension. Also both varying dimensions need to be numeric parameters (no DataType ranges are supported
+for display in this visualizer).
+
+.. figure:: screenshots/simulator_pse_iso.jpg
+   :width: 90%
+   :align: center
+
+   Preview for Continuous PSE Visualizer, when varying two numeric input parameters of the simulator
+
+Controls for scaling or zooming the graph are available in this viewer. When you click on the coloured area, an overlay
+window will open, containing possibility to view or further analyze the simulation result closest to the point where
+you clicked.
+
 Analyzers + Visualizers
 .......................
 
@@ -108,7 +170,7 @@ Cross Coherence Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Displays the cross-coherence matrix. Axes represent brain nodes.
-The matrix size is `number of nodes` x `number of nodes`
+The matrix size is `number of nodes` x `number of nodes`.
 
  
 .. figure:: screenshots/visualizer_cross_coherence.jpg
@@ -118,12 +180,20 @@ The matrix size is `number of nodes` x `number of nodes`
    Preview for Cross Coherence Visualizer
 
 
+Complex Coherence Visualizer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Displays the complex-cross-coherence matrix. Axes represent brain nodes.
+The matrix is a complex ndarray that contains the `number of nodes` x `number of nodes` cross
+spectrum for every frequency frequency and for every segment
+
+This visualizer is very similar with the previous one (Cross Coherence Visualizer).
+
 
 Cross Correlation Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Displays the cross-correlation matrix. Similar to the previous
-two visualizers.
+Displays the cross-correlation matrix. Similar to the previous three visualizers.
 
 
 
@@ -155,6 +225,21 @@ On the right, the first ten components are plotted against the brain nodes
    Preview for Principal Components Analysis Visualizer
 
 
+Independent Component Visualizer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ICA takes time-points as observations and nodes as variables.
+
+As for PCA the TimeSeries datatype must be longer (more time-points) than the number of nodes.
+Mostly a problem for TimeSeriesSurface datatypes, which, if sampled at 1024Hz, would need to be greater than
+16 seconds long.
+
+.. figure:: screenshots/analyzers_ica.jpg
+   :width: 90%
+   :align: center
+
+   Preview for Independent Components Analysis Visualizer
+
 
 Wavelet Spectrogram Visualizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -168,16 +253,3 @@ vary with time.
 
    Preview for Wavelet Visualizer
 
-
-Topographic Visualizer
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. figure:: screenshots/visualizer_topographic.jpg
-   :width: 90%
-   :align: center
-
-   Preview for Topographic Visualizer
-
-
-This display is available for ConnectivityMeasure datatypes obtained by means of
-a BCT analyzer. 
