@@ -206,4 +206,10 @@ The following is a demo script for using TVB Command mode for various operations
 	print loaded_dt.get_data('data')
 
 
+.. raw:: pdf
 
+   PageBreak
+
+.. COPYRIGHT
+
+.. include:: ../templates/copyright_notice.rst

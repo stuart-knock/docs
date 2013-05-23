@@ -18,3 +18,10 @@ Copyright notice
 	License (GPl_LICENSE.TXT) for more details.
 
 
+CITATION:
+
+When using The Virtual Brain for scientific publications, please cite it as follows:
+
+Paula Sanz Leon, Stuart A. Knock, M. Marmaduke Woodman, Lia Domide, Jochen Mersmann, Anthony R. McIntosh, Viktor Jirsa (2013)
+*The Virtual Brain: a simulator of primate brain network dynamics.* Frontiers in Neuroinformatics (in press)
+
