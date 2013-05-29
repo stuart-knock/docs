@@ -108,13 +108,14 @@ On Linux
 --------
 
 Unzip the package and it will create a folder TVB_Distribution. In this folder
-you should find a number of scripts:
+you should find a sub-folder `bin` with a number of scripts:
 
 - tvb_start.sh
 - tvb_clean.sh
 - tvb_stop.sh
 - tvb_command.sh
 - tvb_library.sh
+- contributor_setup.sh
  
 
 To start |TVB| graphical interface in your web-browser, run the
@@ -125,36 +126,39 @@ ALL folders and their content created by |TVB|. Be careful!
 To make sure that no processes will remain open after you use the application,
 you should always close |TVB| by running the `tvb_stop.sh` script.
 
-
 To access the console interface, on a terminal, run `tvb_command.sh` or `tvb_library.sh`.
-The interactive Python shell will appear. To stop all the processes
-run `tvb_stop.sh`. See the User Interface section for more details
-on how to use this interface.
+The interactive Python shell will appear. See the Shell and User Interface sections in this document for
+more details on how to use the different interfaces of |TVB|.
 
 The current |TVB| package was tested on Debian Squeeze and Fedora 16. 
 Other Linux flavors might also work as long as you have installed a glibc 
 version of 2.11 or higher.
 
+For details on script `contributor_setup`, please read document `ContributorsManual.pdf`.
+
 On MacOS
 --------
 
-Unzip the package and it will create a folder TVB_Distribution. In this folder
-you should find a number of scripts and an application package. 
+Unzip the package and it will create a folder: TVB_Distribution. In this folder
+you should find a number of scripts (in `bin` sub-folder) and an application package (`tvb.app`).
 
 To start |TVB| in your web browser you should double-click on the `tvb.app` 
-application. If you rather use the shell interface, then execute one of the files
-`tvb_command` or `tvb_library` from the `bin` folder.
+application. If you would rather use the shell interface, then execute one of the files
+`tvb_command` or `tvb_library` from the `bin` folder. See the Shell and User Interface sections in this document for
+more details on how to use the different interfaces of |TVB|.
 
-This will launch the TVB software as a background process and will also try to 
-fire a browser window for you to start working with TVB.
+Double click on `tvb.app` will launch the TVB software as a background process and will also try to
+fire a browser window for you to start working with TVB. Please be patient, as depending on your computer
+resources, the startup process might take about 1-2 minutes.
 
-You can at any time run the `tvb_clean.command` which will start tvb in a clean state, resetting
-your program database and deleting all folders created by |TVB|.
+You can at any time run the `tvb_clean.command` which will reset
+your TVB database and delete all folders created by |TVB|.
 
 To make sure that no processes will remain open after you use the application,
 you should always close |TVB| by running the `tvb_stop.command` script.
 
-The current |TVB| version was tested on Mac OS X 10.5.8 (Leopard), 10.6.8 (Snow Leopard) and 10.7.2 (Lion) but should also run smoothly on subsequent versions.
+The current |TVB| version was tested on Mac OS X 10.5.8 (Leopard), 10.6.8 (Snow Leopard) and 10.7.2 (Lion)
+but should also run smoothly on subsequent versions.
 
 On Windows
 ----------
@@ -165,7 +169,8 @@ In this folder you should find sub-folder `bin` with a number of .bat scripts.
 To start |TVB| you should use `tvb_start.bat`. This will launch the TVB software with a console 
 process for debugging, and will also try to fire a browser window for you to start working with TVB web interface.
 If you rather use the shell interface, then execute one of the files
-`tvb_command` or `tvb_library` from the `bin` folder.
+`tvb_command` or `tvb_library` from the `bin` folder. See the Shell and User Interface sections in this document for
+more details on how to use the different interfaces of |TVB|.
 
 You can at any time run `tvb_clean.bat` which will start tvb in a clean state, resetting
 your program database and deleting all folders created by |TVB|.

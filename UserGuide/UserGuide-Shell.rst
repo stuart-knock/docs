@@ -28,6 +28,12 @@ To run any demo use the `execfile` command::
 
 	execfile('/home/user/Downloads/TVB_Distribution/tvb_data/tvb/simulator/demos/region_deterministic.py')
 
+The above command should work on Linux and Windows, as long as you replace '/home/user/Downloads/TVB_Distribution'
+with your personal path towards the folder where TVB was being downloaded.
+On Mac OS the path is just a little different::
+
+	execfile('../Resources/lib/python2.7/tvb/simulator/demos/region_deterministic.py')
+
 
 .. figure:: screenshots/linux_shell_run_demo.jpg
    :width: 90%
