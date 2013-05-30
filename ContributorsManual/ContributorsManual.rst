@@ -39,6 +39,8 @@ In the commands above replace *${github_url}* with the URL of your previously fo
 The steps above should create a folder *TVB_Distribution/tvb_scientific_library* which contains the Simulator, Analyzers, Basic and DataTypes as subfolders. 
 This is a clone of your previously Git forked repository. You are now ready to contribute to TVB. Good luck!
 
+NOTE: Each time you do a clean of TVB using the tvb_clean.sh script, make sure to re-run the above described commands in order to re-initialize TVB_PATH properly. This will give you some GIT related warning which you can just ignore.
+
 
 Contribution guidelines
 ------------------------
