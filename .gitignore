@@ -1,0 +1,7 @@
+manuals/DeveloperReference/images/*
+manuals/UserGuide/icons/*
+manuals/UserGuide/screenshots/*
+*.png
+*.jpg
+*.svg
+*.pdf
