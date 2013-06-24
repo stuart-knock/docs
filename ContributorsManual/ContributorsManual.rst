@@ -24,7 +24,14 @@ GIT Setup
 The following steps assume you have the latest distribution package from `TVB Web Page`_. You also need to make sure you have a GIT client installed and available from command line. 
 You can test this by trying to execute *git --version*.
 
-You should access `TVB Git Repository`_. The first step you need to do is to create a free GitHub account, then fork TVB-Library repository for your account. 
+You should access `TVB Git Repository`_. The first step you need to do is to create a free GitHub account, then fork TVB-Library repository for your account.
+
+.. figure:: images/fork_repo.jpg
+   :width: 90%
+   :align: center
+
+   Fork `TVB Git Repository`_
+
 You should now have your own git clone of TVB-Library. 
 
 Now, assuming you have your TVB Distribution package unpacked in a folder *TVB_Distribution*, go into *TVB_Distribution/bin*.
@@ -36,7 +43,13 @@ Depending on the operating system you are using, open a terminal or command line
 
 In the commands above replace *${github_url}* with the URL of your previously forked repository on GitHub.
 
-The steps above should create a folder *TVB_Distribution/tvb_scientific_library* which contains the Simulator, Analyzers, Basic and DataTypes as subfolders. 
+.. figure:: images/clone_repo.jpg
+   :width: 90%
+   :align: center
+
+   Clone your TVB fork
+
+The steps above should create a folder *TVB_Distribution/scientific_library* which contains Simulator, Analyzers, Basic and DataTypes subfolders. 
 This is a clone of your previously Git forked repository. You are now ready to contribute to TVB. Good luck!
 
 NOTE: Each time you do a clean of TVB using the tvb_clean.sh script, make sure to re-run the above described commands in order to re-initialize TVB_PATH properly. This will give you some GIT related warning which you can just ignore.
@@ -45,9 +58,16 @@ NOTE: Each time you do a clean of TVB using the tvb_clean.sh script, make sure t
 Contribution guidelines
 ------------------------
 
-- You should always create a separate branch with a self-explanatory name for the new features you want to add to TVB. In order to do this just execute (from *TVB_Distribution/tvb_scientific_library* folder): *git checkout {my-awesome-new-feature-url}* . 
+- By default, the only branch available is 'trunk'. You should **always** create a separate branch with a self-explanatory name for the new features you want to add to TVB. In order to do this just execute (from *TVB_Distribution/scientific_library* folder): *git checkout {my-awesome-new-feature-url}*. 
 
-- During your development, make sure you make pull requests from master often, in order to quickly solve any conflicts which might appear.
+.. figure:: images/create_branch.jpg
+   :width: 90%
+   :align: center
+
+   Create a new branch within your local cloned repo
+
+
+- While making your modifications/contributions, make sure that 1) you are working in the right branch and 2) you make pull requests from master ('trunk') often, in order to quickly solve any conflicts which might appear.
 
 - If you have problems, send us an email, and we will do our best to help you.
 
