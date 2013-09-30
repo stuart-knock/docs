@@ -134,7 +134,7 @@ The following is a demo script for using TVB Command mode for various operations
 	from tvb.core.traits import db_events
 	from tvb.core.entities import model
 	from tvb.core.entities.storage import dao
-	from tvb.core.services.operationservice import OperationService
+	from tvb.core.services.operation_service import OperationService
 	from tvb.core.adapters.abcadapter import ABCAdapter
 	from tvb.simulator import simulator, models, coupling, integrators, monitors, noise
 	
